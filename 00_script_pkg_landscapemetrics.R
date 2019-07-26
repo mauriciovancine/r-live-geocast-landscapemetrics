@@ -17,14 +17,14 @@ library(sf)
 library(tidyverse)
 
 # directory
-path <- "/home/mude/data/gitlab/r-landscape-ecology/01_data/rio_claro_sp"
+path <- "./"
 setwd(path)
 getwd()
 dir()
 
 # import data -------------------------------------------------------------
 # import
-rc <- sf::read_sf("SP_3543907_USO.shp")
+rc <- sf::read_sf("./Dados/shp/SP_3543907_USO.shp")
 rc
 
 ggplot() + 
