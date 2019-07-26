@@ -6,7 +6,7 @@ library(dplyr)
 library(plyr)
 
 # carregando dados
-PARNASO_lu <- stack("./Dados/PARNASO_lu_Proj_reclass.tif")
+PARNASO_lu <- stack("./Dados/Raster/PARNASO_lu_Proj_reclass.tif")
 # Renomenando layers só apra ter uma referencia
 names(PARNASO_lu) <- paste0("UC", seq(1995, 2017, 5))
 
@@ -21,7 +21,7 @@ m <- tm_shape(PARNASO_lu[[c(1, 5)]]) +
           title.position = c("left", "TOP")) +
   tm_facets()
 m
-tmap_save(m, "./img/mapas.png")
+#tmap_save(m, "./img/mapas.png")
 
 
 # landscape metrics
@@ -59,8 +59,6 @@ temp %>%
   scale_x_discrete(labels = seq(1995, 2017, 5)) + 
   xlab("Anos") + 
   ylab("Proporção de uso")
-ggsave("propop.UC.png")
-
 
 # Mean patch area ----
 lsm_c_area_mn(PARNASO_lu) %>% 
@@ -69,8 +67,7 @@ lsm_c_area_mn(PARNASO_lu) %>%
   scale_x_discrete(labels = seq(1995, 2017, 5)) + 
   xlab("Anos") + 
   ylab("Tamanho médio dos fragmentos m²") +
-  ggtitle("Mean patch area", subtitle = "Tamanho médio dos fragmentos") +
-ggsave("TamanhoMedioFrag.png")
+  ggtitle("Mean patch area", subtitle = "Tamanho médio dos fragmentos") 
 
 # Mean core area
 lsm_c_core_mn(PARNASO_lu) %>%
@@ -80,8 +77,7 @@ lsm_c_core_mn(PARNASO_lu) %>%
   scale_x_discrete(labels = seq(1995, 2017, 5)) + 
   xlab("Anos") + 
   ylab("Tamanho médio de \"core area\"") +
-  ggtitle("Mean core area", subtitle = "Tamanho médio da área central dos fragmentos") +
-ggsave("TamanhoMedioCA.png")
+  ggtitle("Mean core area", subtitle = "Tamanho médio da área central dos fragmentos")
 
 # Mean core area index
 lsm_c_cai_mn(PARNASO_lu) %>% 
@@ -91,8 +87,7 @@ lsm_c_cai_mn(PARNASO_lu) %>%
   scale_x_discrete(labels = seq(1995, 2017, 5)) + 
   xlab("Anos") + 
   ylab("Core área index") +
-  ggtitle("Mean core area index", subtitle = "Core área ponderado pela área (%)") +
-ggsave("CoreAreaIndex.png")
+  ggtitle("Mean core area index", subtitle = "Core área ponderado pela área (%)") 
 
 # gyration index
 lsm_c_gyrate_cv(PARNASO_lu) %>%
@@ -103,9 +98,7 @@ lsm_c_gyrate_cv(PARNASO_lu) %>%
   scale_x_discrete(labels = seq(1995, 2017, 5)) + 
   xlab("Anos") + 
   ylab("Gyration") +
-  ggtitle("Radius of gyration", subtitle = "Equivalente à contiguidade da paisagem - correlação") +
-ggsave("gyration.png")
-
+  ggtitle("Radius of gyration", subtitle = "Equivalente à contiguidade da paisagem - correlação") 
 
 # patch density
 lsm_c_pd(PARNASO_lu) %>%
@@ -116,6 +109,4 @@ lsm_c_pd(PARNASO_lu) %>%
   scale_x_discrete(labels = seq(1995, 2017, 5)) + 
   xlab("Anos") + 
   ylab("Densidade de fragmentos") +
-  ggtitle("Patch density", subtitle = "Quantidade dde fragmentos por unidade de área") +
-ggsave("DensidadeFrag.png")
-
+  ggtitle("Patch density", subtitle = "Quantidade dde fragmentos por unidade de área")
