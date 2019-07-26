@@ -27,7 +27,7 @@ check_landscape(PARNASO_lu)
 
 ------------------------------------------------------  
 
-Com relação à metricas disponíveis:  
+Com relação às metricas disponíveis:  
 
 ```  
 
@@ -47,4 +47,7 @@ Com relação à metricas disponíveis:
   enn      euclidean nearest neighbor      aggregation metric    patch 
                     distance                                           
 -----------------------------------------------------------------------
-```
+```  
+
+* [Script com um pre-processamento do raster usado](https://gitlab.com/geocastbrasil/landscapemetrics/blob/master/LandScapeMetrics_Preprocessamento.R);
+* [Algumas métricas claculadas](https://gitlab.com/geocastbrasil/landscapemetrics/blob/master/LandScapeMetrics.R)
