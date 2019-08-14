@@ -2,7 +2,7 @@
 # landscape metrics
 # mauricio vancine
 # mauricio.vancine@gmail.com
-# 26-07-2019
+# 13-08-2019
 # -------------------------------------------------------------------------
 
 # preparate r -------------------------------------------------------------
@@ -13,6 +13,8 @@ rm(list = ls())
 library(fasterize)
 library(landscapemetrics)
 library(landscapetools)
+library(raster)
+library(rgdal)
 library(sf)
 library(tidyverse)
 
@@ -24,7 +26,7 @@ dir()
 
 # import data -------------------------------------------------------------
 # import
-rc <- sf::read_sf("./Dados/shp/SP_3543907_USO.shp")
+rc <- sf::read_sf("./dados/vector/rio_claro/SP_3543907_USO.shp")
 rc
 
 ggplot() + 
@@ -36,11 +38,11 @@ ggplot() +
 # create number coloumn
 rc <- rc %>% 
   dplyr::mutate(class = seq(5))
-rc
+sf::st_drop_geometry(rc)
 
 # rasterize ---------------------------------------------------------------
 # create raster
-ra <- fasterize::raster(rc, res = 90)
+ra <- fasterize::raster(rc, res = 30)
 ra
 
 # rasterize
@@ -61,20 +63,76 @@ ggplot() +
 # landscapetools
 landscapetools::show_landscape(rc_raster, discrete = TRUE)
 
-# landscape metrics -------------------------------------------------------
-# check raster
-landscapemetrics::check_landscape(rc_raster)
+# buffers -----------------------------------------------------------------
+po <- sf::read_sf("./dados/vector/rio_claro/pontos_amostragem.shp")
+po
 
-# check all metrics
+bu <- sf::st_buffer(po, 2000)
+bu
+
+# ggplot
+ggplot() +
+  geom_raster(data = raster::rasterToPoints(rc_raster) %>% tibble::as_tibble(), 
+              aes(x, y, fill = factor(layer))) +
+  geom_sf(data = bu, fill = NA, color = "black", size = 1) +
+  scale_fill_manual(values = c("blue", "orange", "gray", "forestgreen", "green")) +
+  labs(x = "Longitude", y = "Latitude", fill = "Classes") +
+  theme_bw()
+
+# crop and mask landscapes ------------------------------------------------
+# select buffers
+bu01 <- dplyr::filter(bu, id == 1)
+bu01
+plot(bu01[1])
+
+bu02 <- dplyr::filter(bu, id == 2)
+bu02
+plot(bu02[1])
+
+# crop and mask landscapes
+la01 <- rc_raster %>% 
+  raster::crop(bu01) %>% 
+  raster::mask(bu01)
+la01
+la01 %>% plot
+
+la02 <- rc_raster %>% 
+  raster::crop(bu02) %>% 
+  raster::mask(bu02)
+la02
+la02 %>% plot
+
+# check rasters -----------------------------------------------------------
+landscapemetrics::check_landscape(la01)
+landscapemetrics::check_landscape(la02)
+
+# list metrics ------------------------------------------------------------
+# all
 all_metrics <- landscapemetrics::list_lsm()
 all_metrics
 
+# patch metrics
+patch_metrics <- landscapemetrics::list_lsm() %>%
+  dplyr::filter(level == "patch")
+patch_metrics
+
+# class metrics
+class_metrics <- landscapemetrics::list_lsm() %>%
+  dplyr::filter(level == "class")
+class_metrics
+
+# landscape metrics
+landscape_metrics <- landscapemetrics::list_lsm() %>%
+  dplyr::filter(level == "landscape")
+landscape_metrics
+
+# metrics -----------------------------------------------------------------
 # calculate for example the Euclidean nearest-neighbor distance on patch level
-landscapemetrics::lsm_p_enn(rc_raster)
+landscapemetrics::lsm_p_enn(la01)
 
 # calculate the total area and total class edge length
-landscapemetrics::lsm_l_ta(rc_raster)
-landscapemetrics::lsm_c_te(rc_raster)
+landscapemetrics::lsm_l_ta(la01)
+landscapemetrics::lsm_c_te(la01)
 
 # calculate all metrics on patch level
 lsm_patch <- landscapemetrics::calculate_lsm(rc_raster, level = "patch", progress = TRUE)
