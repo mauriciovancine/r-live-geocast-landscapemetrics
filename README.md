@@ -1,11 +1,31 @@
 # Landscape metrics
 
-Repositorio para trabalhar o tema de métricas de paisagem com [LS Metrics]() e [landscapemetrics]();
+Repositorio com materiais da live com @mauriciovancine a respeito de  métricas de paisagem com [R](https://cran.r-project.org/), usando o pacote [landscapemetrics](https://cran.r-project.org/web/packages/landscapemetrics/index.html);  
 
+## Roteiro da live:  
 
+1. Apresentação pessoalProfissional:  
+  - Formação;  
+  - Cursos;  
+1. Base teórica:  
+  - Ecología de paisagem;  
+  - Metricas de paisagem;  
+1. Contextualização:  
+  - Situação problema;  
+  - Especie de sapo;  
+    Lago como frag habitat p/ sapo;  
+1. Hands-on: landscapemetrics & R:  
+  - Pacote;  
+  - Quais metricas;  
+  - Metricas selecionadas;  
+  - Especificações do pacote (raster tem q estar projetado, etc);  
+  - Mapa/graficos resultados;  
+1. Outros universos/mapas:  
+1. Como onde buscar informações:  
+  - Livros;  
 
 ### Landscapemetrics
-O pacote sogere que a paisagem a ser analisada seja um raster em sistema projetado;
+O pacote sugere que a paisagem a ser analisada seja um raster em sistema projetado;
 
 O pacote fornece uma função para confirmar se o raster está adequado:  
 ```r
