@@ -17,10 +17,10 @@ library(raster)
 library(rgdal)
 library(sf)
 library(tidyverse)
+library(tmap)
 
 # directory
-path <- "/home/mude/data/gitlab/landscapemetrics"
-setwd(path)
+setwd("./")
 getwd()
 dir()
 
@@ -28,15 +28,17 @@ dir()
 # import
 rc <- sf::read_sf("./02_dados/vector/rio_claro/SP_3543907_USO.shp")
 
-ggplot() + 
-  geom_sf(data = rc, aes(fill = CLASSE_USO), color = NA) + 
-  scale_fill_manual(values = c("blue", "orange", "gray", "forestgreen", "green")) +
-  labs(x = "Longitude", y = "Latitude", fill = "Classes") +
-  theme_bw()
+# ggplot() + 
+#   geom_sf(data = rc, aes(fill = CLASSE_USO), color = NA) + 
+#   scale_fill_manual(values = c("blue", "orange", "gray", "forestgreen", "green")) +
+#   labs(x = "Longitude", y = "Latitude", fill = "Classes") +
+#   theme_bw()
 
 # create number coloumn
 rc <- rc %>% 
   dplyr::mutate(class = seq(5))
+
+# attribute table
 sf::st_drop_geometry(rc)
 
 # rasterize ---------------------------------------------------------------
@@ -52,12 +54,12 @@ rc_raster
 fasterize::plot(rc_raster)
 
 # ggplot
-ggplot() +
-  geom_raster(data = raster::rasterToPoints(rc_raster) %>% tibble::as_tibble(), 
-              aes(x, y, fill = factor(layer))) +
-  scale_fill_manual(values = c("blue", "orange", "gray", "forestgreen", "green")) +
-  labs(x = "Longitude", y = "Latitude", fill = "Classes") +
-  theme_bw()
+# ggplot() +
+#   geom_raster(data = raster::rasterToPoints(rc_raster) %>% tibble::as_tibble(), 
+#               aes(x, y, fill = factor(layer))) +
+#   scale_fill_manual(values = c("blue", "orange", "gray", "forestgreen", "green")) +
+#   labs(x = "Longitude", y = "Latitude", fill = "Classes") +
+#   theme_bw()
 
 # landscapetools
 landscapetools::show_landscape(rc_raster, discrete = TRUE)
@@ -69,18 +71,19 @@ po
 bu <- sf::st_buffer(po, 2000)
 bu
 
-landscapetools::show_landscape(rc_raster, discrete = TRUE) +
-  geom_sf(data = bu, fill = NA, color = "black", size = 1)
+tm_shape(rc_raster) +
+  tm_raster(palette = "cat", style = "cat") +
+  tm_shape(bu) +
+  tm_borders() +
+  tm_graticules()
 
 # crop and mask landscapes ------------------------------------------------
 # select buffers
 bu01 <- dplyr::filter(bu, id == 1)
 bu01
-ggplot(data = bu01) + geom_sf() + theme_bw()
 
 bu02 <- dplyr::filter(bu, id == 2)
 bu02
-ggplot(data = bu02) + geom_sf() + theme_bw()
 
 # crop and mask landscapes
 la01 <- rc_raster %>% 
@@ -105,6 +108,8 @@ landscapemetrics::check_landscape(la02)
 # all
 all_metrics <- landscapemetrics::list_lsm()
 all_metrics
+
+readr::write_csv(all_metrics, "all_metrics.csv")
 
 # patch metrics
 patch_metrics <- landscapemetrics::list_lsm() %>%
