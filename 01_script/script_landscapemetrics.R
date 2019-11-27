@@ -10,9 +10,12 @@
 rm(list = ls())
 
 # instalar pacotes
-# install.packages(c("tidyverse", "sf", "raster", "rgdal", "fasterize", 
-#                    "landscapetools", "landscapemetrics", "tmap", "gspatial"),
+# install.packages(c("tidyverse", "sf", "raster", "rgdal", "fasterize", "devtools",
+#                    "landscapetools", "landscapemetrics", "tmap", "ggspatial"),
 #                  dependencies = TRUE)
+# 
+# github
+# devtools::install_github("thomasp85/patchwork")
 
 # carregar pacotes
 library(sf)
@@ -23,6 +26,7 @@ library(landscapetools)
 library(landscapemetrics)
 library(tmap)
 library(ggspatial)
+library(patchwork)
 library(tidyverse)
 
 # directorio
@@ -31,14 +35,15 @@ getwd()
 dir()
 
 # importar dados ----------------------------------------------------------
-# importar vetor
-rc <- sf::read_sf("./02_dados/SP_3543907_USO.shp")
+# download: http://geo.fbds.org.br/SP/RIO_CLARO/USO/
+# import vector
+rc <- sf::read_sf("./02_dados/vector/SP_3543907_USO.shp")
 
 # tabela de atributos
 sf::st_drop_geometry(rc)
 
 # mapa
-la <- ggplot() +
+ggplot() +
   geom_sf(data = rc, aes(fill = CLASSE_USO), color = NA) +
   scale_fill_manual(values = c("blue", "orange", "gray", "forestgreen", "green")) +
   coord_sf() +
@@ -50,7 +55,6 @@ la <- ggplot() +
   theme_bw() +
   theme(legend.position = c(.15, .15),
         legend.background = element_rect(colour = "black"))
-la
 
 # criar uma coluna numerica para as classes de uso da terra
 rc <- rc %>% 
@@ -60,7 +64,7 @@ rc <- rc %>%
 sf::st_drop_geometry(rc)
 
 # rasterizar --------------------------------------------------------------
-# criar um raster
+# criar um raster vazio
 ra <- fasterize::raster(rc, res = 30)
 ra
 
@@ -96,18 +100,20 @@ tm_shape(rc_raster) +
   tm_scale_bar(text.size = .6) +
   tm_layout(legend.position = c("left", "bottom")) 
 
-# exportar
+# exportar raster
 raster::writeRaster(x = rc_raster,
-                    filename = "./02_dados/SP_3543907_USO_raster_30m",
+                    filename = "./02_dados/raster/SP_3543907_USO_raster_30m",
                     format = "GTiff",
                     options = c("COMPRESS=DEFLATE" , "TFW=TRUE"),
                     overwrite = TRUE)
 
 # buffers -----------------------------------------------------------------
-# coordenadas
-co <- tibble::tibble(id = 1:4,
-                     x = c(222993, 229076, 242815, 231477), 
-                     y = c(7526113, 7517654, 7528139, 7507708))
+# coordenadas - amostragens de campo
+co <- tibble::tibble(id = 1:10,
+                     x = c(222993, 229276, 242815, 231477, 231477, 
+                           241702, 237779, 239468, 236614, 230836), 
+                     y = c(7526113, 7517654, 7528139, 7507708, 7512711, 
+                           7535264, 7532688, 7520459, 7527841, 7524274))
 co
 
 # pontos
@@ -132,8 +138,8 @@ tm_shape(rc_raster) +
   tm_layout(legend.position = c("left", "bottom")) 
 
 # exportar
-sf::write_sf(po, "./02_dados/pontos_amostragem.shp")
-sf::write_sf(bu_2km, "./02_dados/buffer_2km.shp")
+sf::write_sf(po, "./02_dados/vector/pontos_amostragem.shp")
+sf::write_sf(bu_2km, "./02_dados/vector/buffer_2km.shp")
 
 # ajustar paisagens -------------------------------------------------------
 # list
@@ -141,10 +147,10 @@ rc_raster_pa <- list()
 rc_raster_pa
 
 # crop e mask das paisagens
-for(i in 1:4){
+for(i in 1:10){
   
   # informacao
-  print(paste0("Ajustando a paisagem 0", i))
+  print(paste0("Ajustando a paisagem ", i))
   
   
   # filter
@@ -161,7 +167,7 @@ for(i in 1:4){
 # nomes das paisagens
 rc_raster_pa
 names(rc_raster_pa)
-names(rc_raster_pa) <- paste0("paisagem_0", 1:4)
+names(rc_raster_pa) <- c(paste0("paisagem_0", 1:9), "paisagem_10")
 names(rc_raster_pa)
 
 # mapas
@@ -197,14 +203,14 @@ la04
 la01 + la02 + la03 + la04
 
 # exportar
-for(i in 1:4){
+for(i in 1:10){
   
   # informacao
   print(paste0("Exportanto a ", names(rc_raster_pa)[i]))
   
   # exportar
   raster::writeRaster(x = rc_raster_pa[[i]],
-                      filename = paste0("./02_dados/", names(rc_raster_pa)[i]),
+                      filename = paste0("./02_dados/raster/", names(rc_raster_pa)[i]),
                       format = "GTiff",
                       options = c("COMPRESS=DEFLATE" , "TFW=TRUE"),
                       overwrite = TRUE)
@@ -224,7 +230,9 @@ patch_metrics <- landscapemetrics::list_lsm() %>%
   dplyr::arrange(type)
 patch_metrics
 
-patch_metrics$type %>% table
+patch_metrics %>%
+  group_by(type) %>% 
+  summarise(n = n())
 
 # class metrics
 class_metrics <- landscapemetrics::list_lsm() %>%
@@ -232,7 +240,19 @@ class_metrics <- landscapemetrics::list_lsm() %>%
   dplyr::arrange(type)
 class_metrics
 
-class_metrics$type %>% table
+class_metrics_type <- class_metrics %>%
+  group_by(type) %>% 
+  summarise(n = n())
+class_metrics_type
+
+class_metrics_type_unique <- class_metrics %>%
+  distinct(name, .keep_all = TRUE) %>% 
+  group_by(type) %>% 
+  summarise(n_unicas = n())
+class_metrics_type_unique
+
+bind_cols(class_metrics_type, class_metrics_type_unique[, 2]) %>% 
+  mutate(n_agregacao = n - n_unicas)
 
 # landscape metrics
 landscape_metrics <- landscapemetrics::list_lsm() %>%
@@ -240,10 +260,22 @@ landscape_metrics <- landscapemetrics::list_lsm() %>%
   dplyr::arrange(type)
 landscape_metrics
 
-landscape_metrics$type %>% table
+landscape_metrics_type <- landscape_metrics %>%
+  group_by(type) %>% 
+  summarise(n = n())
+landscape_metrics_type$n %>% sum
+
+landscape_metrics_type_unique <- landscape_metrics %>%
+  distinct(name, .keep_all = TRUE) %>% 
+  group_by(type) %>% 
+  summarise(n_unicas = n())
+landscape_metrics_type_unique
+
+bind_cols(landscape_metrics_type, landscape_metrics_type_unique[, 2]) %>% 
+  mutate(n_agregacao = n - n_unicas)
 
 # exportar
-readr::write_csv(all_metrics, "./01_script/metricas.csv")
+readr::write_csv(all_metrics, "./02_dados/metricas/lista_metricas.csv")
 
 # calcular as metricas ----------------------------------------------------
 # area in patch level
@@ -261,7 +293,7 @@ area_l <- landscapemetrics::lsm_l_ta(landscape = rc_raster_pa)
 area_l
 
 # verify
-area_p_sum <- area_p %>% 
+area_p_class_sum <- area_p %>% 
   dplyr::group_by(layer, class) %>% 
   dplyr::summarise(area = sum(value))
 area_p_class_sum
@@ -277,7 +309,8 @@ area_l
 
 all(area_p_layer_sum$area == area_l$value)
 
-# calculate all metrics on patch level
+# calcular todas as metricas por nivel ------------------------------------
+# patch level
 lsm_patch <- landscapemetrics::calculate_lsm(landscape = rc_raster_pa, 
                                              level = "patch", 
                                              edge_depth = 1,
@@ -286,7 +319,7 @@ lsm_patch <- landscapemetrics::calculate_lsm(landscape = rc_raster_pa,
                                              progress = TRUE)
 lsm_patch
 
-# calculate all metrics on class level
+# class level
 lsm_class <- landscapemetrics::calculate_lsm(landscape = rc_raster_pa, 
                                              level = "class", 
                                              edge_depth = 1,
@@ -304,13 +337,16 @@ lsm_landscape <- landscapemetrics::calculate_lsm(landscape = rc_raster_pa,
                                                  progress = TRUE)
 lsm_landscape
 
+# export
+readr::write_csv(lsm_patch, "./02_dados/metricas_tabelas/metricas_patch.csv")
+readr::write_csv(lsm_class, "./02_dados/metricas_tabelas/metricas_class.csv")
+readr::write_csv(lsm_landscape, "./02_dados/metricas_tabelas/metricas_landscape.csv")
+
 # maps --------------------------------------------------------------------
 # plot landscape + landscape with labeled patches
 landscapemetrics::show_patches(landscape = rc_raster_pa$paisagem_01, class = 4, labels = FALSE)
-la01
 
 landscapemetrics::show_cores(rc_raster_pa$paisagem_01, class = 4, labels = FALSE)
-la01
 
 landscapemetrics::show_lsm(rc_raster_pa$paisagem_01, what = "lsm_p_area", class = 4, 
                            label_lsm = TRUE, labels = FALSE)
@@ -318,24 +354,27 @@ landscapemetrics::show_lsm(rc_raster_pa$paisagem_01, what = "lsm_p_area", class 
 # spatialize landscape metric values --------------------------------------
 rc_raster_pa01_bin <- raster::reclassify(x = rc_raster_pa$paisagem_01, 
                                          rcl = c(0,3,NA, 3,4,1))
-rc_raster_pa01_bin %>% plot
+landscapetools::show_landscape(rc_raster_pa01_bin)
 
-rc_raster_pa01_bin_lsm_p_area_raster <- landscapemetrics::spatialize_lsm(rc_raster_pa01_bin, 
-                                                                         what = "patch", 
-                                                                         progress = TRUE)
-rc_raster_pa01_bin_lsm_p_area_raster
+rc_raster_pa01_bin_patch <- landscapemetrics::spatialize_lsm(rc_raster_pa01_bin,
+                                                             what = "patch", 
+                                                             progress = TRUE)
+rc_raster_pa01_bin_patch
 
-landscapetools::show_landscape(rc_raster_pa01_bin_lsm_p_area_raster[[1]]$lsm_p_area)
-landscapetools::show_landscape(rc_raster_pa01_bin_lsm_p_area_raster[[1]]$lsm_p_cai)
-landscapetools::show_landscape(rc_raster_pa01_bin_lsm_p_area_raster[[1]]$lsm_p_circle)
-landscapetools::show_landscape(rc_raster_pa01_bin_lsm_p_area_raster[[1]]$lsm_p_contig)
-landscapetools::show_landscape(rc_raster_pa01_bin_lsm_p_area_raster[[1]]$lsm_p_core)
-landscapetools::show_landscape(rc_raster_pa01_bin_lsm_p_area_raster[[1]]$lsm_p_area)
+landscapetools::show_landscape(rc_raster_pa01_bin_lsm_p_area_raster[[1]]$lsm_p_area) +
+  labs(title = "Área")
 
-raster::writeRaster(x = rc_raster_pa01_bin_lsm_p_area_raster[[1]]$lsm_p_area,
-                    filename = paste0("./02_dados/paisagem_01_p_area"),
-                    format = "GTiff",
-                    options = c("COMPRESS=DEFLATE" , "TFW=TRUE"),
-                    overwrite = TRUE)
+for(i in 1:length(rc_raster_pa01_bin_patch[[1]])){
+  
+  # informacao
+  print(names(rc_raster_pa01_bin_patch[[1]][i]))
+  
+  # exportar
+  raster::writeRaster(x = rc_raster_pa01_bin_patch[[1]][[i]],
+                      filename = paste0("./02_dados/metricas_raster/paisagem_01_", names(rc_raster_pa01_bin_patch[[1]][i])),
+                      format = "GTiff",
+                      options = c("COMPRESS=DEFLATE" , "TFW=TRUE"),
+                      overwrite = TRUE)
+}
 
 # end ---------------------------------------------------------------------
