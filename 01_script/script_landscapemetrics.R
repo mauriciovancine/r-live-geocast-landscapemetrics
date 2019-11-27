@@ -11,7 +11,7 @@ rm(list = ls())
 
 # instalar pacotes
 # install.packages(c("tidyverse", "sf", "raster", "rgdal", "fasterize", "devtools",
-#                    "landscapetools", "landscapemetrics", "tmap", "ggspatial"),
+#                    "landscapetools", "landscapemetrics", "tmap", "ggspatial", "broom", "bbmle"),
 #                  dependencies = TRUE)
 # 
 # github
@@ -27,6 +27,8 @@ library(landscapemetrics)
 library(tmap)
 library(ggspatial)
 library(patchwork)
+library(broom)
+library(bbmle)
 library(tidyverse)
 
 # directorio
@@ -53,8 +55,9 @@ ggplot() +
                          pad_x = unit(0, "cm"), pad_y = unit(.8, "cm"),
                          style = north_arrow_fancy_orienteering) +
   theme_bw() +
-  theme(legend.position = c(.15, .15),
+  theme(legend.position = c(.2, .2),
         legend.background = element_rect(colour = "black"))
+ggsave("./02_dados/mapas/00_uso_vetor.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # criar uma coluna numerica para as classes de uso da terra
 rc <- rc %>% 
@@ -79,6 +82,7 @@ fasterize::plot(rc_raster)
 landscapetools::show_landscape(rc_raster, discrete = TRUE) +
   scale_fill_manual(values = c("blue", "orange", "gray", "forestgreen", "green")) +
   theme(legend.position = "none")
+ggsave("./02_dados/mapas/01_uso_raster_landscapemetrics.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # mapa ggplot2
 ggplot() +
@@ -87,18 +91,20 @@ ggplot() +
   coord_sf() +
   scale_fill_manual(values = c("blue", "orange", "gray", "forestgreen", "green")) +
   labs(x = "Longitude", y = "Latitude", fill = "Classes") +
-  theme_minimal() +
+  theme_bw() +
   theme(legend.position = c(.2, .2),
         axis.text.y = element_text(angle = 90, hjust = .5))
+ggsave("./02_dados/mapas/02_uso_raster_ggplot2.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # mapa tmap
-tm_shape(rc_raster) +
+tm_shape(rc_raster, bbox = raster::bbox(rc_raster) + c(-1e3, -1e3, 1e3, 1e3)) +
   tm_raster(style = "cat", palette = c("blue", "orange", "gray", "forestgreen", "green"),
             title = "Classes") +
   tm_grid(lines = FALSE, labels.rot = c(0, 90), labels.size = .8) +
-  tm_compass() +
-  tm_scale_bar(text.size = .6) +
+  tm_compass(position = c(.73, .08)) +
+  tm_scale_bar(position = c(.63, 0), text.size = .65) +
   tm_layout(legend.position = c("left", "bottom")) 
+tmap::tmap_save(filename = "./02_dados/mapas/03_uso_raster_tmap.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # exportar raster
 raster::writeRaster(x = rc_raster,
@@ -125,7 +131,7 @@ bu_2km <- sf::st_buffer(x = po, dist = 2000)
 bu_2km
 
 # mapa
-tm_shape(rc_raster) +
+tm_shape(rc_raster, bbox = raster::bbox(rc_raster) + c(-1e3, -1e3, 1e3, 1e3)) +
   tm_raster(style = "cat", palette = c("blue", "orange", "gray", "forestgreen", "green"),
             title = "Classes") +
   tm_shape(bu_2km) +
@@ -133,9 +139,10 @@ tm_shape(rc_raster) +
   tm_shape(po) +
   tm_dots(size = .7, shape = 20, alpha = .7) +
   tm_grid(lines = FALSE, labels.rot = c(0, 90), labels.size = .8) +
-  tm_compass() +
-  tm_scale_bar(text.size = .6) +
+  tm_compass(position = c(.73, .08)) +
+  tm_scale_bar(position = c(.63, 0), text.size = .65) +
   tm_layout(legend.position = c("left", "bottom")) 
+tmap::tmap_save(filename = "./02_dados/mapas/04_pontos_buffer_uso_raster_tmap.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # exportar
 sf::write_sf(po, "./02_dados/vector/pontos_amostragem.shp")
@@ -143,8 +150,8 @@ sf::write_sf(bu_2km, "./02_dados/vector/buffer_2km.shp")
 
 # ajustar paisagens -------------------------------------------------------
 # list
-rc_raster_pa <- list()
-rc_raster_pa
+rc_raster_pai <- list()
+rc_raster_pai
 
 # crop e mask das paisagens
 for(i in 1:10){
@@ -158,66 +165,77 @@ for(i in 1:10){
     dplyr::filter(id == i)
   
   # crop e mask
-  rc_raster_pa[[i]] <- rc_raster %>% 
+  rc_raster_pai[[i]] <- rc_raster %>% 
     raster::crop(bu_2km_pa) %>% 
     raster::mask(bu_2km_pa)
   
 }
 
 # nomes das paisagens
-rc_raster_pa
-names(rc_raster_pa)
-names(rc_raster_pa) <- c(paste0("paisagem_0", 1:9), "paisagem_10")
-names(rc_raster_pa)
+rc_raster_pai
+names(rc_raster_pai)
+names(rc_raster_pai) <- c(paste0("paisagem_0", 1:9), "paisagem_10")
+names(rc_raster_pai)
 
 # mapas
-la01 <- landscapetools::show_landscape(rc_raster_pa$paisagem_01, discrete = TRUE) +
+la01 <- landscapetools::show_landscape(rc_raster_pai$paisagem_01, discrete = TRUE) +
   scale_fill_manual(values = c("blue", "orange", "forestgreen")) +
   labs(title = "Paisagem 01") +
   theme(legend.position = "none",
-        axis.text.y = element_text(angle = 90, hjust = .5))
+        axis.text.x = element_text(size = 7),
+        axis.text.y = element_text(size = 7, angle = 90, hjust = .5))
 la01
 
-la02 <- landscapetools::show_landscape(rc_raster_pa$paisagem_02, discrete = TRUE)+
+la02 <- landscapetools::show_landscape(rc_raster_pai$paisagem_02, discrete = TRUE)+
   scale_fill_manual(values = c("blue", "orange", "forestgreen")) +
   labs(title = "Paisagem 02") +
   theme(legend.position = "none",
-        axis.text.y = element_text(angle = 90, hjust = .5))
+        axis.text.x = element_text(size = 7),
+        axis.text.y = element_text(size = 7, angle = 90, hjust = .5))
 la02
 
-la03 <- landscapetools::show_landscape(rc_raster_pa$paisagem_03, discrete = TRUE)+
+la03 <- landscapetools::show_landscape(rc_raster_pai$paisagem_03, discrete = TRUE)+
   scale_fill_manual(values = c("blue", "orange", "forestgreen")) +
   labs(title = "Paisagem 03") +
   theme(legend.position = "none",
-        axis.text.y = element_text(angle = 90, hjust = .5))
+        axis.text.x = element_text(size = 7),
+        axis.text.y = element_text(size = 7, angle = 90, hjust = .5))
 la03
 
-la04 <- landscapetools::show_landscape(rc_raster_pa$paisagem_04, discrete = TRUE)+
+la04 <- landscapetools::show_landscape(rc_raster_pai$paisagem_04, discrete = TRUE)+
   scale_fill_manual(values = c("blue", "orange", "forestgreen")) +
   labs(title = "Paisagem 04") +
   theme(legend.position = "none",
-        axis.text.y = element_text(angle = 90, hjust = .5))
+        axis.text.x = element_text(size = 7),
+        axis.text.y = element_text(size = 7, angle = 90, hjust = .5))
 la04
 
 # todos os mapas - patchwork
 la01 + la02 + la03 + la04
+ggsave("./02_dados/mapas/05_uso_paisagens.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # exportar
 for(i in 1:10){
   
   # informacao
-  print(paste0("Exportanto a ", names(rc_raster_pa)[i]))
+  print(paste0("Exportanto a ", names(rc_raster_pai)[i]))
   
   # exportar
-  raster::writeRaster(x = rc_raster_pa[[i]],
-                      filename = paste0("./02_dados/raster/", names(rc_raster_pa)[i]),
+  raster::writeRaster(x = rc_raster_pai[[i]],
+                      filename = paste0("./02_dados/raster/", names(rc_raster_pai)[i]),
                       format = "GTiff",
                       options = c("COMPRESS=DEFLATE" , "TFW=TRUE"),
                       overwrite = TRUE)
 }
 
 # checar os raster --------------------------------------------------------
-landscapemetrics::check_landscape(rc_raster_pa)
+landscapemetrics::check_landscape(rc_raster_pai)
+
+#' prerequisitos do raster
+#' 1. sistema de referencias de coordenadas e projetada (crs)
+#' 2. unidade esta em metros (units)
+#' 3. classes como valores inteiros (class)
+#' 4. numero de classes (n_class)
 
 # listar as metricas ------------------------------------------------------
 # metricas
@@ -275,63 +293,59 @@ bind_cols(landscape_metrics_type, landscape_metrics_type_unique[, 2]) %>%
   mutate(n_agregacao = n - n_unicas)
 
 # exportar
-readr::write_csv(all_metrics, "./02_dados/metricas/lista_metricas.csv")
+readr::write_csv(all_metrics, "./02_dados/metricas_lista/listagem_metricas.csv")
 
 # calcular as metricas ----------------------------------------------------
-# area in patch level
-area_p <- landscapemetrics::lsm_p_area(landscape = rc_raster_pa)
-area_p
+#' estrutura das funcoes
+#' 1. prefixo: ‘lsm_’
+#' 2. nível: ‘p’, ‘c’ e ‘l’ para patch‐, class‐ e landscape‐level
+#' 3. metrica: patch area - ‘lsm_p_area’
+#' 4. todas as funcoes funcionam para rasterlayers, rasterstack/rasterbrick ou list
+#' 5. algumas funcoes permitem add parametros: edge depth ou cell neighbourhood rule
 
+# area in patch level
+area_p <- landscapemetrics::lsm_p_area(landscape = rc_raster_pai)
 area_p
 
 # area in class level
-area_c <- landscapemetrics::lsm_c_ca(landscape = rc_raster_pa)
+area_c <- landscapemetrics::lsm_c_ca(landscape = rc_raster_pai)
 area_c
 
 # area in patch level
-area_l <- landscapemetrics::lsm_l_ta(landscape = rc_raster_pa)
+area_l <- landscapemetrics::lsm_l_ta(landscape = rc_raster_pai)
 area_l
-
-# verify
-area_p_class_sum <- area_p %>% 
-  dplyr::group_by(layer, class) %>% 
-  dplyr::summarise(area = sum(value))
-area_p_class_sum
-area_c
-
-all(area_p_class_sum$area == area_c$value)
-
-area_p_layer_sum <- area_p %>% 
-  dplyr::group_by(layer) %>% 
-  dplyr::summarise(area = sum(value))
-area_p_layer_sum
-area_l
-
-all(area_p_layer_sum$area == area_l$value)
 
 # calcular todas as metricas por nivel ------------------------------------
+#' calculate_lsm()
+#' calcula varias metricas simultaneamente
+#' facilita a entrada de parametros
+#' permite escolha por ‘level’, ‘metric’, ‘name’, ‘type’, ‘what’
+
 # patch level
-lsm_patch <- landscapemetrics::calculate_lsm(landscape = rc_raster_pa, 
+lsm_patch <- landscapemetrics::calculate_lsm(landscape = rc_raster_pai, 
                                              level = "patch", 
-                                             edge_depth = 1,
+                                             edge_depth = 1, # celulas
+                                             neighbourhood = 8, # oito celulas nas vizinhancas
                                              full_name = TRUE, 
                                              verbose = TRUE, 
                                              progress = TRUE)
 lsm_patch
 
 # class level
-lsm_class <- landscapemetrics::calculate_lsm(landscape = rc_raster_pa, 
+lsm_class <- landscapemetrics::calculate_lsm(landscape = rc_raster_pai, 
                                              level = "class", 
-                                             edge_depth = 1,
+                                             edge_depth = 1, # celulas
+                                             neighbourhood = 8, # oito celulas nas vizinhancas
                                              full_name = TRUE, 
                                              verbose = TRUE, 
                                              progress = TRUE)
 lsm_class
 
-# calculate all metrics on landscape level
-lsm_landscape <- landscapemetrics::calculate_lsm(landscape = rc_raster_pa, 
+# landscape level
+lsm_landscape <- landscapemetrics::calculate_lsm(landscape = rc_raster_pai, 
                                                  level = "landscape",
                                                  edge_depth = 1, # celulas
+                                                 neighbourhood = 8, # oito celulas nas vizinhancas
                                                  full_name = TRUE, 
                                                  verbose = TRUE, 
                                                  progress = TRUE)
@@ -342,39 +356,177 @@ readr::write_csv(lsm_patch, "./02_dados/metricas_tabelas/metricas_patch.csv")
 readr::write_csv(lsm_class, "./02_dados/metricas_tabelas/metricas_class.csv")
 readr::write_csv(lsm_landscape, "./02_dados/metricas_tabelas/metricas_landscape.csv")
 
-# maps --------------------------------------------------------------------
-# plot landscape + landscape with labeled patches
-landscapemetrics::show_patches(landscape = rc_raster_pa$paisagem_01, class = 4, labels = FALSE)
+# mapas -------------------------------------------------------------------
+# plotar paisagem e metricas
+landscapemetrics::show_patches(landscape = rc_raster_pai$paisagem_01, 
+                               class = 4, labels = FALSE)
 
-landscapemetrics::show_cores(rc_raster_pa$paisagem_01, class = 4, labels = FALSE)
+landscapemetrics::show_cores(rc_raster_pai$paisagem_01, class = 4, 
+                             edge_depth = 1, labels = FALSE)
 
-landscapemetrics::show_lsm(rc_raster_pa$paisagem_01, what = "lsm_p_area", class = 4, 
-                           label_lsm = TRUE, labels = FALSE)
+landscapemetrics::show_cores(rc_raster_pai$paisagem_01, class = 4, 
+                             edge_depth = 2, labels = FALSE)
 
-# spatialize landscape metric values --------------------------------------
-rc_raster_pa01_bin <- raster::reclassify(x = rc_raster_pa$paisagem_01, 
+landscapemetrics::show_lsm(rc_raster_pai$paisagem_01, what = "lsm_p_area", class = 4, 
+                           labels = FALSE)
+
+# espacializar os valores das metricas ------------------------------------
+# reclassificar
+rc_raster_pai01_fo <- raster::reclassify(x = rc_raster_pai$paisagem_01, 
                                          rcl = c(0,3,NA, 3,4,1))
-landscapetools::show_landscape(rc_raster_pa01_bin)
+landscapetools::show_landscape(rc_raster_pai01_fo)
 
-rc_raster_pa01_bin_patch <- landscapemetrics::spatialize_lsm(rc_raster_pa01_bin,
+# calcular e espacializar
+rc_raster_pai01_fo_patch <- landscapemetrics::spatialize_lsm(rc_raster_pai01_fo,
                                                              what = "patch", 
                                                              progress = TRUE)
-rc_raster_pa01_bin_patch
+rc_raster_pai01_fo_patch
 
-landscapetools::show_landscape(rc_raster_pa01_bin_lsm_p_area_raster[[1]]$lsm_p_area) +
+# mapa
+landscapetools::show_landscape(rc_raster_pai01_fo_patch[[1]]$lsm_p_area) +
   labs(title = "Área")
 
-for(i in 1:length(rc_raster_pa01_bin_patch[[1]])){
+# exportar
+for(i in 1:length(rc_raster_pai01_fo_patch[[1]])){
   
   # informacao
-  print(names(rc_raster_pa01_bin_patch[[1]][i]))
+  print(paste0("Paisagem 01 - ", names(rc_raster_pai01_fo_patch[[1]][i])))
   
   # exportar
-  raster::writeRaster(x = rc_raster_pa01_bin_patch[[1]][[i]],
-                      filename = paste0("./02_dados/metricas_raster/paisagem_01_", names(rc_raster_pa01_bin_patch[[1]][i])),
+  raster::writeRaster(x = rc_raster_pai01_fo_patch[[1]][[i]],
+                      filename = paste0("./02_dados/metricas_raster/paisagem_01_", names(rc_raster_pai01_fo_patch[[1]][i])),
                       format = "GTiff",
                       options = c("COMPRESS=DEFLATE" , "TFW=TRUE"),
                       overwrite = TRUE)
 }
+  
+# exemplo -----------------------------------------------------------------
+# paisagens com floresta e água
+# list
+rc_raster_pai_flo_agu_sep <- list()
+rc_raster_pai_flo_agu_sep
+
+rc_raster_pai_flo_agu_jun <- list()
+rc_raster_pai_flo_agu_jun
+
+# reclassificar as paisagens das paisagens
+for(i in 1:10){
+  
+  # informacao
+  print(paste0("Ajustando a paisagem ", i))
+
+  # reclassify
+  rc_raster_pai_flo_agu_sep[[i]] <- raster::reclassify(x = rc_raster_pai[[i]],
+                                                   rcl = c(0,1,1, 1,2,NA, 2,3,NA, 3,4,4, 4,5,NA))
+  
+  # reclassify
+  rc_raster_pai_flo_agu_jun[[i]] <- raster::reclassify(x = rc_raster_pai[[i]],
+                                                       rcl = c(0,1,1, 1,2,NA, 2,3,NA, 3,4,1, 4,5,NA))
+  
+}
+
+# verificar
+landscapetools::show_landscape(rc_raster_pai_flo_agu_sep[[1]])
+landscapetools::show_landscape(rc_raster_pai_flo_agu_jun[[1]])
+
+# metrica para tamanho e densidade de borda das lagoas
+borda_lagoas <- landscapemetrics::calculate_lsm(landscape = rc_raster_pai_flo_agu_sep,
+                                                what = "lsm_c_ed",
+                                                edge_depth = 1) %>% 
+  dplyr::filter(class == 1)
+borda_lagoas
+
+# metrica para tamanho de floresta
+area_floresta <- landscapemetrics::calculate_lsm(landscape = rc_raster_pai_flo_agu_sep,
+                                                     what = "lsm_c_ca") %>% 
+  dplyr::filter(class == 4)
+area_floresta
+
+# distancia de lagos e florestas
+dist_floresta_lago <- landscapemetrics::calculate_lsm(landscape = rc_raster_pai_flo_agu_jun,
+                                                 what = c("lsm_l_enn_mn"))
+dist_floresta_lago
+
+# numero de especies por paisagem
+set.seed(42)
+sp_n <- rpois(10, 10)
+sp_n %>% sort
+
+sp_n <- c(5, 3, 6, 8, 5, 2, 0, 9, 4, 2)
+sp_n
+
+# data
+da <- tibble::tibble(sp_n = sp_n,
+                     borda_lagoa = borda_lagoas$value,
+                     area_floresta = area_floresta$value,
+                     dist_floresta_lago = dist_floresta_lago$value)
+da
+
+# modelos
+mo_borda_lagoas <- glm(sp_n ~ borda_lagoa, data = da, family = "poisson")
+broom::tidy(mo_borda_lagoas)
+
+mo_area_floresta <- glm(sp_n ~ log10(area_floresta), data = da, family = "poisson")
+broom::tidy(mo_area_floresta)
+
+mo_dist_floresta_lago <- glm(sp_n ~ dist_floresta_lago, data = da, family = "poisson")
+broom::tidy(mo_dist_floresta_lago)
+
+# aicc
+aic <- bbmle::ICtab(mo_borda_lagoas, mo_area_floresta, mo_dist_floresta_lago, 
+                    type = "AICc",
+                    weights = TRUE,
+                    delta = TRUE,
+                    logLik = TRUE,
+                    sort = TRUE,
+                    nobs = nrow(da))
+aic
+
+class(aic) <- "data.frame"
+aic
+
+write.csv(aic, "./02_dados/modelos/aic_results.csv")
+
+# graficos
+ggplot(data = da) +
+  aes(x = borda_lagoa, y = sp_n) +
+  stat_smooth(method = "glm", method.args = list(family = "poisson"), col = "black", level = .95) +
+  geom_point(shape = 21, size = 5, col = "black", fill = "blue", alpha = .8) +
+  theme_classic() +
+  labs(x = "Densidade de borda de lagoas", y = "Número de espécies") +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20),
+        legend.title = element_text(size = 14),
+        legend.text = element_text(size = 12))
+ggsave("./02_dados/modelos/modelo_borda_lagoa.png", he = 15, wi = 20, un = "cm", dpi = 300)
+
+# graficos
+ggplot(data = da) +
+  aes(x = log10(area_floresta), y = sp_n) +
+  stat_smooth(method = "glm", method.args = list(family = "poisson"), col = "black", level = .95) +
+  geom_point(shape = 21, size = 5, col = "black", fill = "forestgreen", alpha = .8) +
+  theme_classic() +
+  labs(x = "Área de floresta (log10)", y = "Número de espécies") +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20),
+        legend.title = element_text(size = 14),
+        legend.text = element_text(size = 12))
+ggsave("./02_dados/modelos/modelo_area_flo.png", he = 15, wi = 20, un = "cm", dpi = 300)
+
+# graficos
+ggplot(data = da) +
+  aes(x = dist_floresta_lago, y = sp_n) +
+  stat_smooth(method = "glm", method.args = list(family = "poisson"), col = "black", level = .95) +
+  geom_point(shape = 21, size = 5, col = "black", fill = "cyan4", alpha = .8) +
+  theme_classic() +
+  labs(x = "Distância de lagoas e florestas", y = "Número de espécies") +
+  theme(axis.title = element_text(size = 24),
+        axis.text.x = element_text(size = 20),
+        axis.text.y = element_text(size = 20),
+        legend.title = element_text(size = 14),
+        legend.text = element_text(size = 12))
+ggsave("./02_dados/modelos/modelo_dist_flo_agu.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # end ---------------------------------------------------------------------
