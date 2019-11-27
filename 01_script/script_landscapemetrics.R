@@ -31,15 +31,27 @@ library(broom)
 library(bbmle)
 library(tidyverse)
 
-# directorio
-setwd("./")
+# diretorios --------------------------------------------------------------
+# conferir diretorio
 getwd()
 dir()
 
+# mudar diretorio
+setwd("02_dados")
+
+# criar diretorios de saida
+dir.create("mapas")
+dir.create("metricas_lista")
+dir.create("metricas_raster")
+dir.create("metricas_tabelas")
+dir.create("modelos")
+dir.create("raster")
+dir.create("vector")
+
 # importar dados ----------------------------------------------------------
-# download: http://geo.fbds.org.br/SP/RIO_CLARO/USO/
+# download: http://geo.fbds.org.br/SP/RIO_CLARO na pasta 02_dados/vector
 # import vector
-rc <- sf::read_sf("./02_dados/vector/SP_3543907_USO.shp")
+rc <- sf::read_sf("./vector/SP_3543907_USO.shp")
 
 # tabela de atributos
 sf::st_drop_geometry(rc)
@@ -57,7 +69,7 @@ ggplot() +
   theme_bw() +
   theme(legend.position = c(.2, .2),
         legend.background = element_rect(colour = "black"))
-ggsave("./02_dados/mapas/00_uso_vetor.png", he = 15, wi = 20, un = "cm", dpi = 300)
+ggsave("./mapas/00_uso_vetor.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # criar uma coluna numerica para as classes de uso da terra
 rc <- rc %>% 
@@ -82,7 +94,7 @@ fasterize::plot(rc_raster)
 landscapetools::show_landscape(rc_raster, discrete = TRUE) +
   scale_fill_manual(values = c("blue", "orange", "gray", "forestgreen", "green")) +
   theme(legend.position = "none")
-ggsave("./02_dados/mapas/01_uso_raster_landscapemetrics.png", he = 15, wi = 20, un = "cm", dpi = 300)
+ggsave("./mapas/01_uso_raster_landscapemetrics.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # mapa ggplot2
 ggplot() +
@@ -94,7 +106,7 @@ ggplot() +
   theme_bw() +
   theme(legend.position = c(.2, .2),
         axis.text.y = element_text(angle = 90, hjust = .5))
-ggsave("./02_dados/mapas/02_uso_raster_ggplot2.png", he = 15, wi = 20, un = "cm", dpi = 300)
+ggsave("./mapas/02_uso_raster_ggplot2.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # mapa tmap
 tm_shape(rc_raster, bbox = raster::bbox(rc_raster) + c(-1e3, -1e3, 1e3, 1e3)) +
@@ -104,11 +116,11 @@ tm_shape(rc_raster, bbox = raster::bbox(rc_raster) + c(-1e3, -1e3, 1e3, 1e3)) +
   tm_compass(position = c(.73, .08)) +
   tm_scale_bar(position = c(.63, 0), text.size = .65) +
   tm_layout(legend.position = c("left", "bottom")) 
-tmap::tmap_save(filename = "./02_dados/mapas/03_uso_raster_tmap.png", he = 15, wi = 20, un = "cm", dpi = 300)
+tmap::tmap_save(filename = "./mapas/03_uso_raster_tmap.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # exportar raster
 raster::writeRaster(x = rc_raster,
-                    filename = "./02_dados/raster/SP_3543907_USO_raster_30m",
+                    filename = "./raster/SP_3543907_USO_raster_30m",
                     format = "GTiff",
                     options = c("COMPRESS=DEFLATE" , "TFW=TRUE"),
                     overwrite = TRUE)
@@ -142,11 +154,11 @@ tm_shape(rc_raster, bbox = raster::bbox(rc_raster) + c(-1e3, -1e3, 1e3, 1e3)) +
   tm_compass(position = c(.73, .08)) +
   tm_scale_bar(position = c(.63, 0), text.size = .65) +
   tm_layout(legend.position = c("left", "bottom")) 
-tmap::tmap_save(filename = "./02_dados/mapas/04_pontos_buffer_uso_raster_tmap.png", he = 15, wi = 20, un = "cm", dpi = 300)
+tmap::tmap_save(filename = "./mapas/04_pontos_buffer_uso_raster_tmap.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # exportar
-sf::write_sf(po, "./02_dados/vector/pontos_amostragem.shp")
-sf::write_sf(bu_2km, "./02_dados/vector/buffer_2km.shp")
+sf::write_sf(po, "./vector/pontos_amostragem.shp")
+sf::write_sf(bu_2km, "./vector/buffer_2km.shp")
 
 # ajustar paisagens -------------------------------------------------------
 # list
@@ -212,7 +224,7 @@ la04
 
 # todos os mapas - patchwork
 la01 + la02 + la03 + la04
-ggsave("./02_dados/mapas/05_uso_paisagens.png", he = 15, wi = 20, un = "cm", dpi = 300)
+ggsave("./mapas/05_uso_paisagens.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # exportar
 for(i in 1:10){
@@ -222,7 +234,7 @@ for(i in 1:10){
   
   # exportar
   raster::writeRaster(x = rc_raster_pai[[i]],
-                      filename = paste0("./02_dados/raster/", names(rc_raster_pai)[i]),
+                      filename = paste0("./raster/", names(rc_raster_pai)[i]),
                       format = "GTiff",
                       options = c("COMPRESS=DEFLATE" , "TFW=TRUE"),
                       overwrite = TRUE)
@@ -293,7 +305,7 @@ bind_cols(landscape_metrics_type, landscape_metrics_type_unique[, 2]) %>%
   mutate(n_agregacao = n - n_unicas)
 
 # exportar
-readr::write_csv(all_metrics, "./02_dados/metricas_lista/listagem_metricas.csv")
+readr::write_csv(all_metrics, "./metricas_lista/listagem_metricas.csv")
 
 # calcular as metricas ----------------------------------------------------
 #' estrutura das funcoes
@@ -352,9 +364,9 @@ lsm_landscape <- landscapemetrics::calculate_lsm(landscape = rc_raster_pai,
 lsm_landscape
 
 # export
-readr::write_csv(lsm_patch, "./02_dados/metricas_tabelas/metricas_patch.csv")
-readr::write_csv(lsm_class, "./02_dados/metricas_tabelas/metricas_class.csv")
-readr::write_csv(lsm_landscape, "./02_dados/metricas_tabelas/metricas_landscape.csv")
+readr::write_csv(lsm_patch, "./metricas_tabelas/metricas_patch.csv")
+readr::write_csv(lsm_class, "./metricas_tabelas/metricas_class.csv")
+readr::write_csv(lsm_landscape, "./metricas_tabelas/metricas_landscape.csv")
 
 # mapas -------------------------------------------------------------------
 # plotar paisagem e metricas
@@ -394,7 +406,7 @@ for(i in 1:length(rc_raster_pai01_fo_patch[[1]])){
   
   # exportar
   raster::writeRaster(x = rc_raster_pai01_fo_patch[[1]][[i]],
-                      filename = paste0("./02_dados/metricas_raster/paisagem_01_", names(rc_raster_pai01_fo_patch[[1]][i])),
+                      filename = paste0("./metricas_raster/paisagem_01_", names(rc_raster_pai01_fo_patch[[1]][i])),
                       format = "GTiff",
                       options = c("COMPRESS=DEFLATE" , "TFW=TRUE"),
                       overwrite = TRUE)
@@ -485,7 +497,7 @@ aic
 class(aic) <- "data.frame"
 aic
 
-write.csv(aic, "./02_dados/modelos/aic_results.csv")
+write.csv(aic, "./modelos/aic_results.csv")
 
 # graficos
 ggplot(data = da) +
@@ -499,7 +511,7 @@ ggplot(data = da) +
         axis.text.y = element_text(size = 20),
         legend.title = element_text(size = 14),
         legend.text = element_text(size = 12))
-ggsave("./02_dados/modelos/modelo_borda_lagoa.png", he = 15, wi = 20, un = "cm", dpi = 300)
+ggsave("./modelos/modelo_borda_lagoa.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # graficos
 ggplot(data = da) +
@@ -513,7 +525,7 @@ ggplot(data = da) +
         axis.text.y = element_text(size = 20),
         legend.title = element_text(size = 14),
         legend.text = element_text(size = 12))
-ggsave("./02_dados/modelos/modelo_area_flo.png", he = 15, wi = 20, un = "cm", dpi = 300)
+ggsave("./modelos/modelo_area_flo.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # graficos
 ggplot(data = da) +
@@ -527,6 +539,6 @@ ggplot(data = da) +
         axis.text.y = element_text(size = 20),
         legend.title = element_text(size = 14),
         legend.text = element_text(size = 12))
-ggsave("./02_dados/modelos/modelo_dist_flo_agu.png", he = 15, wi = 20, un = "cm", dpi = 300)
+ggsave("./modelos/modelo_dist_flo_agu.png", he = 15, wi = 20, un = "cm", dpi = 300)
 
 # end ---------------------------------------------------------------------
