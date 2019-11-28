@@ -71,3 +71,12 @@ Com relação às metricas disponíveis:
 
 * [Script com um pre-processamento do raster usado](https://gitlab.com/geocastbrasil/landscapemetrics/blob/master/LandScapeMetrics_Preprocessamento.R);
 * [Algumas métricas claculadas](https://gitlab.com/geocastbrasil/landscapemetrics/blob/master/LandScapeMetrics.R)
+
+## Sugestões de artigos  
+
+Sugestão do Israel Schneiberg​:  
+* Lenore Fahrig - Effects of habitat fragmentation on biodiversity (2003) doi: 10.1146/annurev.ecolsys.34.011802.132419  
+* Miguet P. et al. What determines the spatial extent of landscape effects on species? DOI 10.1007/s10980-015-0314-1  
+
+## Sugestões de pacotes:  
+* [multifit](https://cran.r-project.org/web/packages/MultiFit/index.html): para identificação/definição de escala de análise;  
