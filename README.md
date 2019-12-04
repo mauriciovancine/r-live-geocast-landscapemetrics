@@ -70,7 +70,8 @@ Com relação às metricas disponíveis:
 ```  
 
 * [Script com um pre-processamento do raster usado](https://gitlab.com/geocastbrasil/landscapemetrics/blob/master/LandScapeMetrics_Preprocessamento.R);
-* [Algumas métricas claculadas](https://gitlab.com/geocastbrasil/landscapemetrics/blob/master/LandScapeMetrics.R)
+* [Algumas métricas claculadas](https://gitlab.com/geocastbrasil/landscapemetrics/blob/master/LandScapeMetrics.R);  
+* [Script download datos FBS](https://gitlab.com/geocastbrasil/landscapemetrics/blob/master/01_script/enm_function_var_download_fbds.r);  
 
 ## Sugestões de artigos  
 
