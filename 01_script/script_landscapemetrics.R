@@ -11,7 +11,8 @@ rm(list = ls())
 
 # instalar pacotes
 # install.packages(c("tidyverse", "sf", "raster", "rgdal", "fasterize", "devtools",
-#                    "landscapetools", "landscapemetrics", "tmap", "ggspatial", "broom", "bbmle"),
+#                    "landscapetools", "landscapemetrics", "tmap", "ggspatial",
+#                    "broom", "bbmle"),
 #                  dependencies = TRUE)
 # 
 # github
@@ -37,7 +38,7 @@ getwd()
 dir()
 
 # mudar diretorio
-setwd("02_dados")
+setwd(".."); setwd("02_dados")
 
 # criar diretorios de saida
 dir.create("mapas")
@@ -85,6 +86,9 @@ ra
 
 # rasterizar
 rc_raster <- fasterize::fasterize(sf = rc, raster = ra, field = "classe_num")
+rc_raster
+
+raster::crs(rc_raster) <- raster::crs(rc)
 rc_raster
 
 # mapa fasterize
@@ -170,7 +174,6 @@ for(i in 1:10){
   
   # informacao
   print(paste0("Ajustando a paisagem ", i))
-  
   
   # filter
   bu_2km_pa <- bu_2km %>% 
@@ -293,7 +296,7 @@ landscape_metrics
 landscape_metrics_type <- landscape_metrics %>%
   group_by(type) %>% 
   summarise(n = n())
-landscape_metrics_type$n %>% sum
+landscape_metrics_type
 
 landscape_metrics_type_unique <- landscape_metrics %>%
   distinct(name, .keep_all = TRUE) %>% 
@@ -310,7 +313,7 @@ readr::write_csv(all_metrics, "./metricas_lista/listagem_metricas.csv")
 # calcular as metricas ----------------------------------------------------
 #' estrutura das funcoes
 #' 1. prefixo: ‘lsm_’
-#' 2. nível: ‘p’, ‘c’ e ‘l’ para patch‐, class‐ e landscape‐level
+#' 2. nivel: ‘p’, ‘c’ e ‘l’ para patch‐, class‐ e landscape‐level
 #' 3. metrica: patch area - ‘lsm_p_area’
 #' 4. todas as funcoes funcionam para rasterlayers, rasterstack/rasterbrick ou list
 #' 5. algumas funcoes permitem add parametros: edge depth ou cell neighbourhood rule
@@ -460,10 +463,6 @@ dist_floresta_lago <- landscapemetrics::calculate_lsm(landscape = rc_raster_pai_
 dist_floresta_lago
 
 # numero de especies por paisagem
-set.seed(42)
-sp_n <- rpois(10, 10)
-sp_n %>% sort
-
 sp_n <- c(5, 3, 6, 8, 5, 2, 0, 9, 4, 2)
 sp_n
 

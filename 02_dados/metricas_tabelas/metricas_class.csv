@@ -1,0 +1,2036 @@
+layer,level,class,id,metric,value,name,type,function_name
+1,class,1,NA,ai,62.213740458015266,aggregation index,aggregation metric,lsm_c_ai
+1,class,2,NA,ai,91.05530766836152,aggregation index,aggregation metric,lsm_c_ai
+1,class,4,NA,ai,79.31806869089098,aggregation index,aggregation metric,lsm_c_ai
+1,class,1,NA,area_cv,212.98729413157386,patch area,area and edge metric,lsm_c_area_cv
+1,class,2,NA,area_cv,583.5246302466029,patch area,area and edge metric,lsm_c_area_cv
+1,class,4,NA,area_cv,190.02620615083768,patch area,area and edge metric,lsm_c_area_cv
+1,class,1,NA,area_mn,0.45964285714285713,patch area,area and edge metric,lsm_c_area_mn
+1,class,2,NA,area_mn,24.34,patch area,area and edge metric,lsm_c_area_mn
+1,class,4,NA,area_mn,7.816595744680851,patch area,area and edge metric,lsm_c_area_mn
+1,class,1,NA,area_sd,0.978980884097627,patch area,area and edge metric,lsm_c_area_sd
+1,class,2,NA,area_sd,142.02989500202312,patch area,area and edge metric,lsm_c_area_sd
+1,class,4,NA,area_sd,14.853580343764838,patch area,area and edge metric,lsm_c_area_sd
+1,class,1,NA,ca,12.87,total (class) area,area and edge metric,lsm_c_ca
+1,class,2,NA,ca,876.24,total (class) area,area and edge metric,lsm_c_ca
+1,class,4,NA,ca,367.38,total (class) area,area and edge metric,lsm_c_ca
+1,class,1,NA,cai_cv,297.27589912600524,core area index,core area metric,lsm_c_cai_cv
+1,class,2,NA,cai_cv,323.36464220783756,core area index,core area metric,lsm_c_cai_cv
+1,class,4,NA,cai_cv,109.71818221303464,core area index,core area metric,lsm_c_cai_cv
+1,class,1,NA,cai_mn,4.151129838168394,core area index,core area metric,lsm_c_cai_mn
+1,class,2,NA,cai_mn,5.1117147623228645,core area index,core area metric,lsm_c_cai_mn
+1,class,4,NA,cai_mn,18.555243943932876,core area index,core area metric,lsm_c_cai_mn
+1,class,1,NA,cai_sd,12.340308550302979,core area index,core area metric,lsm_c_cai_sd
+1,class,2,NA,cai_sd,16.529478151870546,core area index,core area metric,lsm_c_cai_sd
+1,class,4,NA,cai_sd,20.358476360477347,core area index,core area metric,lsm_c_cai_sd
+1,class,1,NA,circle_cv,91.24020173108768,related circumscribing circle,shape metric,lsm_c_circle_cv
+1,class,2,NA,circle_cv,124.34621617641116,related circumscribing circle,shape metric,lsm_c_circle_cv
+1,class,4,NA,circle_cv,51.08339736605832,related circumscribing circle,shape metric,lsm_c_circle_cv
+1,class,1,NA,circle_mn,0.34263598750846264,related circumscribing circle,shape metric,lsm_c_circle_mn
+1,class,2,NA,circle_mn,0.244164668298395,related circumscribing circle,shape metric,lsm_c_circle_mn
+1,class,4,NA,circle_mn,0.5436193894067197,related circumscribing circle,shape metric,lsm_c_circle_mn
+1,class,1,NA,circle_sd,0.3126217662060257,related circumscribing circle,shape metric,lsm_c_circle_sd
+1,class,2,NA,circle_sd,0.3036095262687395,related circumscribing circle,shape metric,lsm_c_circle_sd
+1,class,4,NA,circle_sd,0.2776992528495746,related circumscribing circle,shape metric,lsm_c_circle_sd
+1,class,1,NA,clumpy,0.6230621708585234,clumpiness index,aggregation metric,lsm_c_clumpy
+1,class,2,NA,clumpy,0.7312873396135625,clumpiness index,aggregation metric,lsm_c_clumpy
+1,class,4,NA,clumpy,0.7155184080357732,clumpiness index,aggregation metric,lsm_c_clumpy
+1,class,1,NA,cohesion,68.61633442670502,patch cohesion index,aggregation metric,lsm_c_cohesion
+1,class,2,NA,cohesion,99.70933468579666,patch cohesion index,aggregation metric,lsm_c_cohesion
+1,class,4,NA,cohesion,94.44598547941608,patch cohesion index,aggregation metric,lsm_c_cohesion
+1,class,1,NA,contig_cv,142.35302625914605,contiguity index,shape metric,lsm_c_contig_cv
+1,class,2,NA,contig_cv,171.38265478786457,contiguity index,shape metric,lsm_c_contig_cv
+1,class,4,NA,contig_cv,59.05727704490946,contiguity index,shape metric,lsm_c_contig_cv
+1,class,1,NA,contig_mn,0.15467911566147824,contiguity index,shape metric,lsm_c_contig_mn
+1,class,2,NA,contig_mn,0.1325989925097228,contiguity index,shape metric,lsm_c_contig_mn
+1,class,4,NA,contig_mn,0.4715985916919198,contiguity index,shape metric,lsm_c_contig_mn
+1,class,1,NA,contig_sd,0.22019040213499902,contiguity index,shape metric,lsm_c_contig_sd
+1,class,2,NA,contig_sd,0.22725167358512463,contiguity index,shape metric,lsm_c_contig_sd
+1,class,4,NA,contig_sd,0.27851328683538845,contiguity index,shape metric,lsm_c_contig_sd
+1,class,1,NA,core_cv,343.15529364349834,core area,core area metric,lsm_c_core_cv
+1,class,2,NA,core_cv,591.7605271014552,core area,core area metric,lsm_c_core_cv
+1,class,4,NA,core_cv,237.63697996210664,core area,core area metric,lsm_c_core_cv
+1,class,1,NA,core_mn,0.1285714285714286,core area,core area metric,lsm_c_core_mn
+1,class,2,NA,core_mn,18.465,core area,core area metric,lsm_c_core_mn
+1,class,4,NA,core_mn,3.7551063829787235,core area,core area metric,lsm_c_core_mn
+1,class,1,NA,core_sd,0.44119966325592647,core area,core area metric,lsm_c_core_sd
+1,class,2,NA,core_sd,109.2685813292837,core area,core area metric,lsm_c_core_sd
+1,class,4,NA,core_sd,8.923521402874936,core area,core area metric,lsm_c_core_sd
+1,class,1,NA,cpland,0.2865124274765418,core area percentage of landscape,core area metric,lsm_c_cpland
+1,class,2,NA,cpland,52.904519733543445,core area percentage of landscape,core area metric,lsm_c_cpland
+1,class,4,NA,cpland,14.046271757037463,core area percentage of landscape,core area metric,lsm_c_cpland
+1,class,1,NA,dcad,0.2387603562304515,disjunct core area density,core area metric,lsm_c_dcad
+1,class,2,NA,dcad,1.8304960644334616,disjunct core area density,core area metric,lsm_c_dcad
+1,class,4,NA,dcad,6.36694283281204,disjunct core area density,core area metric,lsm_c_dcad
+1,class,1,NA,dcore_cv,293.97236789606563,disjunct core area,core area metric,lsm_c_dcore_cv
+1,class,2,NA,dcore_cv,521.3476792376686,disjunct core area,core area metric,lsm_c_dcore_cv
+1,class,4,NA,dcore_cv,143.34062692093596,disjunct core area,core area metric,lsm_c_dcore_cv
+1,class,1,NA,dcore_mn,0.10714285714285714,disjunct core area,core area metric,lsm_c_dcore_mn
+1,class,2,NA,dcore_mn,0.6388888888888888,disjunct core area,core area metric,lsm_c_dcore_mn
+1,class,4,NA,dcore_mn,1.702127659574468,disjunct core area,core area metric,lsm_c_dcore_mn
+1,class,1,NA,dcore_sd,0.314970394174356,disjunct core area,core area metric,lsm_c_dcore_sd
+1,class,2,NA,dcore_sd,3.3308323951295487,disjunct core area,core area metric,lsm_c_dcore_sd
+1,class,4,NA,dcore_sd,2.4398404582286974,disjunct core area,core area metric,lsm_c_dcore_sd
+1,class,1,NA,division,0.9999798624511524,division index,aggregation metric,lsm_c_division
+1,class,2,NA,division,0.539282988643741,division index,aggregation metric,lsm_c_division
+1,class,4,NA,division,0.9917526861091613,division index,aggregation metric,lsm_c_division
+1,class,1,NA,ed,5.873504763269107,edge density,area and edge metric,lsm_c_ed
+1,class,2,NA,ed,90.51405104696416,edge density,area and edge metric,lsm_c_ed
+1,class,4,NA,ed,84.9270587111716,edge density,area and edge metric,lsm_c_ed
+1,class,1,NA,enn_cv,70.22211769127587,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+1,class,2,NA,enn_cv,20.029757226637663,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+1,class,4,NA,enn_cv,46.163348856600244,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+1,class,1,NA,enn_mn,245.86891991000982,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+1,class,2,NA,enn_mn,72.09217435416097,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+1,class,4,NA,enn_mn,86.38665095208387,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+1,class,1,NA,enn_sd,172.65436230547593,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+1,class,2,NA,enn_sd,14.439887502542781,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+1,class,4,NA,enn_sd,39.87897104454405,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+1,class,1,NA,frac_cv,4.188639422852164,fractal dimension index,shape metric,lsm_c_frac_cv
+1,class,2,NA,frac_cv,6.142352137582542,fractal dimension index,shape metric,lsm_c_frac_cv
+1,class,4,NA,frac_cv,6.9785652741992035,fractal dimension index,shape metric,lsm_c_frac_cv
+1,class,1,NA,frac_mn,1.0326968687264784,fractal dimension index,shape metric,lsm_c_frac_mn
+1,class,2,NA,frac_mn,1.0342885016904604,fractal dimension index,shape metric,lsm_c_frac_mn
+1,class,4,NA,frac_mn,1.1066889880631343,fractal dimension index,shape metric,lsm_c_frac_mn
+1,class,1,NA,frac_sd,0.04325594816203713,fractal dimension index,shape metric,lsm_c_frac_sd
+1,class,2,NA,frac_sd,0.06352964189235444,fractal dimension index,shape metric,lsm_c_frac_sd
+1,class,4,NA,frac_sd,0.07723101341436046,fractal dimension index,shape metric,lsm_c_frac_sd
+1,class,1,NA,gyrate_cv,138.22021807901083,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+1,class,2,NA,gyrate_cv,419.3029615175238,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+1,class,4,NA,gyrate_cv,113.72756378692321,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+1,class,1,NA,gyrate_mn,17.854624077395595,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+1,class,2,NA,gyrate_mn,51.04304776782938,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+1,class,4,NA,gyrate_mn,104.63134478456446,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+1,class,1,NA,gyrate_sd,24.678700336963765,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+1,class,2,NA,gyrate_sd,214.0250109393129,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+1,class,4,NA,gyrate_sd,118.99467938098111,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+1,class,1,NA,iji,99.9802915000331,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+1,class,2,NA,iji,22.198941520680034,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+1,class,4,NA,iji,21.66374047330907,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+1,class,1,NA,lpi,0.3796289664064178,largest patch index,area and edge metric,lsm_c_lpi
+1,class,2,NA,lpi,67.86763125850584,largest patch index,area and edge metric,lsm_c_lpi
+1,class,4,NA,lpi,5.551178282357997,largest patch index,area and edge metric,lsm_c_lpi
+1,class,1,NA,lsi,5.139275766016713,landscape shape index,aggregation metric,lsm_c_lsi
+1,class,2,NA,lsi,9.738219895287958,landscape shape index,aggregation metric,lsm_c_lsi
+1,class,4,NA,lsi,14.006259780907667,landscape shape index,aggregation metric,lsm_c_lsi
+1,class,1,NA,mesh,0.025302628751522095,effective mesh size,aggregation metric,lsm_c_mesh
+1,class,2,NA,mesh,578.8863175990259,effective mesh size,aggregation metric,lsm_c_mesh
+1,class,4,NA,mesh,10.362667430699808,effective mesh size,aggregation metric,lsm_c_mesh
+1,class,1,NA,ndca,3,number of disjunct core areas,core area metric,lsm_c_ndca
+1,class,2,NA,ndca,23,number of disjunct core areas,core area metric,lsm_c_ndca
+1,class,4,NA,ndca,80,number of disjunct core areas,core area metric,lsm_c_ndca
+1,class,1,NA,nlsi,13.992366412213741,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+1,class,2,NA,nlsi,0.9131533364056764,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+1,class,4,NA,nlsi,6.66650074664012,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+1,class,1,NA,np,28,number of patches,aggregation metric,lsm_c_np
+1,class,2,NA,np,36,number of patches,aggregation metric,lsm_c_np
+1,class,4,NA,np,47,number of patches,aggregation metric,lsm_c_np
+1,class,1,NA,pafrac,1.2685228008921041,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+1,class,2,NA,pafrac,1.4596855332488101,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+1,class,4,NA,pafrac,1.466342739861249,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+1,class,1,NA,para_cv,29.39714544374665,perimeter-area ratio,shape metric,lsm_c_para_cv
+1,class,2,NA,para_cv,28.104048465250195,perimeter-area ratio,shape metric,lsm_c_para_cv
+1,class,4,NA,para_cv,57.5454689613718,perimeter-area ratio,shape metric,lsm_c_para_cv
+1,class,1,NA,para_mn,0.1108658215815722,perimeter-area ratio,shape metric,lsm_c_para_mn
+1,class,2,NA,para_mn,0.11343675457679991,perimeter-area ratio,shape metric,lsm_c_para_mn
+1,class,4,NA,para_mn,0.06785992750802962,perimeter-area ratio,shape metric,lsm_c_para_mn
+1,class,1,NA,para_sd,0.03259138681773944,perimeter-area ratio,shape metric,lsm_c_para_sd
+1,class,2,NA,para_sd,0.03188032048367077,perimeter-area ratio,shape metric,lsm_c_para_sd
+1,class,4,NA,para_sd,0.03905031352134259,perimeter-area ratio,shape metric,lsm_c_para_sd
+1,class,1,NA,pd,2.228429991484214,patch density,aggregation metric,lsm_c_pd
+1,class,2,NA,pd,2.8651242747654178,patch density,aggregation metric,lsm_c_pd
+1,class,4,NA,pd,3.7405789142770733,patch density,aggregation metric,lsm_c_pd
+1,class,1,NA,pladj,57.3943661971831,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+1,class,2,NA,pladj,90.92557573245602,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+1,class,4,NA,pladj,78.60886723808349,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+1,class,1,NA,pland,1.0242819282286368,percentage of landscape,area and edge metric,lsm_c_pland
+1,class,2,NA,pland,69.73712484779028,percentage of landscape,area and edge metric,lsm_c_pland
+1,class,4,NA,pland,29.23859322398109,percentage of landscape,area and edge metric,lsm_c_pland
+1,class,1,NA,shape_cv,20.282047213968,shape index,shape metric,lsm_c_shape_cv
+1,class,2,NA,shape_cv,96.75762669194346,shape index,shape metric,lsm_c_shape_cv
+1,class,4,NA,shape_cv,52.617202494013036,shape index,shape metric,lsm_c_shape_cv
+1,class,1,NA,shape_mn,1.1630031671488401,shape index,shape metric,lsm_c_shape_mn
+1,class,2,NA,shape_mn,1.389223397125183,shape index,shape metric,lsm_c_shape_mn
+1,class,4,NA,shape_mn,2.003822180992718,shape index,shape metric,lsm_c_shape_mn
+1,class,1,NA,shape_sd,0.23588085146107093,shape index,shape metric,lsm_c_shape_sd
+1,class,2,NA,shape_sd,1.3441795885075198,shape index,shape metric,lsm_c_shape_sd
+1,class,4,NA,shape_sd,1.054355174592887,shape index,shape metric,lsm_c_shape_sd
+1,class,1,NA,split,49658.476687898095,splitting index,aggregation metric,lsm_c_split
+1,class,2,NA,split,2.1705297945396014,splitting index,aggregation metric,lsm_c_split
+1,class,4,NA,split,121.25159939781521,splitting index,aggregation metric,lsm_c_split
+1,class,1,NA,tca,3.6,total core area,core area metric,lsm_c_tca
+1,class,2,NA,tca,664.74,total core area,core area metric,lsm_c_tca
+1,class,4,NA,tca,176.49,total core area,core area metric,lsm_c_tca
+1,class,1,NA,te,7380,total edge,area and edge metric,lsm_c_te
+1,class,2,NA,te,113730,total edge,area and edge metric,lsm_c_te
+1,class,4,NA,te,106710,total edge,area and edge metric,lsm_c_te
+2,class,1,NA,ai,95.3560371517028,aggregation index,aggregation metric,lsm_c_ai
+2,class,2,NA,ai,97.69350447296772,aggregation index,aggregation metric,lsm_c_ai
+2,class,4,NA,ai,67.62635956493922,aggregation index,aggregation metric,lsm_c_ai
+2,class,1,NA,area_cv,252.2326967966947,patch area,area and edge metric,lsm_c_area_cv
+2,class,2,NA,area_cv,141.33411968476895,patch area,area and edge metric,lsm_c_area_cv
+2,class,4,NA,area_cv,206.6389469265104,patch area,area and edge metric,lsm_c_area_cv
+2,class,1,NA,area_mn,2.25,patch area,area and edge metric,lsm_c_area_mn
+2,class,2,NA,area_mn,583.6049999999999,patch area,area and edge metric,lsm_c_area_mn
+2,class,4,NA,area_mn,1.9184210526315788,patch area,area and edge metric,lsm_c_area_mn
+2,class,1,NA,area_sd,5.675235677925631,patch area,area and edge metric,lsm_c_area_sd
+2,class,2,NA,area_sd,824.8329891862958,patch area,area and edge metric,lsm_c_area_sd
+2,class,4,NA,area_sd,3.9642050607743706,patch area,area and edge metric,lsm_c_area_sd
+2,class,1,NA,ca,15.75,total (class) area,area and edge metric,lsm_c_ca
+2,class,2,NA,ca,1167.2099999999998,total (class) area,area and edge metric,lsm_c_ca
+2,class,4,NA,ca,72.89999999999999,total (class) area,area and edge metric,lsm_c_ca
+2,class,1,NA,cai_cv,264.5751311064591,core area index,core area metric,lsm_c_cai_cv
+2,class,2,NA,cai_cv,141.4213562373095,core area index,core area metric,lsm_c_cai_cv
+2,class,4,NA,cai_cv,187.176023626927,core area index,core area metric,lsm_c_cai_cv
+2,class,1,NA,cai_mn,10.799319727891156,core area index,core area metric,lsm_c_cai_mn
+2,class,2,NA,cai_mn,45.61126108754338,core area index,core area metric,lsm_c_cai_mn
+2,class,4,NA,cai_mn,8.137894925892617,core area index,core area metric,lsm_c_cai_mn
+2,class,1,NA,cai_sd,28.572314328673723,core area index,core area metric,lsm_c_cai_sd
+2,class,2,NA,cai_sd,64.50406402694406,core area index,core area metric,lsm_c_cai_sd
+2,class,4,NA,cai_sd,15.232188129223257,core area index,core area metric,lsm_c_cai_sd
+2,class,1,NA,circle_cv,189.9095271805743,related circumscribing circle,shape metric,lsm_c_circle_cv
+2,class,2,NA,circle_cv,111.17840785841136,related circumscribing circle,shape metric,lsm_c_circle_cv
+2,class,4,NA,circle_cv,41.39580608552573,related circumscribing circle,shape metric,lsm_c_circle_cv
+2,class,1,NA,circle_mn,0.0993601601014281,related circumscribing circle,shape metric,lsm_c_circle_mn
+2,class,2,NA,circle_mn,0.41729533663016954,related circumscribing circle,shape metric,lsm_c_circle_mn
+2,class,4,NA,circle_mn,0.5917376437183379,related circumscribing circle,shape metric,lsm_c_circle_mn
+2,class,1,NA,circle_sd,0.18869441025448375,related circumscribing circle,shape metric,lsm_c_circle_sd
+2,class,2,NA,circle_sd,0.46394231133282055,related circumscribing circle,shape metric,lsm_c_circle_sd
+2,class,4,NA,circle_sd,0.2449545675287023,related circumscribing circle,shape metric,lsm_c_circle_sd
+2,class,1,NA,clumpy,0.9529705656541554,clumpiness index,aggregation metric,lsm_c_clumpy
+2,class,2,NA,clumpy,0.7864040047012271,clumpiness index,aggregation metric,lsm_c_clumpy
+2,class,4,NA,clumpy,0.6660906861874415,clumpiness index,aggregation metric,lsm_c_clumpy
+2,class,1,NA,cohesion,89.99609487107254,patch cohesion index,aggregation metric,lsm_c_cohesion
+2,class,2,NA,cohesion,99.96162907171063,patch cohesion index,aggregation metric,lsm_c_cohesion
+2,class,4,NA,cohesion,87.37678964911981,patch cohesion index,aggregation metric,lsm_c_cohesion
+2,class,1,NA,contig_cv,220.14434519285163,contiguity index,shape metric,lsm_c_contig_cv
+2,class,2,NA,contig_cv,91.22196120496945,contiguity index,shape metric,lsm_c_contig_cv
+2,class,4,NA,contig_cv,53.80979234299738,contiguity index,shape metric,lsm_c_contig_cv
+2,class,1,NA,contig_mn,0.15235260770975056,contiguity index,shape metric,lsm_c_contig_mn
+2,class,2,NA,contig_mn,0.5869150919141278,contiguity index,shape metric,lsm_c_contig_mn
+2,class,4,NA,contig_mn,0.39938707191111805,contiguity index,shape metric,lsm_c_contig_mn
+2,class,1,NA,contig_sd,0.33539565062686433,contiguity index,shape metric,lsm_c_contig_sd
+2,class,2,NA,contig_sd,0.5353954574520164,contiguity index,shape metric,lsm_c_contig_sd
+2,class,4,NA,contig_sd,0.21490935404015027,contiguity index,shape metric,lsm_c_contig_sd
+2,class,1,NA,core_cv,264.5751311064591,core area,core area metric,lsm_c_core_cv
+2,class,2,NA,core_cv,141.4213562373095,core area,core area metric,lsm_c_core_cv
+2,class,4,NA,core_cv,318.2808508744545,core area,core area metric,lsm_c_core_cv
+2,class,1,NA,core_mn,1.6328571428571428,core area,core area metric,lsm_c_core_mn
+2,class,2,NA,core_mn,532.215,core area,core area metric,lsm_c_core_mn
+2,class,4,NA,core_mn,0.5328947368421052,core area,core area metric,lsm_c_core_mn
+2,class,1,NA,core_sd,4.320133926495467,core area,core area metric,lsm_c_core_sd
+2,class,2,NA,core_sd,752.6656710983968,core area,core area metric,lsm_c_core_sd
+2,class,4,NA,core_sd,1.6961019026862374,core area,core area metric,lsm_c_core_sd
+2,class,1,NA,cpland,0.9101332951125127,core area percentage of landscape,core area metric,lsm_c_cpland
+2,class,2,NA,cpland,84.75705890784006,core area percentage of landscape,core area metric,lsm_c_cpland
+2,class,4,NA,cpland,1.6124408771678373,core area percentage of landscape,core area metric,lsm_c_cpland
+2,class,1,NA,dcad,0.0796267099835969,disjunct core area density,core area metric,lsm_c_dcad
+2,class,2,NA,dcad,0.3185068399343876,disjunct core area density,core area metric,lsm_c_dcad
+2,class,4,NA,dcad,1.5129074896883412,disjunct core area density,core area metric,lsm_c_dcad
+2,class,1,NA,dcore_cv,264.5751311064591,disjunct core area,core area metric,lsm_c_dcore_cv
+2,class,2,NA,dcore_cv,141.4213562373095,disjunct core area,core area metric,lsm_c_dcore_cv
+2,class,4,NA,dcore_cv,166.03483841521805,disjunct core area,core area metric,lsm_c_dcore_cv
+2,class,1,NA,dcore_mn,0.14285714285714285,disjunct core area,core area metric,lsm_c_dcore_mn
+2,class,2,NA,dcore_mn,2,disjunct core area,core area metric,lsm_c_dcore_mn
+2,class,4,NA,dcore_mn,0.5,disjunct core area,core area metric,lsm_c_dcore_mn
+2,class,1,NA,dcore_sd,0.3779644730092272,disjunct core area,core area metric,lsm_c_dcore_sd
+2,class,2,NA,dcore_sd,2.8284271247461903,disjunct core area,core area metric,lsm_c_dcore_sd
+2,class,4,NA,dcore_sd,0.8301741920760902,disjunct core area,core area metric,lsm_c_dcore_sd
+2,class,1,NA,division,0.9998550028083223,division index,aggregation metric,lsm_c_division
+2,class,2,NA,division,0.13672801719213823,division index,aggregation metric,lsm_c_division
+2,class,4,NA,division,0.9995426628442285,division index,aggregation metric,lsm_c_division
+2,class,1,NA,ed,2.006593091586642,edge density,area and edge metric,lsm_c_ed
+2,class,2,NA,ed,37.6713964932397,edge density,area and edge metric,lsm_c_ed
+2,class,4,NA,ed,26.706798528498403,edge density,area and edge metric,lsm_c_ed
+2,class,1,NA,enn_cv,71.90307349195483,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+2,class,2,NA,enn_cv,0,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+2,class,4,NA,enn_cv,91.79365303112714,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+2,class,1,NA,enn_mn,500.5236010175555,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+2,class,2,NA,enn_mn,60,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+2,class,4,NA,enn_mn,138.71586133188157,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+2,class,1,NA,enn_sd,359.8918526842317,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+2,class,2,NA,enn_sd,0,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+2,class,4,NA,enn_sd,127.33235645012682,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+2,class,1,NA,frac_cv,0.8428619090004792,fractal dimension index,shape metric,lsm_c_frac_cv
+2,class,2,NA,frac_cv,3.616248900806603,fractal dimension index,shape metric,lsm_c_frac_cv
+2,class,4,NA,frac_cv,6.113198084491687,fractal dimension index,shape metric,lsm_c_frac_cv
+2,class,1,NA,frac_mn,1.0049319457591712,fractal dimension index,shape metric,lsm_c_frac_mn
+2,class,2,NA,frac_mn,1.1278710271954497,fractal dimension index,shape metric,lsm_c_frac_mn
+2,class,4,NA,frac_mn,1.0887438233215838,fractal dimension index,shape metric,lsm_c_frac_mn
+2,class,1,NA,frac_sd,0.00847018858218141,fractal dimension index,shape metric,lsm_c_frac_sd
+2,class,2,NA,frac_sd,0.0407866236234716,fractal dimension index,shape metric,lsm_c_frac_sd
+2,class,4,NA,frac_sd,0.06655706655231662,fractal dimension index,shape metric,lsm_c_frac_sd
+2,class,1,NA,gyrate_cv,237.1474593597701,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+2,class,2,NA,gyrate_cv,134.761391734358,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+2,class,4,NA,gyrate_cv,114.17962872165079,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+2,class,1,NA,gyrate_mn,23.071787025007065,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+2,class,2,NA,gyrate_mn,687.3266804875171,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+2,class,4,NA,gyrate_mn,61.77450880262383,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+2,class,1,NA,gyrate_sd,54.714156758701336,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+2,class,2,NA,gyrate_sd,926.2510003865422,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+2,class,4,NA,gyrate_sd,70.53390479545936,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+2,class,1,NA,iji,-0,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+2,class,2,NA,iji,37.486756792498326,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+2,class,4,NA,iji,-0,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+2,class,1,NA,lpi,1.2039558549519853,largest patch index,area and edge metric,lsm_c_lpi
+2,class,2,NA,lpi,92.912426544360045,largest patch index,area and edge metric,lsm_c_lpi
+2,class,4,NA,lpi,1.8632650136161673,largest patch index,area and edge metric,lsm_c_lpi
+2,class,1,NA,lsi,1.5869017632241813,landscape shape index,aggregation metric,lsm_c_lsi
+2,class,2,NA,lsi,3.6045660763939704,landscape shape index,aggregation metric,lsm_c_lsi
+2,class,4,NA,lsi,9.888758782201405,landscape shape index,aggregation metric,lsm_c_lsi
+2,class,1,NA,mesh,0.1820961731403182,effective mesh size,aggregation metric,lsm_c_mesh
+2,class,2,NA,mesh,1084.1487523290816,effective mesh size,aggregation metric,lsm_c_mesh
+2,class,4,NA,mesh,0.5743514404471838,effective mesh size,aggregation metric,lsm_c_mesh
+2,class,1,NA,ndca,1,number of disjunct core areas,core area metric,lsm_c_ndca
+2,class,2,NA,ndca,4,number of disjunct core areas,core area metric,lsm_c_ndca
+2,class,4,NA,ndca,19,number of disjunct core areas,core area metric,lsm_c_ndca
+2,class,1,NA,nlsi,3.8173374613003097,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+2,class,2,NA,nlsi,1.2058111380145278,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+2,class,4,NA,nlsi,10.769673704414588,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+2,class,1,NA,np,7,number of patches,aggregation metric,lsm_c_np
+2,class,2,NA,np,2,number of patches,aggregation metric,lsm_c_np
+2,class,4,NA,np,38,number of patches,aggregation metric,lsm_c_np
+2,class,1,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+2,class,2,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+2,class,4,NA,pafrac,1.5114757462925965,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+2,class,1,NA,para_cv,41.080183478848284,perimeter-area ratio,shape metric,lsm_c_para_cv
+2,class,2,NA,para_cv,130.04483257701023,perimeter-area ratio,shape metric,lsm_c_para_cv
+2,class,4,NA,para_cv,40.32306086135184,perimeter-area ratio,shape metric,lsm_c_para_cv
+2,class,1,NA,para_mn,0.11116780045351474,perimeter-area ratio,shape metric,lsm_c_para_mn
+2,class,2,NA,para_mn,0.05209538501092686,perimeter-area ratio,shape metric,lsm_c_para_mn
+2,class,4,NA,para_mn,0.07529685925236633,perimeter-area ratio,shape metric,lsm_c_para_mn
+2,class,1,NA,para_sd,0.04566793639570379,perimeter-area ratio,shape metric,lsm_c_para_sd
+2,class,2,NA,para_sd,0.06774735621780871,perimeter-area ratio,shape metric,lsm_c_para_sd
+2,class,4,NA,para_sd,0.03036199838301811,perimeter-area ratio,shape metric,lsm_c_para_sd
+2,class,1,NA,pd,0.5573869698851783,patch density,aggregation metric,lsm_c_pd
+2,class,2,NA,pd,0.1592534199671938,patch density,aggregation metric,lsm_c_pd
+2,class,4,NA,pd,3.0258149793766824,patch density,aggregation metric,lsm_c_pd
+2,class,1,NA,pladj,88,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+2,class,2,NA,pladj,97.61946403933229,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+2,class,4,NA,pladj,66.1038148843027,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+2,class,1,NA,pland,1.2541206822416513,percentage of landscape,area and edge metric,lsm_c_pland
+2,class,2,NA,pland,92.94109215995412,percentage of landscape,area and edge metric,lsm_c_pland
+2,class,4,NA,pland,5.804787157804213,percentage of landscape,area and edge metric,lsm_c_pland
+2,class,1,NA,shape_cv,4.53367174974401,shape index,shape metric,lsm_c_shape_cv
+2,class,2,NA,shape_cv,57.88420373745661,shape index,shape metric,lsm_c_shape_cv
+2,class,4,NA,shape_cv,42.44448244761213,shape index,shape metric,lsm_c_shape_cv
+2,class,1,NA,shape_mn,1.0252964939189044,shape index,shape metric,lsm_c_shape_mn
+2,class,2,NA,shape_mn,2.539373536299766,shape index,shape metric,lsm_c_shape_mn
+2,class,4,NA,shape_mn,1.6343586751804688,shape index,shape metric,lsm_c_shape_mn
+2,class,1,NA,shape_sd,0.04648357749591719,shape index,shape metric,lsm_c_shape_sd
+2,class,2,NA,shape_sd,1.4698961514068132,shape index,shape metric,lsm_c_shape_sd
+2,class,4,NA,shape_sd,0.6936950810180003,shape index,shape metric,lsm_c_shape_sd
+2,class,1,NA,split,6896.685297347076,splitting index,aggregation metric,lsm_c_split
+2,class,2,NA,split,1.1583834757933638,splitting index,aggregation metric,lsm_c_split
+2,class,4,NA,split,2186.5706457046604,splitting index,aggregation metric,lsm_c_split
+2,class,1,NA,tca,11.43,total core area,core area metric,lsm_c_tca
+2,class,2,NA,tca,1064.43,total core area,core area metric,lsm_c_tca
+2,class,4,NA,tca,20.25,total core area,core area metric,lsm_c_tca
+2,class,1,NA,te,2520,total edge,area and edge metric,lsm_c_te
+2,class,2,NA,te,47310,total edge,area and edge metric,lsm_c_te
+2,class,4,NA,te,33540,total edge,area and edge metric,lsm_c_te
+3,class,1,NA,ai,94.05320813771519,aggregation index,aggregation metric,lsm_c_ai
+3,class,2,NA,ai,96.86251886038875,aggregation index,aggregation metric,lsm_c_ai
+3,class,4,NA,ai,86.71043694815485,aggregation index,aggregation metric,lsm_c_ai
+3,class,1,NA,area_cv,137.23729244330627,patch area,area and edge metric,lsm_c_area_cv
+3,class,2,NA,area_cv,359.5593253989388,patch area,area and edge metric,lsm_c_area_cv
+3,class,4,NA,area_cv,210.2124802490931,patch area,area and edge metric,lsm_c_area_cv
+3,class,1,NA,area_mn,15.209999999999999,patch area,area and edge metric,lsm_c_area_mn
+3,class,2,NA,area_mn,78.74307692307691,patch area,area and edge metric,lsm_c_area_mn
+3,class,4,NA,area_mn,11.943529411764706,patch area,area and edge metric,lsm_c_area_mn
+3,class,1,NA,area_sd,20.873792180626882,patch area,area and edge metric,lsm_c_area_sd
+3,class,2,NA,area_sd,283.1280761829828,patch area,area and edge metric,lsm_c_area_sd
+3,class,4,NA,area_sd,25.106789405750504,patch area,area and edge metric,lsm_c_area_sd
+3,class,1,NA,ca,30.419999999999998,total (class) area,area and edge metric,lsm_c_ca
+3,class,2,NA,ca,1023.66,total (class) area,area and edge metric,lsm_c_ca
+3,class,4,NA,ca,203.04,total (class) area,area and edge metric,lsm_c_ca
+3,class,1,NA,cai_cv,141.4213562373095,core area index,core area metric,lsm_c_cai_cv
+3,class,2,NA,cai_cv,360.5551275463989,core area index,core area metric,lsm_c_cai_cv
+3,class,4,NA,cai_cv,143.22888225388596,core area index,core area metric,lsm_c_cai_cv
+3,class,1,NA,cai_mn,36.186186186186184,core area index,core area metric,lsm_c_cai_mn
+3,class,2,NA,cai_mn,6.913923449842357,core area index,core area metric,lsm_c_cai_mn
+3,class,4,NA,cai_mn,19.67998194244519,core area index,core area metric,lsm_c_cai_mn
+3,class,1,NA,cai_sd,51.17499527506244,core area index,core area metric,lsm_c_cai_sd
+3,class,2,NA,cai_sd,24.928505513039493,core area index,core area metric,lsm_c_cai_sd
+3,class,4,NA,cai_sd,28.18741816393084,core area index,core area metric,lsm_c_cai_sd
+3,class,1,NA,circle_cv,26.146947419324064,related circumscribing circle,shape metric,lsm_c_circle_cv
+3,class,2,NA,circle_cv,92.63994475911224,related circumscribing circle,shape metric,lsm_c_circle_cv
+3,class,4,NA,circle_cv,41.297746089600096,related circumscribing circle,shape metric,lsm_c_circle_cv
+3,class,1,NA,circle_mn,0.6260388210570081,related circumscribing circle,shape metric,lsm_c_circle_mn
+3,class,2,NA,circle_mn,0.3254870311058082,related circumscribing circle,shape metric,lsm_c_circle_mn
+3,class,4,NA,circle_mn,0.563959216709563,related circumscribing circle,shape metric,lsm_c_circle_mn
+3,class,1,NA,circle_sd,0.1636900413663322,related circumscribing circle,shape metric,lsm_c_circle_sd
+3,class,2,NA,circle_sd,0.30153100581449516,related circumscribing circle,shape metric,lsm_c_circle_sd
+3,class,4,NA,circle_sd,0.23290244536561286,related circumscribing circle,shape metric,lsm_c_circle_sd
+3,class,1,NA,clumpy,0.9390573817077078,clumpiness index,aggregation metric,lsm_c_clumpy
+3,class,2,NA,clumpy,0.881180963025182,clumpiness index,aggregation metric,lsm_c_clumpy
+3,class,4,NA,clumpy,0.8501223754306062,clumpiness index,aggregation metric,lsm_c_clumpy
+3,class,1,NA,cohesion,94.98322517152302,patch cohesion index,aggregation metric,lsm_c_cohesion
+3,class,2,NA,cohesion,99.86203824432378,patch cohesion index,aggregation metric,lsm_c_cohesion
+3,class,4,NA,cohesion,96.10115595218531,patch cohesion index,aggregation metric,lsm_c_cohesion
+3,class,1,NA,contig_cv,48.30202379357798,contiguity index,shape metric,lsm_c_contig_cv
+3,class,2,NA,contig_cv,140.73019245051245,contiguity index,shape metric,lsm_c_contig_cv
+3,class,4,NA,contig_cv,68.43614969417177,contiguity index,shape metric,lsm_c_contig_cv
+3,class,1,NA,contig_mn,0.6581081081081082,contiguity index,shape metric,lsm_c_contig_mn
+3,class,2,NA,contig_mn,0.18945448313011115,contiguity index,shape metric,lsm_c_contig_mn
+3,class,4,NA,contig_mn,0.4466214928202736,contiguity index,shape metric,lsm_c_contig_mn
+3,class,1,NA,contig_sd,0.3178795349658443,contiguity index,shape metric,lsm_c_contig_sd
+3,class,2,NA,contig_sd,0.26661965871512905,contiguity index,shape metric,lsm_c_contig_sd
+3,class,4,NA,contig_sd,0.3056505533928271,contiguity index,shape metric,lsm_c_contig_sd
+3,class,1,NA,core_cv,141.4213562373095,core area,core area metric,lsm_c_core_cv
+3,class,2,NA,core_cv,360.5551275463989,core area,core area metric,lsm_c_core_cv
+3,class,4,NA,core_cv,231.1623343854534,core area,core area metric,lsm_c_core_cv
+3,class,1,NA,core_mn,10.845,core area,core area metric,lsm_c_core_mn
+3,class,2,NA,core_mn,70.59461538461538,core area,core area metric,lsm_c_core_mn
+3,class,4,NA,core_mn,7.406470588235294,core area,core area metric,lsm_c_core_mn
+3,class,1,NA,core_sd,15.337146083936217,core area,core area metric,lsm_c_core_sd
+3,class,2,NA,core_sd,254.53250554088976,core area,core area metric,lsm_c_core_sd
+3,class,4,NA,core_sd,17.120970307336727,core area,core area metric,lsm_c_core_sd
+3,class,1,NA,cpland,1.725372279495991,core area percentage of landscape,core area metric,lsm_c_cpland
+3,class,2,NA,cpland,73.00257731958763,core area percentage of landscape,core area metric,lsm_c_cpland
+3,class,4,NA,cpland,10.015750286368844,core area percentage of landscape,core area metric,lsm_c_cpland
+3,class,1,NA,dcad,0.07954690085274278,disjunct core area density,core area metric,lsm_c_dcad
+3,class,2,NA,dcad,0.3977345042637139,disjunct core area density,core area metric,lsm_c_dcad
+3,class,4,NA,dcad,2.0682194221713126,disjunct core area density,core area metric,lsm_c_dcad
+3,class,1,NA,dcore_cv,141.4213562373095,disjunct core area,core area metric,lsm_c_dcore_cv
+3,class,2,NA,dcore_cv,360.55512754639886,disjunct core area,core area metric,lsm_c_dcore_cv
+3,class,4,NA,dcore_cv,180.7231938104932,disjunct core area,core area metric,lsm_c_dcore_cv
+3,class,1,NA,dcore_mn,0.5,disjunct core area,core area metric,lsm_c_dcore_mn
+3,class,2,NA,dcore_mn,0.38461538461538464,disjunct core area,core area metric,lsm_c_dcore_mn
+3,class,4,NA,dcore_mn,1.5294117647058822,disjunct core area,core area metric,lsm_c_dcore_mn
+3,class,1,NA,dcore_sd,0.7071067811865476,disjunct core area,core area metric,lsm_c_dcore_sd
+3,class,2,NA,dcore_sd,1.3867504905630728,disjunct core area,core area metric,lsm_c_dcore_sd
+3,class,4,NA,dcore_sd,2.764001787689896,disjunct core area,core area metric,lsm_c_dcore_sd
+3,class,1,NA,division,0.9994315164329136,division index,aggregation metric,lsm_c_division
+3,class,2,NA,division,0.3403083049260689,division index,aggregation metric,lsm_c_division
+3,class,4,NA,division,0.9920836379897628,division index,aggregation metric,lsm_c_division
+3,class,1,NA,ed,3.579610538373425,edge density,area and edge metric,lsm_c_ed
+3,class,2,NA,ed,43.52806414662085,edge density,area and edge metric,lsm_c_ed
+3,class,4,NA,ed,32.16876670484918,edge density,area and edge metric,lsm_c_ed
+3,class,1,NA,enn_cv,0,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+3,class,2,NA,enn_cv,20.31117481531683,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+3,class,4,NA,enn_cv,74.94749800811019,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+3,class,1,NA,enn_mn,523.9274758971894,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+3,class,2,NA,enn_mn,72.58510505729704,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+3,class,4,NA,enn_mn,108.83106003565567,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+3,class,1,NA,enn_sd,0,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+3,class,2,NA,enn_sd,14.742887578068979,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+3,class,4,NA,enn_sd,81.56615655242823,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+3,class,1,NA,frac_cv,5.09715114449906,fractal dimension index,shape metric,lsm_c_frac_cv
+3,class,2,NA,frac_cv,5.7081929763824375,fractal dimension index,shape metric,lsm_c_frac_cv
+3,class,4,NA,frac_cv,6.580622644991537,fractal dimension index,shape metric,lsm_c_frac_cv
+3,class,1,NA,frac_mn,1.0649091160139617,fractal dimension index,shape metric,lsm_c_frac_mn
+3,class,2,NA,frac_mn,1.039584264795116,fractal dimension index,shape metric,lsm_c_frac_mn
+3,class,4,NA,frac_mn,1.0914911501551248,fractal dimension index,shape metric,lsm_c_frac_mn
+3,class,1,NA,frac_sd,0.05428002719478047,fractal dimension index,shape metric,lsm_c_frac_sd
+3,class,2,NA,frac_sd,0.059341475986611804,fractal dimension index,shape metric,lsm_c_frac_sd
+3,class,4,NA,frac_sd,0.07182691379518671,fractal dimension index,shape metric,lsm_c_frac_sd
+3,class,1,NA,gyrate_cv,118.61349325095263,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+3,class,2,NA,gyrate_cv,319.9045722726766,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+3,class,4,NA,gyrate_cv,141.13359932892018,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+3,class,1,NA,gyrate_mn,157.70513182387634,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+3,class,2,NA,gyrate_mn,115.58576163471989,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+3,class,4,NA,gyrate_mn,118.46339648944262,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+3,class,1,NA,gyrate_sd,187.0595658923195,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+3,class,2,NA,gyrate_sd,369.7641363656662,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+3,class,4,NA,gyrate_sd,167.19165535284003,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+3,class,1,NA,iji,46.899559358928116,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+3,class,2,NA,iji,45.86858162005403,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+3,class,4,NA,iji,9.22772477445739,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+3,class,1,NA,lpi,2.3840206185567014,largest patch index,area and edge metric,lsm_c_lpi
+3,class,2,NA,lpi,81.22136311569301,largest patch index,area and edge metric,lsm_c_lpi
+3,class,4,NA,lpi,7.481386025200458,largest patch index,area and edge metric,lsm_c_lpi
+3,class,1,NA,lsi,2.0380434782608696,landscape shape index,aggregation metric,lsm_c_lsi
+3,class,2,NA,lsi,4.317862165963432,landscape shape index,aggregation metric,lsm_c_lsi
+3,class,4,NA,lsi,7.178947368421053,landscape shape index,aggregation metric,lsm_c_lsi
+3,class,1,NA,mesh,0.7146520618556702,effective mesh size,aggregation metric,lsm_c_mesh
+3,class,2,NA,mesh,829.3116237113403,effective mesh size,aggregation metric,lsm_c_mesh
+3,class,4,NA,mesh,9.95181701030928,effective mesh size,aggregation metric,lsm_c_mesh
+3,class,1,NA,ndca,1,number of disjunct core areas,core area metric,lsm_c_ndca
+3,class,2,NA,ndca,5,number of disjunct core areas,core area metric,lsm_c_ndca
+3,class,4,NA,ndca,26,number of disjunct core areas,core area metric,lsm_c_ndca
+3,class,1,NA,nlsi,3.463223787167449,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+3,class,2,NA,nlsi,1.0293609671848014,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+3,class,4,NA,nlsi,4.610595426760245,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+3,class,1,NA,np,2,number of patches,aggregation metric,lsm_c_np
+3,class,2,NA,np,13,number of patches,aggregation metric,lsm_c_np
+3,class,4,NA,np,17,number of patches,aggregation metric,lsm_c_np
+3,class,1,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+3,class,2,NA,pafrac,1.3142317162362092,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+3,class,4,NA,pafrac,1.375907846232265,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+3,class,1,NA,para_cv,92.29234910772307,perimeter-area ratio,shape metric,lsm_c_para_cv
+3,class,2,NA,para_cv,35.54551167782242,perimeter-area ratio,shape metric,lsm_c_para_cv
+3,class,4,NA,para_cv,58.69071552449819,perimeter-area ratio,shape metric,lsm_c_para_cv
+3,class,1,NA,para_mn,0.04034034034034034,perimeter-area ratio,shape metric,lsm_c_para_mn
+3,class,2,NA,para_mn,0.10467083281538989,perimeter-area ratio,shape metric,lsm_c_para_mn
+3,class,4,NA,para_mn,0.07069528042093243,perimeter-area ratio,shape metric,lsm_c_para_mn
+3,class,1,NA,para_sd,0.03723104773815055,perimeter-area ratio,shape metric,lsm_c_para_sd
+3,class,2,NA,para_sd,0.037205783101668395,perimeter-area ratio,shape metric,lsm_c_para_sd
+3,class,4,NA,para_sd,0.041491565921095715,perimeter-area ratio,shape metric,lsm_c_para_sd
+3,class,1,NA,pd,0.15909380170548557,patch density,aggregation metric,lsm_c_pd
+3,class,2,NA,pd,1.0341097110856563,patch density,aggregation metric,lsm_c_pd
+3,class,4,NA,pd,1.3522973144966275,patch density,aggregation metric,lsm_c_pd
+3,class,1,NA,pladj,88.90532544378699,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+3,class,2,NA,pladj,96.86466816073846,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+3,class,4,NA,pladj,85.57703049938554,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+3,class,1,NA,pland,2.4198167239404356,percentage of landscape,area and edge metric,lsm_c_pland
+3,class,2,NA,pland,81.42898052691866,percentage of landscape,area and edge metric,lsm_c_pland
+3,class,4,NA,pland,16.151202749140893,percentage of landscape,area and edge metric,lsm_c_pland
+3,class,1,NA,shape_cv,37.664984324509554,shape index,shape metric,lsm_c_shape_cv
+3,class,2,NA,shape_cv,62.76801363573361,shape index,shape metric,lsm_c_shape_cv
+3,class,4,NA,shape_cv,54.07113268258545,shape index,shape metric,lsm_c_shape_cv
+3,class,1,NA,shape_mn,1.5144596651445967,shape index,shape metric,lsm_c_shape_mn
+3,class,2,NA,shape_mn,1.371151670745378,shape index,shape metric,lsm_c_shape_mn
+3,class,4,NA,shape_mn,1.8261207332539073,shape index,shape metric,lsm_c_shape_mn
+3,class,1,NA,shape_sd,0.5704209954777323,shape index,shape metric,lsm_c_shape_sd
+3,class,2,NA,shape_sd,0.860644667660048,shape index,shape metric,lsm_c_shape_sd
+3,class,4,NA,shape_sd,0.9874041646219226,shape index,shape metric,lsm_c_shape_sd
+3,class,1,NA,split,1759.0657987269415,splitting index,aggregation metric,lsm_c_split
+3,class,2,NA,split,1.515859616647032,splitting index,aggregation metric,lsm_c_split
+3,class,4,NA,split,126.32065066085168,splitting index,aggregation metric,lsm_c_split
+3,class,1,NA,tca,21.69,total core area,core area metric,lsm_c_tca
+3,class,2,NA,tca,917.73,total core area,core area metric,lsm_c_tca
+3,class,4,NA,tca,125.91,total core area,core area metric,lsm_c_tca
+3,class,1,NA,te,4500,total edge,area and edge metric,lsm_c_te
+3,class,2,NA,te,54720,total edge,area and edge metric,lsm_c_te
+3,class,4,NA,te,40440,total edge,area and edge metric,lsm_c_te
+4,class,1,NA,ai,33.6322869955157,aggregation index,aggregation metric,lsm_c_ai
+4,class,2,NA,ai,96.74368884137817,aggregation index,aggregation metric,lsm_c_ai
+4,class,4,NA,ai,76.89542483660131,aggregation index,aggregation metric,lsm_c_ai
+4,class,1,NA,area_cv,112.02308309114203,patch area,area and edge metric,lsm_c_area_cv
+4,class,2,NA,area_cv,330.44438532614566,patch area,area and edge metric,lsm_c_area_cv
+4,class,4,NA,area_cv,198.88248131746508,patch area,area and edge metric,lsm_c_area_cv
+4,class,1,NA,area_mn,0.27675,patch area,area and edge metric,lsm_c_area_mn
+4,class,2,NA,area_mn,100.40727272727273,patch area,area and edge metric,lsm_c_area_mn
+4,class,4,NA,area_mn,3.006382978723404,patch area,area and edge metric,lsm_c_area_mn
+4,class,1,NA,area_sd,0.31002388245473556,patch area,area and edge metric,lsm_c_area_sd
+4,class,2,NA,area_sd,331.7901951863831,patch area,area and edge metric,lsm_c_area_sd
+4,class,4,NA,area_sd,5.979169065991024,patch area,area and edge metric,lsm_c_area_sd
+4,class,1,NA,ca,11.07,total (class) area,area and edge metric,lsm_c_ca
+4,class,2,NA,ca,1104.48,total (class) area,area and edge metric,lsm_c_ca
+4,class,4,NA,ca,141.29999999999998,total (class) area,area and edge metric,lsm_c_ca
+4,class,1,NA,cai_cv,485.1710487055649,core area index,core area metric,lsm_c_cai_cv
+4,class,2,NA,cai_cv,261.8770286801997,core area index,core area metric,lsm_c_cai_cv
+4,class,4,NA,cai_cv,190.64050191175346,core area index,core area metric,lsm_c_cai_cv
+4,class,1,NA,cai_mn,0.6923076923076923,core area index,core area metric,lsm_c_cai_mn
+4,class,2,NA,cai_mn,10.367657442712629,core area index,core area metric,lsm_c_cai_mn
+4,class,4,NA,cai_mn,10.457978197538791,core area index,core area metric,lsm_c_cai_mn
+4,class,1,NA,cai_sd,3.358876491038526,core area index,core area metric,lsm_c_cai_sd
+4,class,2,NA,cai_sd,27.15051325471741,core area index,core area metric,lsm_c_cai_sd
+4,class,4,NA,cai_sd,19.9371421256097,core area index,core area metric,lsm_c_cai_sd
+4,class,1,NA,circle_cv,95.53025698356419,related circumscribing circle,shape metric,lsm_c_circle_cv
+4,class,2,NA,circle_cv,131.84219054262888,related circumscribing circle,shape metric,lsm_c_circle_cv
+4,class,4,NA,circle_cv,51.345494097034056,related circumscribing circle,shape metric,lsm_c_circle_cv
+4,class,1,NA,circle_mn,0.3540962045534565,related circumscribing circle,shape metric,lsm_c_circle_mn
+4,class,2,NA,circle_mn,0.25807732228118907,related circumscribing circle,shape metric,lsm_c_circle_mn
+4,class,4,NA,circle_mn,0.5502555651965967,related circumscribing circle,shape metric,lsm_c_circle_mn
+4,class,1,NA,circle_sd,0.3382690141789641,related circumscribing circle,shape metric,lsm_c_circle_sd
+4,class,2,NA,circle_sd,0.3402547949892797,related circumscribing circle,shape metric,lsm_c_circle_sd
+4,class,4,NA,circle_sd,0.28253143874661996,related circumscribing circle,shape metric,lsm_c_circle_sd
+4,class,1,NA,clumpy,0.33980731853964796,clumpiness index,aggregation metric,lsm_c_clumpy
+4,class,2,NA,clumpy,0.8040716047511453,clumpiness index,aggregation metric,lsm_c_clumpy
+4,class,4,NA,clumpy,0.7439568235245024,clumpiness index,aggregation metric,lsm_c_clumpy
+4,class,1,NA,cohesion,54.44834197282289,patch cohesion index,aggregation metric,lsm_c_cohesion
+4,class,2,NA,cohesion,99.9022540362976,patch cohesion index,aggregation metric,lsm_c_cohesion
+4,class,4,NA,cohesion,89.18010695890894,patch cohesion index,aggregation metric,lsm_c_cohesion
+4,class,1,NA,contig_cv,116.91827495496915,contiguity index,shape metric,lsm_c_contig_cv
+4,class,2,NA,contig_cv,179.7655167535715,contiguity index,shape metric,lsm_c_contig_cv
+4,class,4,NA,contig_cv,66.56177455608271,contiguity index,shape metric,lsm_c_contig_cv
+4,class,1,NA,contig_mn,0.12848250197514904,contiguity index,shape metric,lsm_c_contig_mn
+4,class,2,NA,contig_mn,0.17766999509089282,contiguity index,shape metric,lsm_c_contig_mn
+4,class,4,NA,contig_mn,0.38289559239738435,contiguity index,shape metric,lsm_c_contig_mn
+4,class,1,NA,contig_sd,0.15021952492832844,contiguity index,shape metric,lsm_c_contig_sd
+4,class,2,NA,contig_sd,0.31938938479118856,contiguity index,shape metric,lsm_c_contig_sd
+4,class,4,NA,contig_sd,0.25486210099672435,contiguity index,shape metric,lsm_c_contig_sd
+4,class,1,NA,core_cv,466.5445505670575,core area,core area metric,lsm_c_core_cv
+4,class,2,NA,core_cv,331.42821014159574,core area,core area metric,lsm_c_core_cv
+4,class,4,NA,core_cv,295.1876473864688,core area,core area metric,lsm_c_core_cv
+4,class,1,NA,core_mn,0.00675,core area,core area metric,lsm_c_core_mn
+4,class,2,NA,core_mn,89.16545454545455,core area,core area metric,lsm_c_core_mn
+4,class,4,NA,core_mn,1.3538297872340426,core area,core area metric,lsm_c_core_mn
+4,class,1,NA,core_sd,0.03149175716327638,core area,core area metric,lsm_c_core_sd
+4,class,2,NA,core_sd,295.51947006461813,core area,core area metric,lsm_c_core_sd
+4,class,4,NA,core_sd,3.9963382985534066,core area,core area metric,lsm_c_core_sd
+4,class,1,NA,cpland,0.02148227712137487,core area percentage of landscape,core area metric,lsm_c_cpland
+4,class,2,NA,cpland,78.03795202291444,core area percentage of landscape,core area metric,lsm_c_cpland
+4,class,4,NA,cpland,5.06265664160401,core area percentage of landscape,core area metric,lsm_c_cpland
+4,class,1,NA,dcad,0.15912797867685088,disjunct core area density,core area metric,lsm_c_dcad
+4,class,2,NA,dcad,0.39781994669212717,disjunct core area density,core area metric,lsm_c_dcad
+4,class,4,NA,dcad,2.2277917014759123,disjunct core area density,core area metric,lsm_c_dcad
+4,class,1,NA,dcore_cv,441.4428557263045,disjunct core area,core area metric,lsm_c_dcore_cv
+4,class,2,NA,dcore_cv,227.8596058980178,disjunct core area,core area metric,lsm_c_dcore_cv
+4,class,4,NA,dcore_cv,184.0766303914094,disjunct core area,core area metric,lsm_c_dcore_cv
+4,class,1,NA,dcore_mn,0.05,disjunct core area,core area metric,lsm_c_dcore_mn
+4,class,2,NA,dcore_mn,0.45454545454545453,disjunct core area,core area metric,lsm_c_dcore_mn
+4,class,4,NA,dcore_mn,0.5957446808510638,disjunct core area,core area metric,lsm_c_dcore_mn
+4,class,1,NA,dcore_sd,0.22072142786315224,disjunct core area,core area metric,lsm_c_dcore_sd
+4,class,2,NA,dcore_sd,1.0357254813546264,disjunct core area,core area metric,lsm_c_dcore_sd
+4,class,4,NA,dcore_sd,1.0966267342466942,disjunct core area,core area metric,lsm_c_dcore_sd
+4,class,1,NA,division,0.99999568764887,division index,aggregation metric,lsm_c_division
+4,class,2,NA,division,0.23291340211815392,division index,aggregation metric,lsm_c_division
+4,class,4,NA,division,0.998690029764709,division index,aggregation metric,lsm_c_division
+4,class,1,NA,ed,8.139396109320922,edge density,area and edge metric,lsm_c_ed
+4,class,2,NA,ed,47.61904761904762,edge density,area and edge metric,lsm_c_ed
+4,class,4,NA,ed,37.11660102637546,edge density,area and edge metric,lsm_c_ed
+4,class,1,NA,enn_cv,221.58522477799167,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+4,class,2,NA,enn_cv,11.204950582344589,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+4,class,4,NA,enn_cv,79.46812885723654,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+4,class,1,NA,enn_mn,172.267251685407,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+4,class,2,NA,enn_mn,65.47845548794129,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+4,class,4,NA,enn_mn,93.95967466238943,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+4,class,1,NA,enn_sd,381.7187768659777,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+4,class,2,NA,enn_sd,7.336828579506319,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+4,class,4,NA,enn_sd,74.66799533454787,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+4,class,1,NA,frac_cv,5.242318260067388,fractal dimension index,shape metric,lsm_c_frac_cv
+4,class,2,NA,frac_cv,6.49894041700266,fractal dimension index,shape metric,lsm_c_frac_cv
+4,class,4,NA,frac_cv,6.051368780005976,fractal dimension index,shape metric,lsm_c_frac_cv
+4,class,1,NA,frac_mn,1.0403168561459903,fractal dimension index,shape metric,lsm_c_frac_mn
+4,class,2,NA,frac_mn,1.0485928643683151,fractal dimension index,shape metric,lsm_c_frac_mn
+4,class,4,NA,frac_mn,1.0865564013748215,fractal dimension index,shape metric,lsm_c_frac_mn
+4,class,1,NA,frac_sd,0.054536720512300234,fractal dimension index,shape metric,lsm_c_frac_sd
+4,class,2,NA,frac_sd,0.06814742547223832,fractal dimension index,shape metric,lsm_c_frac_sd
+4,class,4,NA,frac_sd,0.06575153484995237,fractal dimension index,shape metric,lsm_c_frac_sd
+4,class,1,NA,gyrate_cv,119.80744399304227,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+4,class,2,NA,gyrate_cv,296.95837220683126,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+4,class,4,NA,gyrate_cv,108.51441470322416,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+4,class,1,NA,gyrate_mn,17.090998569604995,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+4,class,2,NA,gyrate_mn,133.5197785144273,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+4,class,4,NA,gyrate_mn,63.97977822149412,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+4,class,1,NA,gyrate_sd,20.47628853913116,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+4,class,2,NA,gyrate_sd,396.4981608506097,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+4,class,4,NA,gyrate_sd,69.42728186547522,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+4,class,1,NA,iji,99.35861236191215,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+4,class,2,NA,iji,51.6817951792472,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+4,class,4,NA,iji,46.167784732518555,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+4,class,1,NA,lpi,0.12173290368779092,largest patch index,area and edge metric,lsm_c_lpi
+4,class,2,NA,lpi,87.58324382384534,largest patch index,area and edge metric,lsm_c_lpi
+4,class,4,NA,lpi,2.2699606158252776,largest patch index,area and edge metric,lsm_c_lpi
+4,class,1,NA,lsi,7.702702702702703,landscape shape index,aggregation metric,lsm_c_lsi
+4,class,2,NA,lsi,4.576500676997141,landscape shape index,aggregation metric,lsm_c_lsi
+4,class,4,NA,lsi,9.928511354079058,landscape shape index,aggregation metric,lsm_c_lsi
+4,class,1,NA,mesh,0.005419978517722878,effective mesh size,aggregation metric,lsm_c_mesh
+4,class,2,NA,mesh,964.1127905477981,effective mesh size,aggregation metric,lsm_c_mesh
+4,class,4,NA,mesh,1.646436090225564,effective mesh size,aggregation metric,lsm_c_mesh
+4,class,1,NA,ndca,2,number of disjunct core areas,core area metric,lsm_c_ndca
+4,class,2,NA,ndca,5,number of disjunct core areas,core area metric,lsm_c_ndca
+4,class,4,NA,ndca,28,number of disjunct core areas,core area metric,lsm_c_ndca
+4,class,1,NA,nlsi,22.90134529147982,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+4,class,2,NA,nlsi,1.022482562470373,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+4,class,4,NA,nlsi,7.689542483660131,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+4,class,1,NA,np,40,number of patches,aggregation metric,lsm_c_np
+4,class,2,NA,np,11,number of patches,aggregation metric,lsm_c_np
+4,class,4,NA,np,47,number of patches,aggregation metric,lsm_c_np
+4,class,1,NA,pafrac,1.5488891887891783,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+4,class,2,NA,pafrac,1.3152884880485611,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+4,class,4,NA,pafrac,1.3992584308704863,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+4,class,1,NA,para_cv,21.73415726209889,perimeter-area ratio,shape metric,lsm_c_para_cv
+4,class,2,NA,para_cv,40.41885617779471,perimeter-area ratio,shape metric,lsm_c_para_cv
+4,class,4,NA,para_cv,45.08883867166816,perimeter-area ratio,shape metric,lsm_c_para_cv
+4,class,1,NA,para_mn,0.11244959778783309,perimeter-area ratio,shape metric,lsm_c_para_mn
+4,class,2,NA,para_mn,0.11043785201253928,perimeter-area ratio,shape metric,lsm_c_para_mn
+4,class,4,NA,para_mn,0.07804920550425902,perimeter-area ratio,shape metric,lsm_c_para_mn
+4,class,1,NA,para_sd,0.024439972423805315,perimeter-area ratio,shape metric,lsm_c_para_sd
+4,class,2,NA,para_sd,0.04463771657079401,perimeter-area ratio,shape metric,lsm_c_para_sd
+4,class,4,NA,para_sd,0.035191480354334094,perimeter-area ratio,shape metric,lsm_c_para_sd
+4,class,1,NA,pd,3.1825595735370174,patch density,aggregation metric,lsm_c_pd
+4,class,2,NA,pd,0.8752038827226798,patch density,aggregation metric,lsm_c_pd
+4,class,4,NA,pd,3.7395074989059953,patch density,aggregation metric,lsm_c_pd
+4,class,1,NA,pladj,31.25,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+4,class,2,NA,pladj,96.7337458118358,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+4,class,4,NA,pladj,75.29599999999999,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+4,class,1,NA,pland,0.8807733619763695,percentage of landscape,area and edge metric,lsm_c_pland
+4,class,2,NA,pland,87.87683494450413,percentage of landscape,area and edge metric,lsm_c_pland
+4,class,4,NA,pland,11.242391693519513,percentage of landscape,area and edge metric,lsm_c_pland
+4,class,1,NA,shape_cv,29.110962728159667,shape index,shape metric,lsm_c_shape_cv
+4,class,2,NA,shape_cv,68.00467116428473,shape index,shape metric,lsm_c_shape_cv
+4,class,4,NA,shape_cv,37.92864000851944,shape index,shape metric,lsm_c_shape_cv
+4,class,1,NA,shape_mn,1.2209799006488193,shape index,shape metric,lsm_c_shape_mn
+4,class,2,NA,shape_mn,1.4808330235914215,shape index,shape metric,lsm_c_shape_mn
+4,class,4,NA,shape_mn,1.6305750177375986,shape index,shape metric,lsm_c_shape_mn
+4,class,1,NA,shape_sd,0.3554390037961987,shape index,shape metric,lsm_c_shape_sd
+4,class,2,NA,shape_sd,1.007035628185481,shape index,shape metric,lsm_c_shape_sd
+4,class,4,NA,shape_sd,0.6184549285465457,shape index,shape metric,lsm_c_shape_sd
+4,class,1,NA,split,231892.063020214,splitting index,aggregation metric,lsm_c_split
+4,class,2,NA,split,1.3036337784564314,splitting index,aggregation metric,lsm_c_split
+4,class,4,NA,split,763.3761234107848,splitting index,aggregation metric,lsm_c_split
+4,class,1,NA,tca,0.27,total core area,core area metric,lsm_c_tca
+4,class,2,NA,tca,980.82,total core area,core area metric,lsm_c_tca
+4,class,4,NA,tca,63.629999999999995,total core area,core area metric,lsm_c_tca
+4,class,1,NA,te,10230,total edge,area and edge metric,lsm_c_te
+4,class,2,NA,te,59850,total edge,area and edge metric,lsm_c_te
+4,class,4,NA,te,46650,total edge,area and edge metric,lsm_c_te
+5,class,1,NA,ai,42.30769230769231,aggregation index,aggregation metric,lsm_c_ai
+5,class,2,NA,ai,97.74781795511221,aggregation index,aggregation metric,lsm_c_ai
+5,class,3,NA,ai,95.45454545454545,aggregation index,aggregation metric,lsm_c_ai
+5,class,4,NA,ai,71.66246851385391,aggregation index,aggregation metric,lsm_c_ai
+5,class,1,NA,area_cv,137.8778143779706,patch area,area and edge metric,lsm_c_area_cv
+5,class,2,NA,area_cv,264.31286482305785,patch area,area and edge metric,lsm_c_area_cv
+5,class,3,NA,area_cv,NA,patch area,area and edge metric,lsm_c_area_cv
+5,class,4,NA,area_cv,212.73977217453765,patch area,area and edge metric,lsm_c_area_cv
+5,class,1,NA,area_mn,0.43457142857142855,patch area,area and edge metric,lsm_c_area_mn
+5,class,2,NA,area_mn,166.4485714285714,patch area,area and edge metric,lsm_c_area_mn
+5,class,3,NA,area_mn,1.3499999999999999,patch area,area and edge metric,lsm_c_area_mn
+5,class,4,NA,area_mn,2.5541379310344827,patch area,area and edge metric,lsm_c_area_mn
+5,class,1,NA,area_sd,0.5991775876254093,patch area,area and edge metric,lsm_c_area_sd
+5,class,2,NA,area_sd,439.9449875999108,patch area,area and edge metric,lsm_c_area_sd
+5,class,3,NA,area_sd,NA,patch area,area and edge metric,lsm_c_area_sd
+5,class,4,NA,area_sd,5.433667215506208,patch area,area and edge metric,lsm_c_area_sd
+5,class,1,NA,ca,15.209999999999999,total (class) area,area and edge metric,lsm_c_ca
+5,class,2,NA,ca,1165.1399999999999,total (class) area,area and edge metric,lsm_c_ca
+5,class,3,NA,ca,1.3499999999999999,total (class) area,area and edge metric,lsm_c_ca
+5,class,4,NA,ca,74.07,total (class) area,area and edge metric,lsm_c_ca
+5,class,1,NA,cai_cv,440.95890448640114,core area index,core area metric,lsm_c_cai_cv
+5,class,2,NA,cai_cv,264.5751311064591,core area index,core area metric,lsm_c_cai_cv
+5,class,3,NA,cai_cv,NA,core area index,core area metric,lsm_c_cai_cv
+5,class,4,NA,cai_cv,196.61373786094887,core area index,core area metric,lsm_c_cai_cv
+5,class,1,NA,cai_mn,1.3561688311688311,core area index,core area metric,lsm_c_cai_mn
+5,class,2,NA,cai_mn,13.084101827820419,core area index,core area metric,lsm_c_cai_mn
+5,class,3,NA,cai_mn,26.666666666666668,core area index,core area metric,lsm_c_cai_mn
+5,class,4,NA,cai_mn,8.077915153228508,core area index,core area metric,lsm_c_cai_mn
+5,class,1,NA,cai_sd,5.980147220908109,core area index,core area metric,lsm_c_cai_sd
+5,class,2,NA,cai_sd,34.61727956505848,core area index,core area metric,lsm_c_cai_sd
+5,class,3,NA,cai_sd,NA,core area index,core area metric,lsm_c_cai_sd
+5,class,4,NA,cai_sd,15.882290923998564,core area index,core area metric,lsm_c_cai_sd
+5,class,1,NA,circle_cv,67.13937423004258,related circumscribing circle,shape metric,lsm_c_circle_cv
+5,class,2,NA,circle_cv,116.5791593976323,related circumscribing circle,shape metric,lsm_c_circle_cv
+5,class,3,NA,circle_cv,NA,related circumscribing circle,shape metric,lsm_c_circle_cv
+5,class,4,NA,circle_cv,40.06158077122864,related circumscribing circle,shape metric,lsm_c_circle_cv
+5,class,1,NA,circle_mn,0.5050577764459675,related circumscribing circle,shape metric,lsm_c_circle_mn
+5,class,2,NA,circle_mn,0.2674248993336352,related circumscribing circle,shape metric,lsm_c_circle_mn
+5,class,3,NA,circle_mn,0.4382766714403695,related circumscribing circle,shape metric,lsm_c_circle_mn
+5,class,4,NA,circle_mn,0.5930175029737023,related circumscribing circle,shape metric,lsm_c_circle_mn
+5,class,1,NA,circle_sd,0.33909263060599,related circumscribing circle,shape metric,lsm_c_circle_sd
+5,class,2,NA,circle_sd,0.31176169966311634,related circumscribing circle,shape metric,lsm_c_circle_sd
+5,class,3,NA,circle_sd,NA,related circumscribing circle,shape metric,lsm_c_circle_sd
+5,class,4,NA,circle_sd,0.23757218594133295,related circumscribing circle,shape metric,lsm_c_circle_sd
+5,class,1,NA,clumpy,0.42297848990757353,clumpiness index,aggregation metric,lsm_c_clumpy
+5,class,2,NA,clumpy,0.7897596596130552,clumpiness index,aggregation metric,lsm_c_clumpy
+5,class,3,NA,clumpy,1,clumpiness index,aggregation metric,lsm_c_clumpy
+5,class,4,NA,clumpy,0.7145240300181886,clumpiness index,aggregation metric,lsm_c_clumpy
+5,class,1,NA,cohesion,64.18492416367731,patch cohesion index,aggregation metric,lsm_c_cohesion
+5,class,2,NA,cohesion,99.94477854354223,patch cohesion index,aggregation metric,lsm_c_cohesion
+5,class,3,NA,cohesion,74.81346422363217,patch cohesion index,aggregation metric,lsm_c_cohesion
+5,class,4,NA,cohesion,89.75040129249496,patch cohesion index,aggregation metric,lsm_c_cohesion
+5,class,1,NA,contig_cv,101.5829201766305,contiguity index,shape metric,lsm_c_contig_cv
+5,class,2,NA,contig_cv,175.73072108330015,contiguity index,shape metric,lsm_c_contig_cv
+5,class,3,NA,contig_cv,NA,contiguity index,shape metric,lsm_c_contig_cv
+5,class,4,NA,contig_cv,59.29537943117101,contiguity index,shape metric,lsm_c_contig_cv
+5,class,1,NA,contig_mn,0.16451497113997113,contiguity index,shape metric,lsm_c_contig_mn
+5,class,2,NA,contig_mn,0.1976300918511974,contiguity index,shape metric,lsm_c_contig_mn
+5,class,3,NA,contig_mn,0.6555555555555556,contiguity index,shape metric,lsm_c_contig_mn
+5,class,4,NA,contig_mn,0.37565686644530166,contiguity index,shape metric,lsm_c_contig_mn
+5,class,1,NA,contig_sd,0.1671191118117236,contiguity index,shape metric,lsm_c_contig_sd
+5,class,2,NA,contig_sd,0.3472967854876976,contiguity index,shape metric,lsm_c_contig_sd
+5,class,3,NA,contig_sd,NA,contiguity index,shape metric,lsm_c_contig_sd
+5,class,4,NA,contig_sd,0.22274716431798894,contiguity index,shape metric,lsm_c_contig_sd
+5,class,1,NA,core_cv,501.92806120858717,core area,core area metric,lsm_c_core_cv
+5,class,2,NA,core_cv,264.575131106459,core area,core area metric,lsm_c_core_cv
+5,class,3,NA,core_cv,NA,core area,core area metric,lsm_c_core_cv
+5,class,4,NA,core_cv,313.7592471730692,core area,core area metric,lsm_c_core_cv
+5,class,1,NA,core_mn,0.033428571428571426,core area,core area metric,lsm_c_core_mn
+5,class,2,NA,core_mn,152.31857142857143,core area,core area metric,lsm_c_core_mn
+5,class,3,NA,core_mn,0.36,core area,core area metric,lsm_c_core_mn
+5,class,4,NA,core_mn,0.8720689655172413,core area,core area metric,lsm_c_core_mn
+5,class,1,NA,core_sd,0.16778738046115627,core area,core area metric,lsm_c_core_sd
+5,class,2,NA,core_sd,402.99706005662836,core area,core area metric,lsm_c_core_sd
+5,class,3,NA,core_sd,NA,core area,core area metric,lsm_c_core_sd
+5,class,4,NA,core_sd,2.7361970210368685,core area,core area metric,lsm_c_core_sd
+5,class,1,NA,cpland,0.09316992761413317,core area percentage of landscape,core area metric,lsm_c_cpland
+5,class,2,NA,cpland,84.90647172651045,core area percentage of landscape,core area metric,lsm_c_cpland
+5,class,3,NA,cpland,0.0286676700351179,core area percentage of landscape,core area metric,lsm_c_cpland
+5,class,4,NA,cpland,2.0139038199670325,core area percentage of landscape,core area metric,lsm_c_cpland
+5,class,1,NA,dcad,0.2388972502926492,disjunct core area density,core area metric,lsm_c_dcad
+5,class,2,NA,dcad,0.2388972502926492,disjunct core area density,core area metric,lsm_c_dcad
+5,class,3,NA,dcad,0.07963241676421638,disjunct core area density,core area metric,lsm_c_dcad
+5,class,4,NA,dcad,1.5130159185201113,disjunct core area density,core area metric,lsm_c_dcad
+5,class,1,NA,dcore_cv,331.36674783180564,disjunct core area,core area metric,lsm_c_dcore_cv
+5,class,2,NA,dcore_cv,264.5751311064591,disjunct core area,core area metric,lsm_c_dcore_cv
+5,class,3,NA,dcore_cv,NA,disjunct core area,core area metric,lsm_c_dcore_cv
+5,class,4,NA,dcore_cv,169.55095609142293,disjunct core area,core area metric,lsm_c_dcore_cv
+5,class,1,NA,dcore_mn,0.08571428571428572,disjunct core area,core area metric,lsm_c_dcore_mn
+5,class,2,NA,dcore_mn,0.42857142857142855,disjunct core area,core area metric,lsm_c_dcore_mn
+5,class,3,NA,dcore_mn,1,disjunct core area,core area metric,lsm_c_dcore_mn
+5,class,4,NA,dcore_mn,0.6551724137931034,disjunct core area,core area metric,lsm_c_dcore_mn
+5,class,1,NA,dcore_sd,0.2840286409986905,disjunct core area,core area metric,lsm_c_dcore_sd
+5,class,2,NA,dcore_sd,1.1338934190276817,disjunct core area,core area metric,lsm_c_dcore_sd
+5,class,3,NA,dcore_sd,NA,disjunct core area,core area metric,lsm_c_dcore_sd
+5,class,4,NA,dcore_sd,1.1108510916334606,disjunct core area,core area metric,lsm_c_dcore_sd
+5,class,1,NA,division,0.999988067978662,division index,aggregation metric,lsm_c_division
+5,class,2,NA,division,0.14059525397610462,division index,aggregation metric,lsm_c_division
+5,class,3,NA,division,0.999998844294102,division index,aggregation metric,lsm_c_division
+5,class,4,NA,division,0.9993557992595151,division index,aggregation metric,lsm_c_division
+5,class,1,NA,ed,9.818676987027882,edge density,area and edge metric,lsm_c_ed
+5,class,2,NA,ed,36.885735445185034,edge density,area and edge metric,lsm_c_ed
+5,class,3,NA,ed,0.33445615040970883,edge density,area and edge metric,lsm_c_ed
+5,class,4,NA,ed,24.271960629733158,edge density,area and edge metric,lsm_c_ed
+5,class,1,NA,enn_cv,202.75364989203732,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+5,class,2,NA,enn_cv,41.21160037168143,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+5,class,3,NA,enn_cv,NA,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+5,class,4,NA,enn_cv,154.80169714426177,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+5,class,1,NA,enn_mn,142.856143727847,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+5,class,2,NA,enn_mn,92.35638508055635,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+5,class,3,NA,enn_mn,NA,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+5,class,4,NA,enn_mn,147.91102178990965,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+5,class,1,NA,enn_sd,289.64604550322457,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+5,class,2,NA,enn_sd,38.061544337130094,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+5,class,3,NA,enn_sd,NA,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+5,class,4,NA,enn_sd,228.96877199419896,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+5,class,1,NA,frac_cv,5.8884755055419244,fractal dimension index,shape metric,lsm_c_frac_cv
+5,class,2,NA,frac_cv,6.483307674770466,fractal dimension index,shape metric,lsm_c_frac_cv
+5,class,3,NA,frac_cv,NA,fractal dimension index,shape metric,lsm_c_frac_cv
+5,class,4,NA,frac_cv,6.115499204698346,fractal dimension index,shape metric,lsm_c_frac_cv
+5,class,1,NA,frac_mn,1.0679106350426075,fractal dimension index,shape metric,lsm_c_frac_mn
+5,class,2,NA,frac_mn,1.056755859179245,fractal dimension index,shape metric,lsm_c_frac_mn
+5,class,3,NA,frac_mn,1.0315552630368894,fractal dimension index,shape metric,lsm_c_frac_mn
+5,class,4,NA,frac_mn,1.0888989445973936,fractal dimension index,shape metric,lsm_c_frac_mn
+5,class,1,NA,frac_sd,0.06288365616556116,fractal dimension index,shape metric,lsm_c_frac_sd
+5,class,2,NA,frac_sd,0.06851273372175457,fractal dimension index,shape metric,lsm_c_frac_sd
+5,class,3,NA,frac_sd,NA,fractal dimension index,shape metric,lsm_c_frac_sd
+5,class,4,NA,frac_sd,0.06659160629682229,fractal dimension index,shape metric,lsm_c_frac_sd
+5,class,1,NA,gyrate_cv,103.36817622843392,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+5,class,2,NA,gyrate_cv,249.47486715135796,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+5,class,3,NA,gyrate_cv,NA,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+5,class,4,NA,gyrate_cv,111.51970860396571,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+5,class,1,NA,gyrate_mn,28.231802425732656,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+5,class,2,NA,gyrate_mn,198.47116807572394,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+5,class,3,NA,gyrate_mn,44.381168725681015,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+5,class,4,NA,gyrate_mn,61.83376932598142,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+5,class,1,NA,gyrate_sd,29.182699283894618,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+5,class,2,NA,gyrate_sd,495.1356828906607,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+5,class,3,NA,gyrate_sd,NA,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+5,class,4,NA,gyrate_sd,68.95683937118281,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+5,class,1,NA,iji,51.617754574552755,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+5,class,2,NA,iji,56.88152591037458,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+5,class,3,NA,iji,-0,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+5,class,4,NA,iji,30.993625502232426,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+5,class,1,NA,lpi,0.2293413602809432,largest patch index,area and edge metric,lsm_c_lpi
+5,class,2,NA,lpi,92.704077976062507,largest patch index,area and edge metric,lsm_c_lpi
+5,class,3,NA,lpi,0.10750376263169212,largest patch index,area and edge metric,lsm_c_lpi
+5,class,4,NA,lpi,1.870565469791443,largest patch index,area and edge metric,lsm_c_lpi
+5,class,1,NA,lsi,7.923076923076923,landscape shape index,aggregation metric,lsm_c_lsi
+5,class,2,NA,lsi,3.5418192471070746,landscape shape index,aggregation metric,lsm_c_lsi
+5,class,3,NA,lsi,1.1587982832618027,landscape shape index,aggregation metric,lsm_c_lsi
+5,class,4,NA,lsi,8.850174216027874,landscape shape index,aggregation metric,lsm_c_lsi
+5,class,1,NA,mesh,0.014983874435605248,effective mesh size,aggregation metric,lsm_c_mesh
+5,class,2,NA,mesh,1079.2146979144268,effective mesh size,aggregation metric,lsm_c_mesh
+5,class,3,NA,mesh,0.0014513007955278432,effective mesh size,aggregation metric,lsm_c_mesh
+5,class,4,NA,mesh,0.8089679638787357,effective mesh size,aggregation metric,lsm_c_mesh
+5,class,1,NA,ndca,3,number of disjunct core areas,core area metric,lsm_c_ndca
+5,class,2,NA,ndca,3,number of disjunct core areas,core area metric,lsm_c_ndca
+5,class,3,NA,ndca,1,number of disjunct core areas,core area metric,lsm_c_ndca
+5,class,4,NA,ndca,19,number of disjunct core areas,core area metric,lsm_c_ndca
+5,class,1,NA,nlsi,19.724358974358974,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+5,class,2,NA,nlsi,1.0974067625767434,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+5,class,3,NA,nlsi,11.909090909090908,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+5,class,4,NA,nlsi,9.560453400503778,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+5,class,1,NA,np,35,number of patches,aggregation metric,lsm_c_np
+5,class,2,NA,np,7,number of patches,aggregation metric,lsm_c_np
+5,class,3,NA,np,1,number of patches,aggregation metric,lsm_c_np
+5,class,4,NA,np,29,number of patches,aggregation metric,lsm_c_np
+5,class,1,NA,pafrac,1.5451227188728283,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+5,class,2,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+5,class,3,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+5,class,4,NA,pafrac,1.490897399119659,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+5,class,1,NA,para_cv,25.296827976975873,perimeter-area ratio,shape metric,lsm_c_para_cv
+5,class,2,NA,para_cv,44.05209208501767,perimeter-area ratio,shape metric,lsm_c_para_cv
+5,class,3,NA,para_cv,NA,perimeter-area ratio,shape metric,lsm_c_para_cv
+5,class,4,NA,para_cv,38.05973115504291,perimeter-area ratio,shape metric,lsm_c_para_cv
+5,class,1,NA,para_mn,0.10961773861059575,perimeter-area ratio,shape metric,lsm_c_para_mn
+5,class,2,NA,para_mn,0.10772157490750456,perimeter-area ratio,shape metric,lsm_c_para_mn
+5,class,3,NA,para_mn,0.04000000000000001,perimeter-area ratio,shape metric,lsm_c_para_mn
+5,class,4,NA,para_mn,0.07825039933427118,perimeter-area ratio,shape metric,lsm_c_para_mn
+5,class,1,NA,para_sd,0.02772981076857347,perimeter-area ratio,shape metric,lsm_c_para_sd
+5,class,2,NA,para_sd,0.0474536073736852,perimeter-area ratio,shape metric,lsm_c_para_sd
+5,class,3,NA,para_sd,NA,perimeter-area ratio,shape metric,lsm_c_para_sd
+5,class,4,NA,para_sd,0.029781891614371097,perimeter-area ratio,shape metric,lsm_c_para_sd
+5,class,1,NA,pd,2.7871345867475736,patch density,aggregation metric,lsm_c_pd
+5,class,2,NA,pd,0.5574269173495148,patch density,aggregation metric,lsm_c_pd
+5,class,3,NA,pd,0.07963241676421638,patch density,aggregation metric,lsm_c_pd
+5,class,4,NA,pd,2.3093400861622753,patch density,aggregation metric,lsm_c_pd
+5,class,1,NA,pladj,39.63963963963964,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+5,class,2,NA,pladj,97.60899593393124,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+5,class,3,NA,pladj,72.41379310344827,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+5,class,4,NA,pladj,70.50805452292441,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+5,class,1,NA,pland,1.2112090589837314,percentage of landscape,area and edge metric,lsm_c_pland
+5,class,2,NA,pland,92.78291406865907,percentage of landscape,area and edge metric,lsm_c_pland
+5,class,3,NA,pland,0.10750376263169212,percentage of landscape,area and edge metric,lsm_c_pland
+5,class,4,NA,pland,5.898373109725508,percentage of landscape,area and edge metric,lsm_c_pland
+5,class,1,NA,shape_cv,30.934171066034754,shape index,shape metric,lsm_c_shape_cv
+5,class,2,NA,shape_cv,58.85432240213928,shape index,shape metric,lsm_c_shape_cv
+5,class,3,NA,shape_cv,NA,shape index,shape metric,lsm_c_shape_cv
+5,class,4,NA,shape_cv,44.306116511750474,shape index,shape metric,lsm_c_shape_cv
+5,class,1,NA,shape_mn,1.3855697047339819,shape index,shape metric,lsm_c_shape_mn
+5,class,2,NA,shape_mn,1.5251485119252859,shape index,shape metric,lsm_c_shape_mn
+5,class,3,NA,shape_mn,1.1587982832618027,shape index,shape metric,lsm_c_shape_mn
+5,class,4,NA,shape_mn,1.6701915253745876,shape index,shape metric,lsm_c_shape_mn
+5,class,1,NA,shape_sd,0.4286145027015626,shape index,shape metric,lsm_c_shape_sd
+5,class,2,NA,shape_sd,0.8976158223199374,shape index,shape metric,lsm_c_shape_sd
+5,class,3,NA,shape_sd,NA,shape index,shape metric,lsm_c_shape_sd
+5,class,4,NA,shape_sd,0.7399970032018472,shape index,shape metric,lsm_c_shape_sd
+5,class,1,NA,split,83808.0968575118,splitting index,aggregation metric,lsm_c_split
+5,class,2,NA,split,1.163596087439102,splitting index,aggregation metric,lsm_c_split
+5,class,3,NA,split,865272.0399999998,splitting index,aggregation metric,lsm_c_split
+5,class,4,NA,split,1552.3111619636886,splitting index,aggregation metric,lsm_c_split
+5,class,1,NA,tca,1.17,total core area,core area metric,lsm_c_tca
+5,class,2,NA,tca,1066.23,total core area,core area metric,lsm_c_tca
+5,class,3,NA,tca,0.36,total core area,core area metric,lsm_c_tca
+5,class,4,NA,tca,25.29,total core area,core area metric,lsm_c_tca
+5,class,1,NA,te,12330,total edge,area and edge metric,lsm_c_te
+5,class,2,NA,te,46320,total edge,area and edge metric,lsm_c_te
+5,class,3,NA,te,420,total edge,area and edge metric,lsm_c_te
+5,class,4,NA,te,30480,total edge,area and edge metric,lsm_c_te
+6,class,1,NA,ai,79.61538461538461,aggregation index,aggregation metric,lsm_c_ai
+6,class,2,NA,ai,97.09556903547181,aggregation index,aggregation metric,lsm_c_ai
+6,class,4,NA,ai,76.7057800956106,aggregation index,aggregation metric,lsm_c_ai
+6,class,5,NA,ai,81.53846153846153,aggregation index,aggregation metric,lsm_c_ai
+6,class,1,NA,area_cv,238.84932115172523,patch area,area and edge metric,lsm_c_area_cv
+6,class,2,NA,area_cv,411.5083154825671,patch area,area and edge metric,lsm_c_area_cv
+6,class,4,NA,area_cv,245.42942517391504,patch area,area and edge metric,lsm_c_area_cv
+6,class,5,NA,area_cv,NA,patch area,area and edge metric,lsm_c_area_cv
+6,class,1,NA,area_mn,1.1618181818181816,patch area,area and edge metric,lsm_c_area_mn
+6,class,2,NA,area_mn,66.48882352941176,patch area,area and edge metric,lsm_c_area_mn
+6,class,4,NA,area_mn,3.808928571428571,patch area,area and edge metric,lsm_c_area_mn
+6,class,5,NA,area_mn,6.66,patch area,area and edge metric,lsm_c_area_mn
+6,class,1,NA,area_sd,2.7749948402900433,patch area,area and edge metric,lsm_c_area_sd
+6,class,2,NA,area_sd,273.6070376900591,patch area,area and edge metric,lsm_c_area_sd
+6,class,4,NA,area_sd,9.348231498142155,patch area,area and edge metric,lsm_c_area_sd
+6,class,5,NA,area_sd,NA,patch area,area and edge metric,lsm_c_area_sd
+6,class,1,NA,ca,12.78,total (class) area,area and edge metric,lsm_c_ca
+6,class,2,NA,ca,1130.31,total (class) area,area and edge metric,lsm_c_ca
+6,class,4,NA,ca,106.64999999999999,total (class) area,area and edge metric,lsm_c_ca
+6,class,5,NA,ca,6.66,total (class) area,area and edge metric,lsm_c_ca
+6,class,1,NA,cai_cv,250.5414741786445,core area index,core area metric,lsm_c_cai_cv
+6,class,2,NA,cai_cv,412.31056256176606,core area index,core area metric,lsm_c_cai_cv
+6,class,4,NA,cai_cv,159.29742376475252,core area index,core area metric,lsm_c_cai_cv
+6,class,5,NA,cai_cv,NA,core area index,core area metric,lsm_c_cai_cv
+6,class,1,NA,cai_mn,6.83982683982684,core area index,core area metric,lsm_c_cai_mn
+6,class,2,NA,cai_mn,5.296745373324825,core area index,core area metric,lsm_c_cai_mn
+6,class,4,NA,cai_mn,10.681408706846554,core area index,core area metric,lsm_c_cai_mn
+6,class,5,NA,cai_mn,31.08108108108108,core area index,core area metric,lsm_c_cai_mn
+6,class,1,NA,cai_sd,17.136602995768758,core area index,core area metric,lsm_c_cai_sd
+6,class,2,NA,cai_sd,21.8390406462199,core area index,core area metric,lsm_c_cai_sd
+6,class,4,NA,cai_sd,17.01520889179053,core area index,core area metric,lsm_c_cai_sd
+6,class,5,NA,cai_sd,NA,core area index,core area metric,lsm_c_cai_sd
+6,class,1,NA,circle_cv,98.04193212360678,related circumscribing circle,shape metric,lsm_c_circle_cv
+6,class,2,NA,circle_cv,207.4671205786338,related circumscribing circle,shape metric,lsm_c_circle_cv
+6,class,4,NA,circle_cv,50.163334588860685,related circumscribing circle,shape metric,lsm_c_circle_cv
+6,class,5,NA,circle_cv,NA,related circumscribing circle,shape metric,lsm_c_circle_cv
+6,class,1,NA,circle_mn,0.33072734587971203,related circumscribing circle,shape metric,lsm_c_circle_mn
+6,class,2,NA,circle_mn,0.10110654975754219,related circumscribing circle,shape metric,lsm_c_circle_mn
+6,class,4,NA,circle_mn,0.6017226217721608,related circumscribing circle,shape metric,lsm_c_circle_mn
+6,class,5,NA,circle_mn,0.6536039473882278,related circumscribing circle,shape metric,lsm_c_circle_mn
+6,class,1,NA,circle_sd,0.32425147996159354,related circumscribing circle,shape metric,lsm_c_circle_sd
+6,class,2,NA,circle_sd,0.20976284749837643,related circumscribing circle,shape metric,lsm_c_circle_sd
+6,class,4,NA,circle_sd,0.30184413205643373,related circumscribing circle,shape metric,lsm_c_circle_sd
+6,class,5,NA,circle_sd,NA,related circumscribing circle,shape metric,lsm_c_circle_sd
+6,class,1,NA,clumpy,0.79716457354321,clumpiness index,aggregation metric,lsm_c_clumpy
+6,class,2,NA,clumpy,0.7980480096011096,clumpiness index,aggregation metric,lsm_c_clumpy
+6,class,4,NA,clumpy,0.7513195476326078,clumpiness index,aggregation metric,lsm_c_clumpy
+6,class,5,NA,clumpy,0.81440077997762,clumpiness index,aggregation metric,lsm_c_clumpy
+6,class,1,NA,cohesion,84.24969070707093,patch cohesion index,aggregation metric,lsm_c_cohesion
+6,class,2,NA,cohesion,99.91465254630283,patch cohesion index,aggregation metric,lsm_c_cohesion
+6,class,4,NA,cohesion,91.37796272964019,patch cohesion index,aggregation metric,lsm_c_cohesion
+6,class,5,NA,cohesion,89.12959713749414,patch cohesion index,aggregation metric,lsm_c_cohesion
+6,class,1,NA,contig_cv,126.40619421105212,contiguity index,shape metric,lsm_c_contig_cv
+6,class,2,NA,contig_cv,247.8063722638576,contiguity index,shape metric,lsm_c_contig_cv
+6,class,4,NA,contig_cv,65.87283873156734,contiguity index,shape metric,lsm_c_contig_cv
+6,class,5,NA,contig_cv,NA,contiguity index,shape metric,lsm_c_contig_cv
+6,class,1,NA,contig_mn,0.2354256854256854,contiguity index,shape metric,lsm_c_contig_mn
+6,class,2,NA,contig_mn,0.09897039011307565,contiguity index,shape metric,lsm_c_contig_mn
+6,class,4,NA,contig_mn,0.39118083974748125,contiguity index,shape metric,lsm_c_contig_mn
+6,class,5,NA,contig_mn,0.686936936936937,contiguity index,shape metric,lsm_c_contig_mn
+6,class,1,NA,contig_sd,0.29759264914189254,contiguity index,shape metric,lsm_c_contig_sd
+6,class,2,NA,contig_sd,0.24525493335460039,contiguity index,shape metric,lsm_c_contig_sd
+6,class,4,NA,contig_sd,0.2576819237156492,contiguity index,shape metric,lsm_c_contig_sd
+6,class,5,NA,contig_sd,NA,contiguity index,shape metric,lsm_c_contig_sd
+6,class,1,NA,core_cv,314.1395982375755,core area,core area metric,lsm_c_core_cv
+6,class,2,NA,core_cv,412.31056256176606,core area,core area metric,lsm_c_core_cv
+6,class,4,NA,core_cv,368.382903055745,core area,core area metric,lsm_c_core_cv
+6,class,5,NA,core_cv,NA,core area,core area metric,lsm_c_core_cv
+6,class,1,NA,core_mn,0.4990909090909091,core area,core area metric,lsm_c_core_mn
+6,class,2,NA,core_mn,59.76,core area,core area metric,lsm_c_core_mn
+6,class,4,NA,core_mn,1.6328571428571428,core area,core area metric,lsm_c_core_mn
+6,class,5,NA,core_mn,2.07,core area,core area metric,lsm_c_core_mn
+6,class,1,NA,core_sd,1.567842176658445,core area,core area metric,lsm_c_core_sd
+6,class,2,NA,core_sd,246.3967921869114,core area,core area metric,lsm_c_core_sd
+6,class,4,NA,core_sd,6.015166545610235,core area,core area metric,lsm_c_core_sd
+6,class,5,NA,core_sd,NA,core area,core area metric,lsm_c_core_sd
+6,class,1,NA,cpland,0.43696275071633234,core area percentage of landscape,core area metric,lsm_c_cpland
+6,class,2,NA,cpland,80.85959885386819,core area percentage of landscape,core area metric,lsm_c_cpland
+6,class,4,NA,cpland,3.6389684813753576,core area percentage of landscape,core area metric,lsm_c_cpland
+6,class,5,NA,cpland,0.164756446991404,core area percentage of landscape,core area metric,lsm_c_cpland
+6,class,1,NA,dcad,0.15918497293855458,disjunct core area density,core area metric,lsm_c_dcad
+6,class,2,NA,dcad,0.23877745940783188,disjunct core area density,core area metric,lsm_c_dcad
+6,class,4,NA,dcad,1.5918497293855458,disjunct core area density,core area metric,lsm_c_dcad
+6,class,5,NA,dcad,0.23877745940783188,disjunct core area density,core area metric,lsm_c_dcad
+6,class,1,NA,dcore_cv,222.48595461286988,disjunct core area,core area metric,lsm_c_dcore_cv
+6,class,2,NA,dcore_cv,412.310562561766,disjunct core area,core area metric,lsm_c_dcore_cv
+6,class,4,NA,dcore_cv,141.83976353095954,disjunct core area,core area metric,lsm_c_dcore_cv
+6,class,5,NA,dcore_cv,NA,disjunct core area,core area metric,lsm_c_dcore_cv
+6,class,1,NA,dcore_mn,0.18181818181818182,disjunct core area,core area metric,lsm_c_dcore_mn
+6,class,2,NA,dcore_mn,0.17647058823529413,disjunct core area,core area metric,lsm_c_dcore_mn
+6,class,4,NA,dcore_mn,0.7142857142857143,disjunct core area,core area metric,lsm_c_dcore_mn
+6,class,5,NA,dcore_mn,3,disjunct core area,core area metric,lsm_c_dcore_mn
+6,class,1,NA,dcore_sd,0.40451991747794525,disjunct core area,core area metric,lsm_c_dcore_sd
+6,class,2,NA,dcore_sd,0.7276068751089989,disjunct core area,core area metric,lsm_c_dcore_sd
+6,class,4,NA,dcore_sd,1.0131411680782825,disjunct core area,core area metric,lsm_c_dcore_sd
+6,class,5,NA,dcore_sd,NA,disjunct core area,core area metric,lsm_c_dcore_sd
+6,class,1,NA,division,0.9999418108225713,division index,aggregation metric,lsm_c_division
+6,class,2,NA,division,0.19360599974548665,division index,aggregation metric,lsm_c_division
+6,class,4,NA,division,0.9982479156575069,division index,aggregation metric,lsm_c_division
+6,class,5,NA,division,0.9999719008875132,division index,aggregation metric,lsm_c_division
+6,class,1,NA,ed,3.677172874880611,edge density,area and edge metric,lsm_c_ed
+6,class,2,NA,ed,43.98280802292263,edge density,area and edge metric,lsm_c_ed
+6,class,4,NA,ed,28.89207258834766,edge density,area and edge metric,lsm_c_ed
+6,class,5,NA,ed,2.005730659025788,edge density,area and edge metric,lsm_c_ed
+6,class,1,NA,enn_cv,101.27372853320234,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+6,class,2,NA,enn_cv,30.6972651232385,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+6,class,4,NA,enn_cv,103.49632161024846,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+6,class,5,NA,enn_cv,NA,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+6,class,1,NA,enn_mn,380.19682177354474,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+6,class,2,NA,enn_mn,74.45558407234553,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+6,class,4,NA,enn_mn,146.748433745283,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+6,class,5,NA,enn_mn,NA,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+6,class,1,NA,enn_sd,385.0394971748028,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+6,class,2,NA,enn_sd,22.855828041743642,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+6,class,4,NA,enn_sd,151.87923094702046,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+6,class,5,NA,enn_sd,NA,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+6,class,1,NA,frac_cv,4.048980322786018,fractal dimension index,shape metric,lsm_c_frac_cv
+6,class,2,NA,frac_cv,4.419786275012383,fractal dimension index,shape metric,lsm_c_frac_cv
+6,class,4,NA,frac_cv,6.037720276906481,fractal dimension index,shape metric,lsm_c_frac_cv
+6,class,5,NA,frac_cv,NA,fractal dimension index,shape metric,lsm_c_frac_cv
+6,class,1,NA,frac_mn,1.0376746787446416,fractal dimension index,shape metric,lsm_c_frac_mn
+6,class,2,NA,frac_mn,1.0168842613919582,fractal dimension index,shape metric,lsm_c_frac_mn
+6,class,4,NA,frac_mn,1.1057928722159722,fractal dimension index,shape metric,lsm_c_frac_mn
+6,class,5,NA,frac_mn,1.1607154579677743,fractal dimension index,shape metric,lsm_c_frac_mn
+6,class,1,NA,frac_sd,0.042015243556903566,fractal dimension index,shape metric,lsm_c_frac_sd
+6,class,2,NA,frac_sd,0.044944111017762814,fractal dimension index,shape metric,lsm_c_frac_sd
+6,class,4,NA,frac_sd,0.06676468046637032,fractal dimension index,shape metric,lsm_c_frac_sd
+6,class,5,NA,frac_sd,NA,fractal dimension index,shape metric,lsm_c_frac_sd
+6,class,1,NA,gyrate_cv,151.61833595934482,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+6,class,2,NA,gyrate_cv,392.92384592324737,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+6,class,4,NA,gyrate_cv,102.02905702414078,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+6,class,5,NA,gyrate_cv,NA,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+6,class,1,NA,gyrate_mn,25.91627115946583,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+6,class,2,NA,gyrate_mn,82.21809650040296,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+6,class,4,NA,gyrate_mn,77.38414023000823,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+6,class,5,NA,gyrate_mn,121.47263324799555,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+6,class,1,NA,gyrate_sd,39.29381907469369,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+6,class,2,NA,gyrate_sd,323.05450681427016,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+6,class,4,NA,gyrate_sd,78.95430856291617,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+6,class,5,NA,gyrate_sd,NA,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+6,class,1,NA,iji,11.076919850004076,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+6,class,2,NA,iji,49.976424165349094,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+6,class,4,NA,iji,4.560261827899595,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+6,class,5,NA,iji,20.54002623657189,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+6,class,1,NA,lpi,0.7521489971346704,largest patch index,area and edge metric,lsm_c_lpi
+6,class,2,NA,lpi,89.79942693409741,largest patch index,area and edge metric,lsm_c_lpi
+6,class,4,NA,lpi,3.9326647564469908,largest patch index,area and edge metric,lsm_c_lpi
+6,class,5,NA,lpi,0.5300859598853869,largest patch index,area and edge metric,lsm_c_lpi
+6,class,1,NA,lsi,3.230769230769231,landscape shape index,aggregation metric,lsm_c_lsi
+6,class,2,NA,lsi,4.228996282527881,landscape shape index,aggregation metric,lsm_c_lsi
+6,class,4,NA,lsi,8.785091965150048,landscape shape index,aggregation metric,lsm_c_lsi
+6,class,5,NA,lsi,2.4371373307543522,landscape shape index,aggregation metric,lsm_c_lsi
+6,class,1,NA,mesh,0.07310888252148996,effective mesh size,aggregation metric,lsm_c_mesh
+6,class,2,NA,mesh,1013.1534219197707,effective mesh size,aggregation metric,lsm_c_mesh
+6,class,4,NA,mesh,2.201318767908309,effective mesh size,aggregation metric,lsm_c_mesh
+6,class,5,NA,mesh,0.03530372492836677,effective mesh size,aggregation metric,lsm_c_mesh
+6,class,1,NA,ndca,2,number of disjunct core areas,core area metric,lsm_c_ndca
+6,class,2,NA,ndca,3,number of disjunct core areas,core area metric,lsm_c_ndca
+6,class,4,NA,ndca,20,number of disjunct core areas,core area metric,lsm_c_ndca
+6,class,5,NA,ndca,3,number of disjunct core areas,core area metric,lsm_c_ndca
+6,class,1,NA,nlsi,8.792307692307693,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+6,class,2,NA,nlsi,1.153421633554084,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+6,class,4,NA,nlsi,7.8578878748370276,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+6,class,5,NA,nlsi,9.553846153846154,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+6,class,1,NA,np,11,number of patches,aggregation metric,lsm_c_np
+6,class,2,NA,np,17,number of patches,aggregation metric,lsm_c_np
+6,class,4,NA,np,28,number of patches,aggregation metric,lsm_c_np
+6,class,5,NA,np,1,number of patches,aggregation metric,lsm_c_np
+6,class,1,NA,pafrac,1.2332638874775816,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+6,class,2,NA,pafrac,1.2997588199926542,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+6,class,4,NA,pafrac,1.427699961170501,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+6,class,5,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+6,class,1,NA,para_cv,42.657426038805816,perimeter-area ratio,shape metric,lsm_c_para_cv
+6,class,2,NA,para_cv,28.38082459373454,perimeter-area ratio,shape metric,lsm_c_para_cv
+6,class,4,NA,para_cv,46.692090238538235,perimeter-area ratio,shape metric,lsm_c_para_cv
+6,class,5,NA,para_cv,NA,perimeter-area ratio,shape metric,lsm_c_para_cv
+6,class,1,NA,para_mn,0.10072150072150073,perimeter-area ratio,shape metric,lsm_c_para_mn
+6,class,2,NA,para_mn,0.1185850111156992,perimeter-area ratio,shape metric,lsm_c_para_mn
+6,class,4,NA,para_mn,0.07808144115490435,perimeter-area ratio,shape metric,lsm_c_para_mn
+6,class,5,NA,para_mn,0.03783783783783784,perimeter-area ratio,shape metric,lsm_c_para_mn
+6,class,1,NA,para_sd,0.042965199675449435,perimeter-area ratio,shape metric,lsm_c_para_sd
+6,class,2,NA,para_sd,0.0336554039992072,perimeter-area ratio,shape metric,lsm_c_para_sd
+6,class,4,NA,para_sd,0.03645785696359907,perimeter-area ratio,shape metric,lsm_c_para_sd
+6,class,5,NA,para_sd,NA,perimeter-area ratio,shape metric,lsm_c_para_sd
+6,class,1,NA,pd,0.8755173511620503,patch density,aggregation metric,lsm_c_pd
+6,class,2,NA,pd,1.353072269977714,patch density,aggregation metric,lsm_c_pd
+6,class,4,NA,pd,2.228589621139764,patch density,aggregation metric,lsm_c_pd
+6,class,5,NA,pd,0.07959248646927729,patch density,aggregation metric,lsm_c_pd
+6,class,1,NA,pladj,73.14487632508833,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+6,class,2,NA,pladj,97.0877686282386,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+6,class,4,NA,pladj,74.97875955819882,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+6,class,5,NA,pladj,71.62162162162163,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+6,class,1,NA,pland,1.0171919770773639,percentage of landscape,area and edge metric,lsm_c_pland
+6,class,2,NA,pland,89.96418338108883,percentage of landscape,area and edge metric,lsm_c_pland
+6,class,4,NA,pland,8.488538681948423,percentage of landscape,area and edge metric,lsm_c_pland
+6,class,5,NA,pland,0.5300859598853869,percentage of landscape,area and edge metric,lsm_c_pland
+6,class,1,NA,shape_cv,21.492647399318642,shape index,shape metric,lsm_c_shape_cv
+6,class,2,NA,shape_cv,61.132891991502945,shape index,shape metric,lsm_c_shape_cv
+6,class,4,NA,shape_cv,37.522323563155346,shape index,shape metric,lsm_c_shape_cv
+6,class,5,NA,shape_cv,NA,shape index,shape metric,lsm_c_shape_cv
+6,class,1,NA,shape_mn,1.2060662110971883,shape index,shape metric,lsm_c_shape_mn
+6,class,2,NA,shape_mn,1.2120860182330118,shape index,shape metric,lsm_c_shape_mn
+6,class,4,NA,shape_mn,1.8162826443335465,shape index,shape metric,lsm_c_shape_mn
+6,class,5,NA,shape_mn,2.4371373307543522,shape index,shape metric,lsm_c_shape_mn
+6,class,1,NA,shape_sd,0.2592155581534407,shape index,shape metric,lsm_c_shape_sd
+6,class,2,NA,shape_sd,0.7409832363704958,shape index,shape metric,lsm_c_shape_sd
+6,class,4,NA,shape_sd,0.6815114506282673,shape index,shape metric,lsm_c_shape_sd
+6,class,5,NA,shape_sd,NA,shape index,shape metric,lsm_c_shape_sd
+6,class,1,NA,split,17185.326278659617,splitting index,aggregation metric,lsm_c_split
+6,class,2,NA,split,1.2400885915376114,splitting index,aggregation metric,lsm_c_split
+6,class,4,NA,split,570.7487794663333,splitting index,aggregation metric,lsm_c_split
+6,class,5,NA,split,35588.31263696129,splitting index,aggregation metric,lsm_c_split
+6,class,1,NA,tca,5.49,total core area,core area metric,lsm_c_tca
+6,class,2,NA,tca,1015.92,total core area,core area metric,lsm_c_tca
+6,class,4,NA,tca,45.72,total core area,core area metric,lsm_c_tca
+6,class,5,NA,tca,2.07,total core area,core area metric,lsm_c_tca
+6,class,1,NA,te,4620,total edge,area and edge metric,lsm_c_te
+6,class,2,NA,te,55260,total edge,area and edge metric,lsm_c_te
+6,class,4,NA,te,36300,total edge,area and edge metric,lsm_c_te
+6,class,5,NA,te,2520,total edge,area and edge metric,lsm_c_te
+7,class,1,NA,ai,85.98130841121495,aggregation index,aggregation metric,lsm_c_ai
+7,class,2,NA,ai,96.41874481373107,aggregation index,aggregation metric,lsm_c_ai
+7,class,3,NA,ai,95.22653721682848,aggregation index,aggregation metric,lsm_c_ai
+7,class,4,NA,ai,72.00647249190939,aggregation index,aggregation metric,lsm_c_ai
+7,class,5,NA,ai,80,aggregation index,aggregation metric,lsm_c_ai
+7,class,1,NA,area_cv,171.79577742497463,patch area,area and edge metric,lsm_c_area_cv
+7,class,2,NA,area_cv,398.48637071614525,patch area,area and edge metric,lsm_c_area_cv
+7,class,3,NA,area_cv,33.35409345219564,patch area,area and edge metric,lsm_c_area_cv
+7,class,4,NA,area_cv,141.52280959881773,patch area,area and edge metric,lsm_c_area_cv
+7,class,5,NA,area_cv,96.16652224137046,patch area,area and edge metric,lsm_c_area_cv
+7,class,1,NA,area_mn,2.1239999999999997,patch area,area and edge metric,lsm_c_area_mn
+7,class,2,NA,area_mn,65.0025,patch area,area and edge metric,lsm_c_area_mn
+7,class,3,NA,area_mn,57.239999999999995,patch area,area and edge metric,lsm_c_area_mn
+7,class,4,NA,area_mn,3.4488,patch area,area and edge metric,lsm_c_area_mn
+7,class,5,NA,area_mn,2.25,patch area,area and edge metric,lsm_c_area_mn
+7,class,1,NA,area_sd,3.6489423125064606,patch area,area and edge metric,lsm_c_area_sd
+7,class,2,NA,area_sd,259.0261031247623,patch area,area and edge metric,lsm_c_area_sd
+7,class,3,NA,area_sd,19.091883092036785,patch area,area and edge metric,lsm_c_area_sd
+7,class,4,NA,area_sd,4.880838657444025,patch area,area and edge metric,lsm_c_area_sd
+7,class,5,NA,area_sd,2.1637467504308354,patch area,area and edge metric,lsm_c_area_sd
+7,class,1,NA,ca,10.62,total (class) area,area and edge metric,lsm_c_ca
+7,class,2,NA,ca,1040.04,total (class) area,area and edge metric,lsm_c_ca
+7,class,3,NA,ca,114.47999999999999,total (class) area,area and edge metric,lsm_c_ca
+7,class,4,NA,ca,86.22,total (class) area,area and edge metric,lsm_c_ca
+7,class,5,NA,ca,4.5,total (class) area,area and edge metric,lsm_c_ca
+7,class,1,NA,cai_cv,166.91574428650387,core area index,core area metric,lsm_c_cai_cv
+7,class,2,NA,cai_cv,400,core area index,core area metric,lsm_c_cai_cv
+7,class,3,NA,cai_cv,2.761296867400458,core area index,core area metric,lsm_c_cai_cv
+7,class,4,NA,cai_cv,124.26388457859481,core area index,core area metric,lsm_c_cai_cv
+7,class,5,NA,cai_cv,141.4213562373095,core area index,core area metric,lsm_c_cai_cv
+7,class,1,NA,cai_mn,14.491228070175437,core area index,core area metric,lsm_c_cai_mn
+7,class,2,NA,cai_mn,5.532457663916632,core area index,core area metric,lsm_c_cai_mn
+7,class,3,NA,cai_mn,79.11679703452391,core area index,core area metric,lsm_c_cai_mn
+7,class,4,NA,cai_mn,13.386491005306079,core area index,core area metric,lsm_c_cai_mn
+7,class,5,NA,cai_mn,11.904761904761903,core area index,core area metric,lsm_c_cai_mn
+7,class,1,NA,cai_sd,24.188141189588098,core area index,core area metric,lsm_c_cai_sd
+7,class,2,NA,cai_sd,22.129830655666527,core area index,core area metric,lsm_c_cai_sd
+7,class,3,NA,cai_sd,2.184649638101887,core area index,core area metric,lsm_c_cai_sd
+7,class,4,NA,cai_sd,16.63457373195752,core area index,core area metric,lsm_c_cai_sd
+7,class,5,NA,cai_sd,16.835875742536846,core area index,core area metric,lsm_c_cai_sd
+7,class,1,NA,circle_cv,93.40174671194656,related circumscribing circle,shape metric,lsm_c_circle_cv
+7,class,2,NA,circle_cv,97.65862908169785,related circumscribing circle,shape metric,lsm_c_circle_cv
+7,class,3,NA,circle_cv,2.2814673569324038,related circumscribing circle,shape metric,lsm_c_circle_cv
+7,class,4,NA,circle_cv,59.88813003525013,related circumscribing circle,shape metric,lsm_c_circle_cv
+7,class,5,NA,circle_cv,1.0547310273422088,related circumscribing circle,shape metric,lsm_c_circle_cv
+7,class,1,NA,circle_mn,0.3598771342347838,related circumscribing circle,shape metric,lsm_c_circle_mn
+7,class,2,NA,circle_mn,0.29907387272622654,related circumscribing circle,shape metric,lsm_c_circle_mn
+7,class,3,NA,circle_mn,0.6053245474566411,related circumscribing circle,shape metric,lsm_c_circle_mn
+7,class,4,NA,circle_mn,0.5069863566300982,related circumscribing circle,shape metric,lsm_c_circle_mn
+7,class,5,NA,circle_mn,0.7056772181168638,related circumscribing circle,shape metric,lsm_c_circle_mn
+7,class,1,NA,circle_sd,0.33613152939218466,related circumscribing circle,shape metric,lsm_c_circle_sd
+7,class,2,NA,circle_sd,0.2920714440459747,related circumscribing circle,shape metric,lsm_c_circle_sd
+7,class,3,NA,circle_sd,0.013810281953722064,related circumscribing circle,shape metric,lsm_c_circle_sd
+7,class,4,NA,circle_sd,0.30362464851961013,related circumscribing circle,shape metric,lsm_c_circle_sd
+7,class,5,NA,circle_sd,0.007442996572363917,related circumscribing circle,shape metric,lsm_c_circle_sd
+7,class,1,NA,clumpy,0.8586175033030453,clumpiness index,aggregation metric,lsm_c_clumpy
+7,class,2,NA,clumpy,0.8396742908485846,clumpiness index,aggregation metric,lsm_c_clumpy
+7,class,3,NA,clumpy,0.950239947452098,clumpiness index,aggregation metric,lsm_c_clumpy
+7,class,4,NA,clumpy,0.707647513153931,clumpiness index,aggregation metric,lsm_c_clumpy
+7,class,5,NA,clumpy,0.8884893236159058,clumpiness index,aggregation metric,lsm_c_clumpy
+7,class,1,NA,cohesion,86.82146792973194,patch cohesion index,aggregation metric,lsm_c_cohesion
+7,class,2,NA,cohesion,99.85920737629844,patch cohesion index,aggregation metric,lsm_c_cohesion
+7,class,3,NA,cohesion,96.92508541443048,patch cohesion index,aggregation metric,lsm_c_cohesion
+7,class,4,NA,cohesion,90.32565616331229,patch cohesion index,aggregation metric,lsm_c_cohesion
+7,class,5,NA,cohesion,82.73956921297689,patch cohesion index,aggregation metric,lsm_c_cohesion
+7,class,1,NA,contig_cv,107.03779241766955,contiguity index,shape metric,lsm_c_contig_cv
+7,class,2,NA,contig_cv,130.78013542390562,contiguity index,shape metric,lsm_c_contig_cv
+7,class,3,NA,contig_cv,0.6248312597657935,contiguity index,shape metric,lsm_c_contig_cv
+7,class,4,NA,contig_cv,71.75798465780036,contiguity index,shape metric,lsm_c_contig_cv
+7,class,5,NA,contig_cv,29.35160223793216,contiguity index,shape metric,lsm_c_contig_cv
+7,class,1,NA,contig_mn,0.3395321637426901,contiguity index,shape metric,lsm_c_contig_mn
+7,class,2,NA,contig_mn,0.19452800502857492,contiguity index,shape metric,lsm_c_contig_mn
+7,class,3,NA,contig_mn,0.9145344453868627,contiguity index,shape metric,lsm_c_contig_mn
+7,class,4,NA,contig_mn,0.404936914334458,contiguity index,shape metric,lsm_c_contig_mn
+7,class,5,NA,contig_mn,0.5520833333333333,contiguity index,shape metric,lsm_c_contig_mn
+7,class,1,NA,contig_sd,0.3634277326181225,contiguity index,shape metric,lsm_c_contig_sd
+7,class,2,NA,contig_sd,0.25440398841379225,contiguity index,shape metric,lsm_c_contig_sd
+7,class,3,NA,contig_sd,0.005714297096102846,contiguity index,shape metric,lsm_c_contig_sd
+7,class,4,NA,contig_sd,0.2905745688618906,contiguity index,shape metric,lsm_c_contig_sd
+7,class,5,NA,contig_sd,0.1620453040219171,contiguity index,shape metric,lsm_c_contig_sd
+7,class,1,NA,core_cv,208.9552791232358,core area,core area metric,lsm_c_core_cv
+7,class,2,NA,core_cv,400,core area,core area metric,lsm_c_core_cv
+7,class,3,NA,core_cv,35.949840309583124,core area,core area metric,lsm_c_core_cv
+7,class,4,NA,core_cv,171.74553204604123,core area,core area metric,lsm_c_core_cv
+7,class,5,NA,core_cv,141.42135623730948,core area,core area metric,lsm_c_core_cv
+7,class,1,NA,core_mn,1.008,core area,core area metric,lsm_c_core_mn
+7,class,2,NA,core_mn,57.335625,core area,core area metric,lsm_c_core_mn
+7,class,3,NA,core_mn,45.495000000000005,core area,core area metric,lsm_c_core_mn
+7,class,4,NA,core_mn,1.08,core area,core area metric,lsm_c_core_mn
+7,class,5,NA,core_mn,0.45,core area,core area metric,lsm_c_core_mn
+7,class,1,NA,core_sd,2.106269213562217,core area,core area metric,lsm_c_core_sd
+7,class,2,NA,core_sd,229.3425,core area,core area metric,lsm_c_core_sd
+7,class,3,NA,core_sd,16.355379848844844,core area,core area metric,lsm_c_core_sd
+7,class,4,NA,core_sd,1.8548517460972453,core area,core area metric,lsm_c_core_sd
+7,class,5,NA,core_sd,0.6363961030678927,core area,core area metric,lsm_c_core_sd
+7,class,1,NA,cpland,0.4013186183173283,core area percentage of landscape,core area metric,lsm_c_cpland
+7,class,2,NA,cpland,73.0471549376523,core area percentage of landscape,core area metric,lsm_c_cpland
+7,class,3,NA,cpland,7.245234341407484,core area percentage of landscape,core area metric,lsm_c_cpland
+7,class,4,NA,cpland,2.1499211695571163,core area percentage of landscape,core area metric,lsm_c_cpland
+7,class,5,NA,cpland,0.07166403898523721,core area percentage of landscape,core area metric,lsm_c_cpland
+7,class,1,NA,dcad,0.1592534199671938,disjunct core area density,core area metric,lsm_c_dcad
+7,class,2,NA,dcad,0.2388801299507907,disjunct core area density,core area metric,lsm_c_dcad
+7,class,3,NA,dcad,0.2388801299507907,disjunct core area density,core area metric,lsm_c_dcad
+7,class,4,NA,dcad,2.468428009491504,disjunct core area density,core area metric,lsm_c_dcad
+7,class,5,NA,dcad,0.0796267099835969,disjunct core area density,core area metric,lsm_c_dcad
+7,class,1,NA,dcore_cv,136.9306393762915,disjunct core area,core area metric,lsm_c_dcore_cv
+7,class,2,NA,dcore_cv,400,disjunct core area,core area metric,lsm_c_dcore_cv
+7,class,3,NA,dcore_cv,47.14045207910317,disjunct core area,core area metric,lsm_c_dcore_cv
+7,class,4,NA,dcore_cv,153.1550487445604,disjunct core area,core area metric,lsm_c_dcore_cv
+7,class,5,NA,dcore_cv,141.4213562373095,disjunct core area,core area metric,lsm_c_dcore_cv
+7,class,1,NA,dcore_mn,0.4,disjunct core area,core area metric,lsm_c_dcore_mn
+7,class,2,NA,dcore_mn,0.1875,disjunct core area,core area metric,lsm_c_dcore_mn
+7,class,3,NA,dcore_mn,1.5,disjunct core area,core area metric,lsm_c_dcore_mn
+7,class,4,NA,dcore_mn,1.24,disjunct core area,core area metric,lsm_c_dcore_mn
+7,class,5,NA,dcore_mn,0.5,disjunct core area,core area metric,lsm_c_dcore_mn
+7,class,1,NA,dcore_sd,0.5477225575051661,disjunct core area,core area metric,lsm_c_dcore_sd
+7,class,2,NA,dcore_sd,0.75,disjunct core area,core area metric,lsm_c_dcore_sd
+7,class,3,NA,dcore_sd,0.7071067811865476,disjunct core area,core area metric,lsm_c_dcore_sd
+7,class,4,NA,dcore_sd,1.8991226044325487,disjunct core area,core area metric,lsm_c_dcore_sd
+7,class,5,NA,dcore_sd,0.7071067811865476,disjunct core area,core area metric,lsm_c_dcore_sd
+7,class,1,NA,division,0.9999519295252328,division index,aggregation metric,lsm_c_division
+7,class,2,NA,division,0.319025046956534,division index,aggregation metric,lsm_c_division
+7,class,3,NA,division,0.9956141238368152,division index,aggregation metric,lsm_c_division
+7,class,4,NA,division,0.9994489562328394,division index,aggregation metric,lsm_c_division
+7,class,5,NA,division,0.9999906118773638,division index,aggregation metric,lsm_c_division
+7,class,1,NA,ed,2.4843533514882234,edge density,area and edge metric,lsm_c_ed
+7,class,2,NA,ed,47.728249964167986,edge density,area and edge metric,lsm_c_ed
+7,class,3,NA,ed,9.077444938130046,edge density,area and edge metric,lsm_c_ed
+7,class,4,NA,ed,27.757871100281882,edge density,area and edge metric,lsm_c_ed
+7,class,5,NA,ed,1.4810568056949025,edge density,area and edge metric,lsm_c_ed
+7,class,1,NA,enn_cv,33.625347809220386,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+7,class,2,NA,enn_cv,14.400979014068964,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+7,class,3,NA,enn_cv,0,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+7,class,4,NA,enn_cv,168.4845100985368,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+7,class,5,NA,enn_cv,0,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+7,class,1,NA,enn_mn,1205.4469529623257,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+7,class,2,NA,enn_mn,68.07999392248296,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+7,class,3,NA,enn_mn,1603.8079685548391,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+7,class,4,NA,enn_mn,154.96808955779292,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+7,class,5,NA,enn_mn,67.08203932499369,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+7,class,1,NA,enn_sd,405.3357305892312,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+7,class,2,NA,enn_sd,9.804185637556197,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+7,class,3,NA,enn_sd,0,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+7,class,4,NA,enn_sd,261.0972265005092,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+7,class,5,NA,enn_sd,0,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+7,class,1,NA,frac_cv,3.8610296286644963,fractal dimension index,shape metric,lsm_c_frac_cv
+7,class,2,NA,frac_cv,5.60737352794243,fractal dimension index,shape metric,lsm_c_frac_cv
+7,class,3,NA,frac_cv,1.6063279921527336,fractal dimension index,shape metric,lsm_c_frac_cv
+7,class,4,NA,frac_cv,6.91876606224965,fractal dimension index,shape metric,lsm_c_frac_cv
+7,class,5,NA,frac_cv,2.503771022588139,fractal dimension index,shape metric,lsm_c_frac_cv
+7,class,1,NA,frac_mn,1.0390427264359217,fractal dimension index,shape metric,lsm_c_frac_mn
+7,class,2,NA,frac_mn,1.0434366966787698,fractal dimension index,shape metric,lsm_c_frac_mn
+7,class,3,NA,frac_mn,1.0942291742079768,fractal dimension index,shape metric,lsm_c_frac_mn
+7,class,4,NA,frac_mn,1.0867312737316461,fractal dimension index,shape metric,lsm_c_frac_mn
+7,class,5,NA,frac_mn,1.0974709701113117,fractal dimension index,shape metric,lsm_c_frac_mn
+7,class,1,NA,frac_sd,0.04011774752217433,fractal dimension index,shape metric,lsm_c_frac_sd
+7,class,2,NA,frac_sd,0.058509393110402284,fractal dimension index,shape metric,lsm_c_frac_sd
+7,class,3,NA,frac_sd,0.017576909523604432,fractal dimension index,shape metric,lsm_c_frac_sd
+7,class,4,NA,frac_sd,0.07518839455479848,fractal dimension index,shape metric,lsm_c_frac_sd
+7,class,5,NA,frac_sd,0.027478160130963956,fractal dimension index,shape metric,lsm_c_frac_sd
+7,class,1,NA,gyrate_cv,127.55624887070216,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+7,class,2,NA,gyrate_cv,343.2293007305294,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+7,class,3,NA,gyrate_cv,13.837027306453255,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+7,class,4,NA,gyrate_cv,110.40241827869217,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+7,class,5,NA,gyrate_cv,52.95526192679951,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+7,class,1,NA,gyrate_mn,40.11274577200281,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+7,class,2,NA,gyrate_mn,95.6540795447422,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+7,class,3,NA,gyrate_mn,337.8967384334642,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+7,class,4,NA,gyrate_mn,69.54507991290795,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+7,class,5,NA,gyrate_mn,67.91162440778305,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+7,class,1,NA,gyrate_sd,51.16631382580796,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+7,class,2,NA,gyrate_sd,328.31282834164307,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+7,class,3,NA,gyrate_sd,46.75486396465337,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+7,class,4,NA,gyrate_sd,76.77945001769936,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+7,class,5,NA,gyrate_sd,35.96277858388582,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+7,class,1,NA,iji,17.789759875057197,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+7,class,2,NA,iji,61.915301423894164,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+7,class,3,NA,iji,6.0208535535236285,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+7,class,4,NA,iji,6.069952140901349,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+7,class,5,NA,iji,13.11556098071683,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+7,class,1,NA,lpi,0.6808083703597535,largest patch index,area and edge metric,lsm_c_lpi
+7,class,2,NA,lpi,82.52114089150065,largest patch index,area and edge metric,lsm_c_lpi
+7,class,3,NA,lpi,5.6327934642396444,largest patch index,area and edge metric,lsm_c_lpi
+7,class,4,NA,lpi,1.4117815680091732,largest patch index,area and edge metric,lsm_c_lpi
+7,class,5,NA,lpi,0.30098896373799633,largest patch index,area and edge metric,lsm_c_lpi
+7,class,1,NA,lsi,2.392638036809816,landscape shape index,aggregation metric,lsm_c_lsi
+7,class,2,NA,lsi,4.813953488372093,landscape shape index,aggregation metric,lsm_c_lsi
+7,class,3,NA,lsi,2.663551401869159,landscape shape index,aggregation metric,lsm_c_lsi
+7,class,4,NA,lsi,9.381054897739505,landscape shape index,aggregation metric,lsm_c_lsi
+7,class,5,NA,lsi,2.2588235294117647,landscape shape index,aggregation metric,lsm_c_lsi
+7,class,1,NA,mesh,0.06036978644116381,effective mesh size,aggregation metric,lsm_c_mesh
+7,class,2,NA,mesh,855.2092045291674,effective mesh size,aggregation metric,lsm_c_mesh
+7,class,3,NA,mesh,5.508046438297264,effective mesh size,aggregation metric,lsm_c_mesh
+7,class,4,NA,mesh,0.6920338254264011,effective mesh size,aggregation metric,lsm_c_mesh
+7,class,5,NA,mesh,0.011790167693851227,effective mesh size,aggregation metric,lsm_c_mesh
+7,class,1,NA,ndca,2,number of disjunct core areas,core area metric,lsm_c_ndca
+7,class,2,NA,ndca,3,number of disjunct core areas,core area metric,lsm_c_ndca
+7,class,3,NA,ndca,3,number of disjunct core areas,core area metric,lsm_c_ndca
+7,class,4,NA,ndca,31,number of disjunct core areas,core area metric,lsm_c_ndca
+7,class,5,NA,ndca,1,number of disjunct core areas,core area metric,lsm_c_ndca
+7,class,1,NA,nlsi,7.186915887850467,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+7,class,2,NA,nlsi,1.0260889820638248,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+7,class,3,NA,nlsi,2.2766990291262137,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+7,class,4,NA,nlsi,9.367853290183387,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+7,class,5,NA,nlsi,11.117647058823529,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+7,class,1,NA,np,5,number of patches,aggregation metric,lsm_c_np
+7,class,2,NA,np,16,number of patches,aggregation metric,lsm_c_np
+7,class,3,NA,np,2,number of patches,aggregation metric,lsm_c_np
+7,class,4,NA,np,25,number of patches,aggregation metric,lsm_c_np
+7,class,5,NA,np,2,number of patches,aggregation metric,lsm_c_np
+7,class,1,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+7,class,2,NA,pafrac,1.336623687881549,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+7,class,3,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+7,class,4,NA,pafrac,1.463343154811515,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+7,class,5,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+7,class,1,NA,para_cv,59.89108663586689,perimeter-area ratio,shape metric,lsm_c_para_cv
+7,class,2,NA,para_cv,34.34932649301521,perimeter-area ratio,shape metric,lsm_c_para_cv
+7,class,3,NA,para_cv,3.7682806520913283,perimeter-area ratio,shape metric,lsm_c_para_cv
+7,class,4,NA,para_cv,53.61905794853677,perimeter-area ratio,shape metric,lsm_c_para_cv
+7,class,5,NA,para_cv,38.56946079199349,perimeter-area ratio,shape metric,lsm_c_para_cv
+7,class,1,NA,para_mn,0.08449122807017544,perimeter-area ratio,shape metric,lsm_c_para_mn
+7,class,2,NA,para_mn,0.104930544590499,perimeter-area ratio,shape metric,lsm_c_para_mn
+7,class,3,NA,para_mn,0.010021047340809853,perimeter-area ratio,shape metric,lsm_c_para_mn
+7,class,4,NA,para_mn,0.07588070698659588,perimeter-area ratio,shape metric,lsm_c_para_mn
+7,class,5,NA,para_mn,0.05238095238095238,perimeter-area ratio,shape metric,lsm_c_para_mn
+7,class,1,NA,para_sd,0.05060271460321665,perimeter-area ratio,shape metric,lsm_c_para_sd
+7,class,2,NA,para_sd,0.03604293535228941,perimeter-area ratio,shape metric,lsm_c_para_sd
+7,class,3,NA,para_sd,3.776211880806502e-4,perimeter-area ratio,shape metric,lsm_c_para_sd
+7,class,4,NA,para_sd,0.04068652025090223,perimeter-area ratio,shape metric,lsm_c_para_sd
+7,class,5,NA,para_sd,0.02020305089104421,perimeter-area ratio,shape metric,lsm_c_para_sd
+7,class,1,NA,pd,0.3981335499179845,patch density,aggregation metric,lsm_c_pd
+7,class,2,NA,pd,1.2740273597375504,patch density,aggregation metric,lsm_c_pd
+7,class,3,NA,pd,0.1592534199671938,patch density,aggregation metric,lsm_c_pd
+7,class,4,NA,pd,1.9906677495899225,patch density,aggregation metric,lsm_c_pd
+7,class,5,NA,pd,0.1592534199671938,patch density,aggregation metric,lsm_c_pd
+7,class,1,NA,pladj,77.96610169491525,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+7,class,2,NA,pladj,96.33249700010909,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+7,class,3,NA,pladj,92.76847290640394,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+7,class,4,NA,pladj,70.39282889533351,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+7,class,5,NA,pladj,74.31693989071039,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+7,class,1,NA,pland,0.845635660025799,percentage of landscape,area and edge metric,lsm_c_pland
+7,class,2,NA,pland,82.81496345134012,percentage of landscape,area and edge metric,lsm_c_pland
+7,class,3,NA,pland,9.115665758922173,percentage of landscape,area and edge metric,lsm_c_pland
+7,class,4,NA,pland,6.865414934785726,percentage of landscape,area and edge metric,lsm_c_pland
+7,class,5,NA,pland,0.35832019492618605,percentage of landscape,area and edge metric,lsm_c_pland
+7,class,1,NA,shape_cv,22.532692788169186,shape index,shape metric,lsm_c_shape_cv
+7,class,2,NA,shape_cv,63.84169571954178,shape index,shape metric,lsm_c_shape_cv
+7,class,3,NA,shape_cv,13.168234916374118,shape index,shape metric,lsm_c_shape_cv
+7,class,4,NA,shape_cv,51.92924746877654,shape index,shape metric,lsm_c_shape_cv
+7,class,5,NA,shape_cv,19.034465077546663,shape index,shape metric,lsm_c_shape_cv
+7,class,1,NA,shape_mn,1.2413273001508296,shape index,shape metric,lsm_c_shape_mn
+7,class,2,NA,shape_mn,1.384446231842845,shape index,shape metric,lsm_c_shape_mn
+7,class,3,NA,shape_mn,1.8752955727745642,shape index,shape metric,lsm_c_shape_mn
+7,class,4,NA,shape_mn,1.7522598348839888,shape index,shape metric,lsm_c_shape_mn
+7,class,5,NA,shape_mn,1.631332224406472,shape index,shape metric,lsm_c_shape_mn
+7,class,1,NA,shape_sd,0.27970446703866125,shape index,shape metric,lsm_c_shape_sd
+7,class,2,NA,shape_sd,0.883853950733771,shape index,shape metric,lsm_c_shape_sd
+7,class,3,NA,shape_sd,0.24694332639931815,shape index,shape metric,lsm_c_shape_sd
+7,class,4,NA,shape_sd,0.9099353459528817,shape index,shape metric,lsm_c_shape_sd
+7,class,5,NA,shape_sd,0.3105153625534151,shape index,shape metric,lsm_c_shape_sd
+7,class,1,NA,split,20802.790170940178,splitting index,aggregation metric,lsm_c_split
+7,class,2,NA,split,1.46848279151931,splitting index,aggregation metric,lsm_c_split
+7,class,3,NA,split,228.00461362635718,splitting index,aggregation metric,lsm_c_split
+7,class,4,NA,split,1814.7378839844914,splitting index,aggregation metric,lsm_c_split
+7,class,5,NA,split,106517.56892778994,splitting index,aggregation metric,lsm_c_split
+7,class,1,NA,tca,5.039999999999999,total core area,core area metric,lsm_c_tca
+7,class,2,NA,tca,917.37,total core area,core area metric,lsm_c_tca
+7,class,3,NA,tca,90.99000000000001,total core area,core area metric,lsm_c_tca
+7,class,4,NA,tca,27,total core area,core area metric,lsm_c_tca
+7,class,5,NA,tca,0.9,total core area,core area metric,lsm_c_tca
+7,class,1,NA,te,3120,total edge,area and edge metric,lsm_c_te
+7,class,2,NA,te,59940,total edge,area and edge metric,lsm_c_te
+7,class,3,NA,te,11400,total edge,area and edge metric,lsm_c_te
+7,class,4,NA,te,34860,total edge,area and edge metric,lsm_c_te
+7,class,5,NA,te,1860,total edge,area and edge metric,lsm_c_te
+8,class,1,NA,ai,30,aggregation index,aggregation metric,lsm_c_ai
+8,class,2,NA,ai,81.74478141000394,aggregation index,aggregation metric,lsm_c_ai
+8,class,3,NA,ai,97.53710135775182,aggregation index,aggregation metric,lsm_c_ai
+8,class,4,NA,ai,95.19721094806953,aggregation index,aggregation metric,lsm_c_ai
+8,class,1,NA,area_cv,106.54185084179649,patch area,area and edge metric,lsm_c_area_cv
+8,class,2,NA,area_cv,621.8287939225528,patch area,area and edge metric,lsm_c_area_cv
+8,class,3,NA,area_cv,130.79733809632936,patch area,area and edge metric,lsm_c_area_cv
+8,class,4,NA,area_cv,264.03468398062876,patch area,area and edge metric,lsm_c_area_cv
+8,class,1,NA,area_mn,0.324,patch area,area and edge metric,lsm_c_area_mn
+8,class,2,NA,area_mn,2.3545454545454545,patch area,area and edge metric,lsm_c_area_mn
+8,class,3,NA,area_mn,73.08,patch area,area and edge metric,lsm_c_area_mn
+8,class,4,NA,area_mn,124.81714285714285,patch area,area and edge metric,lsm_c_area_mn
+8,class,1,NA,area_sd,0.3451955967274206,patch area,area and edge metric,lsm_c_area_sd
+8,class,2,NA,area_sd,14.641241602358289,patch area,area and edge metric,lsm_c_area_sd
+8,class,3,NA,area_sd,95.58669468079748,patch area,area and edge metric,lsm_c_area_sd
+8,class,4,NA,area_sd,329.5605486965071,patch area,area and edge metric,lsm_c_area_sd
+8,class,1,NA,ca,3.24,total (class) area,area and edge metric,lsm_c_ca
+8,class,2,NA,ca,233.1,total (class) area,area and edge metric,lsm_c_ca
+8,class,3,NA,ca,146.16,total (class) area,area and edge metric,lsm_c_ca
+8,class,4,NA,ca,873.7199999999999,total (class) area,area and edge metric,lsm_c_ca
+8,class,1,NA,cai_cv,NA,core area index,core area metric,lsm_c_cai_cv
+8,class,2,NA,cai_cv,356.52461785438226,core area index,core area metric,lsm_c_cai_cv
+8,class,3,NA,cai_cv,23.86497138382482,core area index,core area metric,lsm_c_cai_cv
+8,class,4,NA,cai_cv,264.575131106459,core area index,core area metric,lsm_c_cai_cv
+8,class,1,NA,cai_mn,0,core area index,core area metric,lsm_c_cai_mn
+8,class,2,NA,cai_mn,3.2367434563696555,core area index,core area metric,lsm_c_cai_mn
+8,class,3,NA,cai_mn,74.94152690811072,core area index,core area metric,lsm_c_cai_mn
+8,class,4,NA,cai_mn,12.148237687397733,core area index,core area metric,lsm_c_cai_mn
+8,class,1,NA,cai_sd,0,core area index,core area metric,lsm_c_cai_sd
+8,class,2,NA,cai_sd,11.539787238748639,core area index,core area metric,lsm_c_cai_sd
+8,class,3,NA,cai_sd,17.884773951222,core area index,core area metric,lsm_c_cai_sd
+8,class,4,NA,cai_sd,32.14121578855682,core area index,core area metric,lsm_c_cai_sd
+8,class,1,NA,circle_cv,56.507877260720214,related circumscribing circle,shape metric,lsm_c_circle_cv
+8,class,2,NA,circle_cv,113.27428904101988,related circumscribing circle,shape metric,lsm_c_circle_cv
+8,class,3,NA,circle_cv,23.96438042414664,related circumscribing circle,shape metric,lsm_c_circle_cv
+8,class,4,NA,circle_cv,74.7945385484752,related circumscribing circle,shape metric,lsm_c_circle_cv
+8,class,1,NA,circle_mn,0.5515030491932839,related circumscribing circle,shape metric,lsm_c_circle_mn
+8,class,2,NA,circle_mn,0.30531572820297836,related circumscribing circle,shape metric,lsm_c_circle_mn
+8,class,3,NA,circle_mn,0.6506902365697201,related circumscribing circle,shape metric,lsm_c_circle_mn
+8,class,4,NA,circle_mn,0.36938271527511773,related circumscribing circle,shape metric,lsm_c_circle_mn
+8,class,1,NA,circle_sd,0.31164266612727026,related circumscribing circle,shape metric,lsm_c_circle_sd
+8,class,2,NA,circle_sd,0.34584422045233637,related circumscribing circle,shape metric,lsm_c_circle_sd
+8,class,3,NA,circle_sd,0.15593388367434746,related circumscribing circle,shape metric,lsm_c_circle_sd
+8,class,4,NA,circle_sd,0.2762780973678523,related circumscribing circle,shape metric,lsm_c_circle_sd
+8,class,1,NA,clumpy,0.2981899152420629,clumpiness index,aggregation metric,lsm_c_clumpy
+8,class,2,NA,clumpy,0.7810219529699012,clumpiness index,aggregation metric,lsm_c_clumpy
+8,class,3,NA,clumpy,0.9941685356085987,clumpiness index,aggregation metric,lsm_c_clumpy
+8,class,4,NA,clumpy,0.8670252453422759,clumpiness index,aggregation metric,lsm_c_clumpy
+8,class,1,NA,cohesion,56.135283644410364,patch cohesion index,aggregation metric,lsm_c_cohesion
+8,class,2,NA,cohesion,94.3364697615689,patch cohesion index,aggregation metric,lsm_c_cohesion
+8,class,3,NA,cohesion,97.9840252096802,patch cohesion index,aggregation metric,lsm_c_cohesion
+8,class,4,NA,cohesion,99.80905976254594,patch cohesion index,aggregation metric,lsm_c_cohesion
+8,class,1,NA,contig_cv,87.02696280124604,contiguity index,shape metric,lsm_c_contig_cv
+8,class,2,NA,contig_cv,149.30681530597417,contiguity index,shape metric,lsm_c_contig_cv
+8,class,3,NA,contig_cv,11.112872008409548,contiguity index,shape metric,lsm_c_contig_cv
+8,class,4,NA,contig_cv,129.13717065443203,contiguity index,shape metric,lsm_c_contig_cv
+8,class,1,NA,contig_mn,0.1484126984126984,contiguity index,shape metric,lsm_c_contig_mn
+8,class,2,NA,contig_mn,0.14143470375560357,contiguity index,shape metric,lsm_c_contig_mn
+8,class,3,NA,contig_mn,0.880679057018694,contiguity index,shape metric,lsm_c_contig_mn
+8,class,4,NA,contig_mn,0.2653062979396691,contiguity index,shape metric,lsm_c_contig_mn
+8,class,1,NA,contig_sd,0.12915906383994452,contiguity index,shape metric,lsm_c_contig_sd
+8,class,2,NA,contig_sd,0.21117165191493076,contiguity index,shape metric,lsm_c_contig_sd
+8,class,3,NA,contig_sd,0.09786873641135561,contiguity index,shape metric,lsm_c_contig_sd
+8,class,4,NA,contig_sd,0.3426090467273063,contiguity index,shape metric,lsm_c_contig_sd
+8,class,1,NA,core_cv,NA,core area,core area metric,lsm_c_core_cv
+8,class,2,NA,core_cv,812.0445364463102,core area,core area metric,lsm_c_core_cv
+8,class,3,NA,core_cv,133.7823917212928,core area,core area metric,lsm_c_core_cv
+8,class,4,NA,core_cv,264.5751311064591,core area,core area metric,lsm_c_core_cv
+8,class,1,NA,core_mn,0,core area,core area metric,lsm_c_core_mn
+8,class,2,NA,core_mn,1.4418181818181819,core area,core area metric,lsm_c_core_mn
+8,class,3,NA,core_mn,63.315,core area,core area metric,lsm_c_core_mn
+8,class,4,NA,core_mn,105.9557142857143,core area,core area metric,lsm_c_core_mn
+8,class,1,NA,core_sd,0,core area,core area metric,lsm_c_core_sd
+8,class,2,NA,core_sd,11.708205770944073,core area,core area metric,lsm_c_core_sd
+8,class,3,NA,core_sd,84.70432131833653,core area,core area metric,lsm_c_core_sd
+8,class,4,NA,core_sd,280.33246998621377,core area,core area metric,lsm_c_core_sd
+8,class,1,NA,cpland,0,core area percentage of landscape,core area metric,lsm_c_cpland
+8,class,2,NA,cpland,11.362659406791805,core area percentage of landscape,core area metric,lsm_c_cpland
+8,class,3,NA,cpland,10.080240722166499,core area percentage of landscape,core area metric,lsm_c_cpland
+8,class,4,NA,cpland,59.04140994411807,core area percentage of landscape,core area metric,lsm_c_cpland
+8,class,1,NA,dcad,0,disjunct core area density,core area metric,lsm_c_dcad
+8,class,2,NA,dcad,1.751285602840267,disjunct core area density,core area metric,lsm_c_dcad
+8,class,3,NA,dcad,0.1592077820763879,disjunct core area density,core area metric,lsm_c_dcad
+8,class,4,NA,dcad,1.0348505834965211,disjunct core area density,core area metric,lsm_c_dcad
+8,class,1,NA,dcore_cv,NA,disjunct core area,core area metric,lsm_c_dcore_cv
+8,class,2,NA,dcore_cv,337.45748031479195,disjunct core area,core area metric,lsm_c_dcore_cv
+8,class,3,NA,dcore_cv,0,disjunct core area,core area metric,lsm_c_dcore_cv
+8,class,4,NA,dcore_cv,264.575131106459,disjunct core area,core area metric,lsm_c_dcore_cv
+8,class,1,NA,dcore_mn,0,disjunct core area,core area metric,lsm_c_dcore_mn
+8,class,2,NA,dcore_mn,0.2222222222222222,disjunct core area,core area metric,lsm_c_dcore_mn
+8,class,3,NA,dcore_mn,1,disjunct core area,core area metric,lsm_c_dcore_mn
+8,class,4,NA,dcore_mn,1.8571428571428572,disjunct core area,core area metric,lsm_c_dcore_mn
+8,class,1,NA,dcore_sd,0,disjunct core area,core area metric,lsm_c_dcore_sd
+8,class,2,NA,dcore_sd,0.7499055118106487,disjunct core area,core area metric,lsm_c_dcore_sd
+8,class,3,NA,dcore_sd,0,disjunct core area,core area metric,lsm_c_dcore_sd
+8,class,4,NA,dcore_sd,4.913538149119954,disjunct core area,core area metric,lsm_c_dcore_sd
+8,class,1,NA,division,0.9999986552086612,division index,aggregation metric,lsm_c_division
+8,class,2,NA,division,0.9863399894071505,division index,aggregation metric,lsm_c_division
+8,class,3,NA,division,0.987441650684352,division index,aggregation metric,lsm_c_division
+8,class,4,NA,division,0.5179509420530235,division index,aggregation metric,lsm_c_division
+8,class,1,NA,ed,2.5791660696374836,edge density,area and edge metric,lsm_c_ed
+8,class,2,NA,ed,48.95639298848928,edge density,area and edge metric,lsm_c_ed
+8,class,3,NA,ed,7.164350193437455,edge density,area and edge metric,lsm_c_ed
+8,class,4,NA,ed,52.825142092945505,edge density,area and edge metric,lsm_c_ed
+8,class,1,NA,enn_cv,175.6616980245344,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+8,class,2,NA,enn_cv,37.30786155814239,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+8,class,3,NA,enn_cv,0,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+8,class,4,NA,enn_cv,18.936407378292248,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+8,class,1,NA,enn_mn,174.09394948312794,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+8,class,2,NA,enn_mn,78.99501735734906,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+8,class,3,NA,enn_mn,60,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+8,class,4,NA,enn_mn,68.84783615248277,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+8,class,1,NA,enn_sd,305.8163878200376,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+8,class,2,NA,enn_sd,29.47135171351034,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+8,class,3,NA,enn_sd,0,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+8,class,4,NA,enn_sd,13.037306724973305,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+8,class,1,NA,frac_cv,5.761988654003747,fractal dimension index,shape metric,lsm_c_frac_cv
+8,class,2,NA,frac_cv,6.597018327110767,fractal dimension index,shape metric,lsm_c_frac_cv
+8,class,3,NA,frac_cv,0.9839665447709579,fractal dimension index,shape metric,lsm_c_frac_cv
+8,class,4,NA,frac_cv,7.348251593631578,fractal dimension index,shape metric,lsm_c_frac_cv
+8,class,1,NA,frac_mn,1.0782598610524445,fractal dimension index,shape metric,lsm_c_frac_mn
+8,class,2,NA,frac_mn,1.0489312502057602,fractal dimension index,shape metric,lsm_c_frac_mn
+8,class,3,NA,frac_mn,1.0702061618839163,fractal dimension index,shape metric,lsm_c_frac_mn
+8,class,4,NA,frac_mn,1.0575752201471291,fractal dimension index,shape metric,lsm_c_frac_mn
+8,class,1,NA,frac_sd,0.06212921085451842,fractal dimension index,shape metric,lsm_c_frac_sd
+8,class,2,NA,frac_sd,0.0691981868148661,fractal dimension index,shape metric,lsm_c_frac_sd
+8,class,3,NA,frac_sd,0.010530470593015056,fractal dimension index,shape metric,lsm_c_frac_sd
+8,class,4,NA,frac_sd,0.07771328796831409,fractal dimension index,shape metric,lsm_c_frac_sd
+8,class,1,NA,gyrate_cv,82.8855858011562,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+8,class,2,NA,gyrate_cv,268.1050427973267,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+8,class,3,NA,gyrate_cv,101.14541904753517,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+8,class,4,NA,gyrate_cv,243.50477885263143,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+8,class,1,NA,gyrate_mn,24.719038514429364,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+8,class,2,NA,gyrate_mn,31.23441642901782,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+8,class,3,NA,gyrate_mn,346.58159421466706,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+8,class,4,NA,gyrate_mn,185.03334995039532,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+8,class,1,NA,gyrate_sd,20.4885198770982,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+8,class,2,NA,gyrate_sd,83.741045534513475,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+8,class,3,NA,gyrate_sd,350.55140581005287,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+8,class,4,NA,gyrate_sd,450.5650496003257,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+8,class,1,NA,iji,35.1062922331132,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+8,class,2,NA,iji,30.447290203812198,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+8,class,3,NA,iji,9.873486775522968,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+8,class,4,NA,iji,19.215244171160627,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+8,class,1,NA,lpi,0.10030090270812438,largest patch index,area and edge metric,lsm_c_lpi
+8,class,2,NA,lpi,11.23370110330993,largest patch index,area and edge metric,lsm_c_lpi
+8,class,3,NA,lpi,11.197879352342742,largest patch index,area and edge metric,lsm_c_lpi
+8,class,4,NA,lpi,69.42971772460237,largest patch index,area and edge metric,lsm_c_lpi
+8,class,1,NA,lsi,4.487534626038781,landscape shape index,aggregation metric,lsm_c_lsi
+8,class,2,NA,lsi,10.108055009823183,landscape shape index,aggregation metric,lsm_c_lsi
+8,class,3,NA,lsi,1.9727047146401986,landscape shape index,aggregation metric,lsm_c_lsi
+8,class,4,NA,lsi,5.688430311231394,landscape shape index,aggregation metric,lsm_c_lsi
+8,class,1,NA,mesh,0.0016893537756125518,effective mesh size,aggregation metric,lsm_c_mesh
+8,class,2,NA,mesh,17.159978506949418,effective mesh size,aggregation metric,lsm_c_mesh
+8,class,3,NA,mesh,15.776049577303333,effective mesh size,aggregation metric,lsm_c_mesh
+8,class,4,NA,mesh,605.559667574151,effective mesh size,aggregation metric,lsm_c_mesh
+8,class,1,NA,ndca,0,number of disjunct core areas,core area metric,lsm_c_ndca
+8,class,2,NA,ndca,22,number of disjunct core areas,core area metric,lsm_c_ndca
+8,class,3,NA,ndca,2,number of disjunct core areas,core area metric,lsm_c_ndca
+8,class,4,NA,ndca,13,number of disjunct core areas,core area metric,lsm_c_ndca
+8,class,1,NA,nlsi,26.8,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+8,class,2,NA,nlsi,6.059078377313903,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+8,class,3,NA,nlsi,1.4805809914745816,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+8,class,4,NA,nlsi,0.8238135133803164,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+8,class,1,NA,np,10,number of patches,aggregation metric,lsm_c_np
+8,class,2,NA,np,99,number of patches,aggregation metric,lsm_c_np
+8,class,3,NA,np,2,number of patches,aggregation metric,lsm_c_np
+8,class,4,NA,np,7,number of patches,aggregation metric,lsm_c_np
+8,class,1,NA,pafrac,1.6725760220419792,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+8,class,2,NA,pafrac,1.4828261912004208,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+8,class,3,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+8,class,4,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+8,class,1,NA,para_cv,19.34969619491227,perimeter-area ratio,shape metric,lsm_c_para_cv
+8,class,2,NA,para_cv,26.52668141233011,perimeter-area ratio,shape metric,lsm_c_para_cv
+8,class,3,NA,para_cv,86.1206859953894,perimeter-area ratio,shape metric,lsm_c_para_cv
+8,class,4,NA,para_cv,49.57444108392537,perimeter-area ratio,shape metric,lsm_c_para_cv
+8,class,1,NA,para_mn,0.1158095238095238,perimeter-area ratio,shape metric,lsm_c_para_mn
+8,class,2,NA,para_mn,0.11412553637558723,perimeter-area ratio,shape metric,lsm_c_para_mn
+8,class,3,NA,para_mn,0.01494358963601593,perimeter-area ratio,shape metric,lsm_c_para_mn
+8,class,4,NA,para_mn,0.09525993407945735,perimeter-area ratio,shape metric,lsm_c_para_mn
+8,class,1,NA,para_sd,0.022408791021917444,perimeter-area ratio,shape metric,lsm_c_para_sd
+8,class,2,NA,para_sd,0.030273717444464932,perimeter-area ratio,shape metric,lsm_c_para_sd
+8,class,3,NA,para_sd,0.012869521906872832,perimeter-area ratio,shape metric,lsm_c_para_sd
+8,class,4,NA,para_sd,0.04722457989680673,perimeter-area ratio,shape metric,lsm_c_para_sd
+8,class,1,NA,pd,0.7960389103819394,patch density,aggregation metric,lsm_c_pd
+8,class,2,NA,pd,7.880785212781201,patch density,aggregation metric,lsm_c_pd
+8,class,3,NA,pd,0.1592077820763879,patch density,aggregation metric,lsm_c_pd
+8,class,4,NA,pd,0.5572272372673577,patch density,aggregation metric,lsm_c_pd
+8,class,1,NA,pladj,25,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+8,class,2,NA,pladj,80.53938688397362,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+8,class,3,NA,pladj,96.95543000627747,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+8,class,4,NA,pladj,94.96496236698675,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+8,class,1,NA,pland,0.25791660696374846,percentage of landscape,area and edge metric,lsm_c_pland
+8,class,2,NA,pland,18.555667001003012,percentage of landscape,area and edge metric,lsm_c_pland
+8,class,3,NA,pland,11.63490471414243,percentage of landscape,area and edge metric,lsm_c_pland
+8,class,4,NA,pland,69.55151167789082,percentage of landscape,area and edge metric,lsm_c_pland
+8,class,1,NA,shape_cv,26.993879253080834,shape index,shape metric,lsm_c_shape_cv
+8,class,2,NA,shape_cv,47.58985877450929,shape index,shape metric,lsm_c_shape_cv
+8,class,3,NA,shape_cv,14.629209237507343,shape index,shape metric,lsm_c_shape_cv
+8,class,4,NA,shape_cv,94.80552649525853,shape index,shape metric,lsm_c_shape_cv
+8,class,1,NA,shape_mn,1.4209276018099548,shape index,shape metric,lsm_c_shape_mn
+8,class,2,NA,shape_mn,1.3516681082204567,shape index,shape metric,lsm_c_shape_mn
+8,class,3,NA,shape_mn,1.5696171481404608,shape index,shape metric,lsm_c_shape_mn
+8,class,4,NA,shape_mn,1.7777512223782352,shape index,shape metric,lsm_c_shape_mn
+8,class,1,NA,shape_sd,0.3835634811062764,shape index,shape metric,lsm_c_shape_sd
+8,class,2,NA,shape_sd,0.6432569438021968,shape index,shape metric,lsm_c_shape_sd
+8,class,3,NA,shape_sd,0.2296225768292636,shape index,shape metric,lsm_c_shape_sd
+8,class,4,NA,shape_sd,1.6854064061515803,shape index,shape metric,lsm_c_shape_sd
+8,class,1,NA,split,743609.7862595419,splitting index,aggregation metric,lsm_c_split
+8,class,2,NA,split,73.20638539793381,splitting index,aggregation metric,lsm_c_split
+8,class,3,NA,split,79.62829945763461,splitting index,aggregation metric,lsm_c_split
+8,class,4,NA,split,2.074477656400681,splitting index,aggregation metric,lsm_c_split
+8,class,1,NA,tca,0,total core area,core area metric,lsm_c_tca
+8,class,2,NA,tca,142.74,total core area,core area metric,lsm_c_tca
+8,class,3,NA,tca,126.63,total core area,core area metric,lsm_c_tca
+8,class,4,NA,tca,741.69,total core area,core area metric,lsm_c_tca
+8,class,1,NA,te,3240,total edge,area and edge metric,lsm_c_te
+8,class,2,NA,te,61500,total edge,area and edge metric,lsm_c_te
+8,class,3,NA,te,9000,total edge,area and edge metric,lsm_c_te
+8,class,4,NA,te,66360,total edge,area and edge metric,lsm_c_te
+9,class,1,NA,ai,24.803149606299215,aggregation index,aggregation metric,lsm_c_ai
+9,class,2,NA,ai,93.0116472545757,aggregation index,aggregation metric,lsm_c_ai
+9,class,3,NA,ai,92.24683544303798,aggregation index,aggregation metric,lsm_c_ai
+9,class,4,NA,ai,72.1852970795569,aggregation index,aggregation metric,lsm_c_ai
+9,class,1,NA,area_cv,91.32217027009496,patch area,area and edge metric,lsm_c_area_cv
+9,class,2,NA,area_cv,486.86612490574424,patch area,area and edge metric,lsm_c_area_cv
+9,class,3,NA,area_cv,121.7259768511981,patch area,area and edge metric,lsm_c_area_cv
+9,class,4,NA,area_cv,358.7959478295747,patch area,area and edge metric,lsm_c_area_cv
+9,class,1,NA,area_mn,0.2843181818181818,patch area,area and edge metric,lsm_c_area_mn
+9,class,2,NA,area_mn,39.82875,patch area,area and edge metric,lsm_c_area_mn
+9,class,3,NA,area_mn,19.74,patch area,area and edge metric,lsm_c_area_mn
+9,class,4,NA,area_mn,4.652448979591837,patch area,area and edge metric,lsm_c_area_mn
+9,class,1,NA,area_sd,0.25964553410883817,patch area,area and edge metric,lsm_c_area_sd
+9,class,2,NA,area_sd,193.9126917233966,patch area,area and edge metric,lsm_c_area_sd
+9,class,3,NA,area_sd,24.0287078304265,patch area,area and edge metric,lsm_c_area_sd
+9,class,4,NA,area_sd,16.692798413613907,patch area,area and edge metric,lsm_c_area_sd
+9,class,1,NA,ca,12.51,total (class) area,area and edge metric,lsm_c_ca
+9,class,2,NA,ca,955.8899999999999,total (class) area,area and edge metric,lsm_c_ca
+9,class,3,NA,ca,59.22,total (class) area,area and edge metric,lsm_c_ca
+9,class,4,NA,ca,227.97,total (class) area,area and edge metric,lsm_c_ca
+9,class,1,NA,cai_cv,NA,core area index,core area metric,lsm_c_cai_cv
+9,class,2,NA,cai_cv,418.69163786273344,core area index,core area metric,lsm_c_cai_cv
+9,class,3,NA,cai_cv,86.60769713848644,core area index,core area metric,lsm_c_cai_cv
+9,class,4,NA,cai_cv,142.48741995881628,core area index,core area metric,lsm_c_cai_cv
+9,class,1,NA,cai_mn,0,core area index,core area metric,lsm_c_cai_mn
+9,class,2,NA,cai_mn,3.9059187797111643,core area index,core area metric,lsm_c_cai_mn
+9,class,3,NA,cai_mn,44.51121794871795,core area index,core area metric,lsm_c_cai_mn
+9,class,4,NA,cai_mn,9.581417885207436,core area index,core area metric,lsm_c_cai_mn
+9,class,1,NA,cai_sd,0,core area index,core area metric,lsm_c_cai_sd
+9,class,2,NA,cai_sd,16.353755312360764,core area index,core area metric,lsm_c_cai_sd
+9,class,3,NA,cai_sd,38.55014083367726,core area index,core area metric,lsm_c_cai_sd
+9,class,4,NA,cai_sd,13.652315140104651,core area index,core area metric,lsm_c_cai_sd
+9,class,1,NA,circle_cv,69.2224865741249,related circumscribing circle,shape metric,lsm_c_circle_cv
+9,class,2,NA,circle_cv,99.69697781703364,related circumscribing circle,shape metric,lsm_c_circle_cv
+9,class,3,NA,circle_cv,30.78978923150326,related circumscribing circle,shape metric,lsm_c_circle_cv
+9,class,4,NA,circle_cv,41.682956111011364,related circumscribing circle,shape metric,lsm_c_circle_cv
+9,class,1,NA,circle_mn,0.46499589467454516,related circumscribing circle,shape metric,lsm_c_circle_mn
+9,class,2,NA,circle_mn,0.31818394112338455,related circumscribing circle,shape metric,lsm_c_circle_mn
+9,class,3,NA,circle_mn,0.626282280710085,related circumscribing circle,shape metric,lsm_c_circle_mn
+9,class,4,NA,circle_mn,0.5814867619890677,related circumscribing circle,shape metric,lsm_c_circle_mn
+9,class,1,NA,circle_sd,0.321881720761319,related circumscribing circle,shape metric,lsm_c_circle_sd
+9,class,2,NA,circle_sd,0.3172197731991441,related circumscribing circle,shape metric,lsm_c_circle_sd
+9,class,3,NA,circle_sd,0.19283099422488675,related circumscribing circle,shape metric,lsm_c_circle_sd
+9,class,4,NA,circle_sd,0.2423808717912442,related circumscribing circle,shape metric,lsm_c_circle_sd
+9,class,1,NA,clumpy,0.24447234289024036,clumpiness index,aggregation metric,lsm_c_clumpy
+9,class,2,NA,clumpy,0.7425531979259316,clumpiness index,aggregation metric,lsm_c_clumpy
+9,class,3,NA,clumpy,0.9310424852486464,clumpiness index,aggregation metric,lsm_c_clumpy
+9,class,4,NA,clumpy,0.665689572136756,clumpiness index,aggregation metric,lsm_c_clumpy
+9,class,1,NA,cohesion,53.90787408071467,patch cohesion index,aggregation metric,lsm_c_cohesion
+9,class,2,NA,cohesion,99.81777345648979,patch cohesion index,aggregation metric,lsm_c_cohesion
+9,class,3,NA,cohesion,95.69691313685624,patch cohesion index,aggregation metric,lsm_c_cohesion
+9,class,4,NA,cohesion,95.85183506425997,patch cohesion index,aggregation metric,lsm_c_cohesion
+9,class,1,NA,contig_cv,84.36103461436919,contiguity index,shape metric,lsm_c_contig_cv
+9,class,2,NA,contig_cv,142.2467558538634,contiguity index,shape metric,lsm_c_contig_cv
+9,class,3,NA,contig_cv,31.69953077050574,contiguity index,shape metric,lsm_c_contig_cv
+9,class,4,NA,contig_cv,58.73979309991376,contiguity index,shape metric,lsm_c_contig_cv
+9,class,1,NA,contig_mn,0.13596715784215785,contiguity index,shape metric,lsm_c_contig_mn
+9,class,2,NA,contig_mn,0.15772748052831875,contiguity index,shape metric,lsm_c_contig_mn
+9,class,3,NA,contig_mn,0.7360977564102564,contiguity index,shape metric,lsm_c_contig_mn
+9,class,4,NA,contig_mn,0.3941435832682704,contiguity index,shape metric,lsm_c_contig_mn
+9,class,1,NA,contig_sd,0.11470330109139677,contiguity index,shape metric,lsm_c_contig_sd
+9,class,2,NA,contig_sd,0.22436222414156748,contiguity index,shape metric,lsm_c_contig_sd
+9,class,3,NA,contig_sd,0.2333395347942716,contiguity index,shape metric,lsm_c_contig_sd
+9,class,4,NA,contig_sd,0.23151912532836835,contiguity index,shape metric,lsm_c_contig_sd
+9,class,1,NA,core_cv,NA,core area,core area metric,lsm_c_core_cv
+9,class,2,NA,core_cv,489.77611812605636,core area,core area metric,lsm_c_core_cv
+9,class,3,NA,core_cv,125.00030953714078,core area,core area metric,lsm_c_core_cv
+9,class,4,NA,core_cv,437.61892642333476,core area,core area metric,lsm_c_core_cv
+9,class,1,NA,core_mn,0,core area,core area metric,lsm_c_core_mn
+9,class,2,NA,core_mn,31.46625,core area,core area metric,lsm_c_core_mn
+9,class,3,NA,core_mn,12.93,core area,core area metric,lsm_c_core_mn
+9,class,4,NA,core_mn,1.4840816326530613,core area,core area metric,lsm_c_core_mn
+9,class,1,NA,core_sd,0,core area,core area metric,lsm_c_core_sd
+9,class,2,NA,core_sd,154.1141777698402,core area,core area metric,lsm_c_core_sd
+9,class,3,NA,core_sd,16.162540023152303,core area,core area metric,lsm_c_core_sd
+9,class,4,NA,core_sd,6.494622108062225,core area,core area metric,lsm_c_core_sd
+9,class,1,NA,cpland,0,core area percentage of landscape,core area metric,lsm_c_cpland
+9,class,2,NA,cpland,60.14622607698373,core area percentage of landscape,core area metric,lsm_c_cpland
+9,class,3,NA,cpland,3.0893842735287795,core area percentage of landscape,core area metric,lsm_c_cpland
+9,class,4,NA,cpland,5.791699519747689,core area percentage of landscape,core area metric,lsm_c_cpland
+9,class,1,NA,dcad,0,disjunct core area density,core area metric,lsm_c_dcad
+9,class,2,NA,dcad,1.035369826137513,disjunct core area density,core area metric,lsm_c_dcad
+9,class,3,NA,dcad,0.2389314983394261,disjunct core area density,core area metric,lsm_c_dcad
+9,class,4,NA,dcad,5.734355960146226,disjunct core area density,core area metric,lsm_c_dcad
+9,class,1,NA,dcore_cv,NA,disjunct core area,core area metric,lsm_c_dcore_cv
+9,class,2,NA,dcore_cv,452.1452168765332,disjunct core area,core area metric,lsm_c_dcore_cv
+9,class,3,NA,dcore_cv,100,disjunct core area,core area metric,lsm_c_dcore_cv
+9,class,4,NA,dcore_cv,270.480539451958,disjunct core area,core area metric,lsm_c_dcore_cv
+9,class,1,NA,dcore_mn,0,disjunct core area,core area metric,lsm_c_dcore_mn
+9,class,2,NA,dcore_mn,0.5416666666666666,disjunct core area,core area metric,lsm_c_dcore_mn
+9,class,3,NA,dcore_mn,1,disjunct core area,core area metric,lsm_c_dcore_mn
+9,class,4,NA,dcore_mn,1.469387755102041,disjunct core area,core area metric,lsm_c_dcore_mn
+9,class,1,NA,dcore_sd,0,disjunct core area,core area metric,lsm_c_dcore_sd
+9,class,2,NA,dcore_sd,2.449119924747888,disjunct core area,core area metric,lsm_c_dcore_sd
+9,class,3,NA,dcore_sd,1,disjunct core area,core area metric,lsm_c_dcore_sd
+9,class,4,NA,dcore_sd,3.9744079266410157,disjunct core area,core area metric,lsm_c_dcore_sd
+9,class,1,NA,division,0.9999959050590458,division index,aggregation metric,lsm_c_division
+9,class,2,NA,division,0.4272645977850089,division index,aggregation metric,lsm_c_division
+9,class,3,NA,division,0.9985260062224298,division index,aggregation metric,lsm_c_division
+9,class,4,NA,division,0.990843172542197,division index,aggregation metric,lsm_c_division
+9,class,1,NA,ed,10.274054428595322,edge density,area and edge metric,lsm_c_ed
+9,class,2,NA,ed,79.03853965068215,edge density,area and edge metric,lsm_c_ed
+9,class,3,NA,ed,7.024586051179128,edge density,area and edge metric,lsm_c_ed
+9,class,4,NA,ed,70.771509808138,edge density,area and edge metric,lsm_c_ed
+9,class,1,NA,enn_cv,125.86532608930129,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+9,class,2,NA,enn_cv,19.05146854281187,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+9,class,3,NA,enn_cv,75.58391557686892,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+9,class,4,NA,enn_cv,49.85673102702769,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+9,class,1,NA,enn_mn,148.8982921381843,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+9,class,2,NA,enn_mn,71.73565277467806,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+9,class,3,NA,enn_mn,372.59406699226014,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+9,class,4,NA,enn_mn,87.21768243685192,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+9,class,1,NA,enn_sd,187.41132094112615,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+9,class,2,NA,enn_sd,13.666695322348541,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+9,class,3,NA,enn_sd,281.6211850398523,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+9,class,4,NA,enn_sd,43.48388534054843,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+9,class,1,NA,frac_cv,5.782349243777391,fractal dimension index,shape metric,lsm_c_frac_cv
+9,class,2,NA,frac_cv,6.2679241264910734,fractal dimension index,shape metric,lsm_c_frac_cv
+9,class,3,NA,frac_cv,5.097812708416571,fractal dimension index,shape metric,lsm_c_frac_cv
+9,class,4,NA,frac_cv,6.886356647470266,fractal dimension index,shape metric,lsm_c_frac_cv
+9,class,1,NA,frac_mn,1.0610666254946426,fractal dimension index,shape metric,lsm_c_frac_mn
+9,class,2,NA,frac_mn,1.0506292595552043,fractal dimension index,shape metric,lsm_c_frac_mn
+9,class,3,NA,frac_mn,1.0827162647052513,fractal dimension index,shape metric,lsm_c_frac_mn
+9,class,4,NA,frac_mn,1.0943458063036244,fractal dimension index,shape metric,lsm_c_frac_mn
+9,class,1,NA,frac_sd,0.06135457799526375,fractal dimension index,shape metric,lsm_c_frac_sd
+9,class,2,NA,frac_sd,0.06585264483963517,fractal dimension index,shape metric,lsm_c_frac_sd
+9,class,3,NA,frac_sd,0.0551948473382375,fractal dimension index,shape metric,lsm_c_frac_sd
+9,class,4,NA,frac_sd,0.07536055517870172,fractal dimension index,shape metric,lsm_c_frac_sd
+9,class,1,NA,gyrate_cv,98.63668325759177,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+9,class,2,NA,gyrate_cv,390.5378581060796,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+9,class,3,NA,gyrate_cv,94.94145519070811,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+9,class,4,NA,gyrate_cv,167.9486306082156,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+9,class,1,NA,gyrate_mn,21.53067596444142,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+9,class,2,NA,gyrate_mn,70.49666530905154,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+9,class,3,NA,gyrate_mn,192.45350362550613,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+9,class,4,NA,gyrate_mn,78.22365193296304,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+9,class,1,NA,gyrate_sd,21.237144654264526,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+9,class,2,NA,gyrate_sd,275.31616673418154,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+9,class,3,NA,gyrate_sd,182.7181569075577,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+9,class,4,NA,gyrate_sd,131.3755522331484,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+9,class,1,NA,iji,51.067126189335,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+9,class,2,NA,iji,40.45041422803565,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+9,class,3,NA,iji,14.75292079335197,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+9,class,4,NA,iji,33.466287678026305,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+9,class,1,NA,lpi,0.09318328435237618,largest patch index,area and edge metric,lsm_c_lpi
+9,class,2,NA,lpi,75.67916278402981,largest patch index,area and edge metric,lsm_c_lpi
+9,class,3,NA,lpi,3.727331374095047,largest patch index,area and edge metric,lsm_c_lpi
+9,class,4,NA,lpi,9.210809260984876,largest patch index,area and edge metric,lsm_c_lpi
+9,class,1,NA,lsi,9.110169491525424,landscape shape index,aggregation metric,lsm_c_lsi
+9,class,2,NA,lsi,8.135510996119017,landscape shape index,aggregation metric,lsm_c_lsi
+9,class,3,NA,lsi,2.9220779220779223,landscape shape index,aggregation metric,lsm_c_lsi
+9,class,4,NA,lsi,14.721854304635762,landscape shape index,aggregation metric,lsm_c_lsi
+9,class,1,NA,mesh,0.00514156691276611,effective mesh size,aggregation metric,lsm_c_mesh
+9,class,2,NA,mesh,719.1208436671207,effective mesh size,aggregation metric,lsm_c_mesh
+9,class,3,NA,mesh,1.8507318471794139,effective mesh size,aggregation metric,lsm_c_mesh
+9,class,4,NA,mesh,11.497220987742816,effective mesh size,aggregation metric,lsm_c_mesh
+9,class,1,NA,ndca,0,number of disjunct core areas,core area metric,lsm_c_ndca
+9,class,2,NA,ndca,13,number of disjunct core areas,core area metric,lsm_c_ndca
+9,class,3,NA,ndca,3,number of disjunct core areas,core area metric,lsm_c_ndca
+9,class,4,NA,ndca,72,number of disjunct core areas,core area metric,lsm_c_ndca
+9,class,1,NA,nlsi,25.299212598425196,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+9,class,2,NA,nlsi,0.8928151395274243,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+9,class,3,NA,nlsi,3.518987341772152,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+9,class,4,NA,nlsi,8.934340382678752,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+9,class,1,NA,np,44,number of patches,aggregation metric,lsm_c_np
+9,class,2,NA,np,24,number of patches,aggregation metric,lsm_c_np
+9,class,3,NA,np,3,number of patches,aggregation metric,lsm_c_np
+9,class,4,NA,np,49,number of patches,aggregation metric,lsm_c_np
+9,class,1,NA,pafrac,1.7040151595922621,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+9,class,2,NA,pafrac,1.4464519890176604,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+9,class,3,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+9,class,4,NA,pafrac,1.547689877103881,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+9,class,1,NA,para_cv,17.6914734422344,perimeter-area ratio,shape metric,lsm_c_para_cv
+9,class,2,NA,para_cv,29.086111004255702,perimeter-area ratio,shape metric,lsm_c_para_cv
+9,class,3,NA,para_cv,89.18979103781669,perimeter-area ratio,shape metric,lsm_c_para_cv
+9,class,4,NA,para_cv,41.52812024531835,perimeter-area ratio,shape metric,lsm_c_para_cv
+9,class,1,NA,para_mn,0.11413156288156288,perimeter-area ratio,shape metric,lsm_c_para_mn
+9,class,2,NA,para_mn,0.11158155605067899,perimeter-area ratio,shape metric,lsm_c_para_mn
+9,class,3,NA,para_mn,0.029559294871794872,perimeter-area ratio,shape metric,lsm_c_para_mn
+9,class,4,NA,para_mn,0.07559490893560698,perimeter-area ratio,shape metric,lsm_c_para_mn
+9,class,1,NA,para_sd,0.02019155513639875,perimeter-area ratio,shape metric,lsm_c_para_sd
+9,class,2,NA,para_sd,0.032454735253176284,perimeter-area ratio,shape metric,lsm_c_para_sd
+9,class,3,NA,para_sd,0.026363873328405913,perimeter-area ratio,shape metric,lsm_c_para_sd
+9,class,4,NA,para_sd,0.03139314468211778,perimeter-area ratio,shape metric,lsm_c_para_sd
+9,class,1,NA,pd,3.5043286423115827,patch density,aggregation metric,lsm_c_pd
+9,class,2,NA,pd,1.9114519867154087,patch density,aggregation metric,lsm_c_pd
+9,class,3,NA,pd,0.2389314983394261,patch density,aggregation metric,lsm_c_pd
+9,class,4,NA,pd,3.902547806210626,patch density,aggregation metric,lsm_c_pd
+9,class,1,NA,pladj,22.99270072992701,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+9,class,2,NA,pladj,92.93212368783547,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+9,class,3,NA,pladj,89.6923076923077,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+9,class,4,NA,pladj,71.18172790466733,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+9,class,1,NA,pland,0.996344348075407,percentage of landscape,area and edge metric,lsm_c_pland
+9,class,2,NA,pland,76.13074331589132,percentage of landscape,area and edge metric,lsm_c_pland
+9,class,3,NA,pland,4.716507777220271,percentage of landscape,area and edge metric,lsm_c_pland
+9,class,4,NA,pland,18.156404558812987,percentage of landscape,area and edge metric,lsm_c_pland
+9,class,1,NA,shape_cv,30.283023244433824,shape index,shape metric,lsm_c_shape_cv
+9,class,2,NA,shape_cv,91.45846872328245,shape index,shape metric,lsm_c_shape_cv
+9,class,3,NA,shape_cv,40.909759881148986,shape index,shape metric,lsm_c_shape_cv
+9,class,4,NA,shape_cv,69.29185252332293,shape index,shape metric,lsm_c_shape_cv
+9,class,1,NA,shape_mn,1.3358382810623537,shape index,shape metric,lsm_c_shape_mn
+9,class,2,NA,shape_mn,1.481440228457127,shape index,shape metric,lsm_c_shape_mn
+9,class,3,NA,shape_mn,1.7040524205545982,shape index,shape metric,lsm_c_shape_mn
+9,class,4,NA,shape_mn,1.833419673499585,shape index,shape metric,lsm_c_shape_mn
+9,class,1,NA,shape_sd,0.4045322171621578,shape index,shape metric,lsm_c_shape_sd
+9,class,2,NA,shape_sd,1.3549025479975856,shape index,shape metric,lsm_c_shape_sd
+9,class,3,NA,shape_sd,0.6971237534977932,shape index,shape metric,lsm_c_shape_sd
+9,class,4,NA,shape_sd,1.2704104562949212,shape index,shape metric,lsm_c_shape_sd
+9,class,1,NA,split,244203.765370138,splitting index,aggregation metric,lsm_c_split
+9,class,2,NA,split,1.7460069626089292,splitting index,aggregation metric,lsm_c_split
+9,class,3,NA,split,678.4289155198617,splitting index,aggregation metric,lsm_c_split
+9,class,4,NA,split,109.20812962876718,splitting index,aggregation metric,lsm_c_split
+9,class,1,NA,tca,0,total core area,core area metric,lsm_c_tca
+9,class,2,NA,tca,755.1899999999999,total core area,core area metric,lsm_c_tca
+9,class,3,NA,tca,38.79,total core area,core area metric,lsm_c_tca
+9,class,4,NA,tca,72.72,total core area,core area metric,lsm_c_tca
+9,class,1,NA,te,12900,total edge,area and edge metric,lsm_c_te
+9,class,2,NA,te,99240,total edge,area and edge metric,lsm_c_te
+9,class,3,NA,te,8820,total edge,area and edge metric,lsm_c_te
+9,class,4,NA,te,88860,total edge,area and edge metric,lsm_c_te
+10,class,1,NA,ai,26.436781609195403,aggregation index,aggregation metric,lsm_c_ai
+10,class,2,NA,ai,96.12453912331011,aggregation index,aggregation metric,lsm_c_ai
+10,class,3,NA,ai,83.9622641509434,aggregation index,aggregation metric,lsm_c_ai
+10,class,4,NA,ai,72.41029113067027,aggregation index,aggregation metric,lsm_c_ai
+10,class,1,NA,area_cv,89.4478771242224,patch area,area and edge metric,lsm_c_area_cv
+10,class,2,NA,area_cv,262.0749822230273,patch area,area and edge metric,lsm_c_area_cv
+10,class,3,NA,area_cv,NA,patch area,area and edge metric,lsm_c_area_cv
+10,class,4,NA,area_cv,245.10180307101663,patch area,area and edge metric,lsm_c_area_cv
+10,class,1,NA,area_mn,0.17653846153846153,patch area,area and edge metric,lsm_c_area_mn
+10,class,2,NA,area_mn,158.34857142857143,patch area,area and edge metric,lsm_c_area_mn
+10,class,3,NA,area_mn,5.49,patch area,area and edge metric,lsm_c_area_mn
+10,class,4,NA,area_mn,2.5266666666666664,patch area,area and edge metric,lsm_c_area_mn
+10,class,1,NA,area_sd,0.1579099061539157,patch area,area and edge metric,lsm_c_area_sd
+10,class,2,NA,area_sd,414.99199042184625,patch area,area and edge metric,lsm_c_area_sd
+10,class,3,NA,area_sd,NA,patch area,area and edge metric,lsm_c_area_sd
+10,class,4,NA,area_sd,6.192905557594353,patch area,area and edge metric,lsm_c_area_sd
+10,class,1,NA,ca,4.59,total (class) area,area and edge metric,lsm_c_ca
+10,class,2,NA,ca,1108.44,total (class) area,area and edge metric,lsm_c_ca
+10,class,3,NA,ca,5.49,total (class) area,area and edge metric,lsm_c_ca
+10,class,4,NA,ca,136.44,total (class) area,area and edge metric,lsm_c_ca
+10,class,1,NA,cai_cv,509.9019513592785,core area index,core area metric,lsm_c_cai_cv
+10,class,2,NA,cai_cv,196.0173748710339,core area index,core area metric,lsm_c_cai_cv
+10,class,3,NA,cai_cv,NA,core area index,core area metric,lsm_c_cai_cv
+10,class,4,NA,cai_cv,177.54969377981993,core area index,core area metric,lsm_c_cai_cv
+10,class,1,NA,cai_mn,0.4807692307692308,core area index,core area metric,lsm_c_cai_mn
+10,class,2,NA,cai_mn,16.925311551353147,core area index,core area metric,lsm_c_cai_mn
+10,class,3,NA,cai_mn,24.590163934426226,core area index,core area metric,lsm_c_cai_mn
+10,class,4,NA,cai_mn,8.23289027542835,core area index,core area metric,lsm_c_cai_mn
+10,class,1,NA,cai_sd,2.4514516892273006,core area index,core area metric,lsm_c_cai_sd
+10,class,2,NA,cai_sd,33.176551391706305,core area index,core area metric,lsm_c_cai_sd
+10,class,3,NA,cai_sd,NA,core area index,core area metric,lsm_c_cai_sd
+10,class,4,NA,cai_sd,14.617471473251607,core area index,core area metric,lsm_c_cai_sd
+10,class,1,NA,circle_cv,132.87830350701267,related circumscribing circle,shape metric,lsm_c_circle_cv
+10,class,2,NA,circle_cv,85.11422215007137,related circumscribing circle,shape metric,lsm_c_circle_cv
+10,class,3,NA,circle_cv,NA,related circumscribing circle,shape metric,lsm_c_circle_cv
+10,class,4,NA,circle_cv,41.40373907539174,related circumscribing circle,shape metric,lsm_c_circle_cv
+10,class,1,NA,circle_mn,0.22668471031650383,related circumscribing circle,shape metric,lsm_c_circle_mn
+10,class,2,NA,circle_mn,0.3738917875133799,related circumscribing circle,shape metric,lsm_c_circle_mn
+10,class,3,NA,circle_mn,0.8509258882363822,related circumscribing circle,shape metric,lsm_c_circle_mn
+10,class,4,NA,circle_mn,0.5753724633179167,related circumscribing circle,shape metric,lsm_c_circle_mn
+10,class,1,NA,circle_sd,0.30121479737835644,related circumscribing circle,shape metric,lsm_c_circle_sd
+10,class,2,NA,circle_sd,0.318235086625011,related circumscribing circle,shape metric,lsm_c_circle_sd
+10,class,3,NA,circle_sd,NA,related circumscribing circle,shape metric,lsm_c_circle_sd
+10,class,4,NA,circle_sd,0.23822571342380428,related circumscribing circle,shape metric,lsm_c_circle_sd
+10,class,1,NA,clumpy,0.2647527029673635,clumpiness index,aggregation metric,lsm_c_clumpy
+10,class,2,NA,clumpy,0.7343630793145559,clumpiness index,aggregation metric,lsm_c_clumpy
+10,class,3,NA,clumpy,0.8389179653682596,clumpiness index,aggregation metric,lsm_c_clumpy
+10,class,4,NA,clumpy,0.6999080732415977,clumpiness index,aggregation metric,lsm_c_clumpy
+10,class,1,NA,cohesion,36.32224482218259,patch cohesion index,aggregation metric,lsm_c_cohesion
+10,class,2,NA,cohesion,99.89067613823346,patch cohesion index,aggregation metric,lsm_c_cohesion
+10,class,3,NA,cohesion,87.94104040053891,patch cohesion index,aggregation metric,lsm_c_cohesion
+10,class,4,NA,cohesion,90.1947039110671,patch cohesion index,aggregation metric,lsm_c_cohesion
+10,class,1,NA,contig_cv,164.698768188476,contiguity index,shape metric,lsm_c_contig_cv
+10,class,2,NA,contig_cv,103.87568096583527,contiguity index,shape metric,lsm_c_contig_cv
+10,class,3,NA,contig_cv,NA,contiguity index,shape metric,lsm_c_contig_cv
+10,class,4,NA,contig_cv,61.58846873912089,contiguity index,shape metric,lsm_c_contig_cv
+10,class,1,NA,contig_mn,0.0889423076923077,contiguity index,shape metric,lsm_c_contig_mn
+10,class,2,NA,contig_mn,0.34263566422888286,contiguity index,shape metric,lsm_c_contig_mn
+10,class,3,NA,contig_mn,0.6912568306010929,contiguity index,shape metric,lsm_c_contig_mn
+10,class,4,NA,contig_mn,0.36502816553045636,contiguity index,shape metric,lsm_c_contig_mn
+10,class,1,NA,contig_sd,0.14648688516763492,contiguity index,shape metric,lsm_c_contig_sd
+10,class,2,NA,contig_sd,0.35591512944956494,contiguity index,shape metric,lsm_c_contig_sd
+10,class,3,NA,contig_sd,NA,contiguity index,shape metric,lsm_c_contig_sd
+10,class,4,NA,contig_sd,0.2248152576167116,contiguity index,shape metric,lsm_c_contig_sd
+10,class,1,NA,core_cv,509.9019513592785,core area,core area metric,lsm_c_core_cv
+10,class,2,NA,core_cv,263.79771625231393,core area,core area metric,lsm_c_core_cv
+10,class,3,NA,core_cv,NA,core area,core area metric,lsm_c_core_cv
+10,class,4,NA,core_cv,381.40082245616907,core area,core area metric,lsm_c_core_cv
+10,class,1,NA,core_mn,0.003461538461538461,core area,core area metric,lsm_c_core_mn
+10,class,2,NA,core_mn,137.68714285714285,core area,core area metric,lsm_c_core_mn
+10,class,3,NA,core_mn,1.35,core area,core area metric,lsm_c_core_mn
+10,class,4,NA,core_mn,0.9066666666666666,core area,core area metric,lsm_c_core_mn
+10,class,1,NA,core_sd,0.01765045216243656,core area,core area metric,lsm_c_core_sd
+10,class,2,NA,core_sd,363.2155384302038,core area,core area metric,lsm_c_core_sd
+10,class,3,NA,core_sd,NA,core area,core area metric,lsm_c_core_sd
+10,class,4,NA,core_sd,3.4580341236025993,core area,core area metric,lsm_c_core_sd
+10,class,1,NA,cpland,0.007171543316121629,core area percentage of landscape,core area metric,lsm_c_cpland
+10,class,2,NA,cpland,76.80005737234652,core area percentage of landscape,core area metric,lsm_c_cpland
+10,class,3,NA,cpland,0.10757314974182446,core area percentage of landscape,core area metric,lsm_c_cpland
+10,class,4,NA,cpland,3.901319563970166,core area percentage of landscape,core area metric,lsm_c_cpland
+10,class,1,NA,dcad,0.07968381462357366,disjunct core area density,core area metric,lsm_c_dcad
+10,class,2,NA,dcad,0.6374705169885893,disjunct core area density,core area metric,lsm_c_dcad
+10,class,3,NA,dcad,0.23905144387072097,disjunct core area density,core area metric,lsm_c_dcad
+10,class,4,NA,dcad,3.027984955695799,disjunct core area density,core area metric,lsm_c_dcad
+10,class,1,NA,dcore_cv,509.9019513592785,disjunct core area,core area metric,lsm_c_dcore_cv
+10,class,2,NA,dcore_cv,178.09758560968763,disjunct core area,core area metric,lsm_c_dcore_cv
+10,class,3,NA,dcore_cv,NA,disjunct core area,core area metric,lsm_c_dcore_cv
+10,class,4,NA,dcore_cv,184.41611452898272,disjunct core area,core area metric,lsm_c_dcore_cv
+10,class,1,NA,dcore_mn,0.038461538461538464,disjunct core area,core area metric,lsm_c_dcore_mn
+10,class,2,NA,dcore_mn,1.1428571428571428,disjunct core area,core area metric,lsm_c_dcore_mn
+10,class,3,NA,dcore_mn,3,disjunct core area,core area metric,lsm_c_dcore_mn
+10,class,4,NA,dcore_mn,0.7037037037037037,disjunct core area,core area metric,lsm_c_dcore_mn
+10,class,1,NA,dcore_sd,0.19611613513818404,disjunct core area,core area metric,lsm_c_dcore_sd
+10,class,2,NA,dcore_sd,2.0354009783964297,disjunct core area,core area metric,lsm_c_dcore_sd
+10,class,3,NA,dcore_sd,NA,disjunct core area,core area metric,lsm_c_dcore_sd
+10,class,4,NA,dcore_sd,1.2977430281669153,disjunct core area,core area metric,lsm_c_dcore_sd
+10,class,1,NA,division,0.9999990896707064,division index,aggregation metric,lsm_c_division
+10,class,2,NA,division,0.23245214280612325,division index,aggregation metric,lsm_c_division
+10,class,3,NA,division,0.9999808625124216,division index,aggregation metric,lsm_c_division
+10,class,4,NA,division,0.9984904683071274,division index,aggregation metric,lsm_c_division
+10,class,1,NA,ed,3.7770128131573912,edge density,area and edge metric,lsm_c_ed
+10,class,2,NA,ed,54.312488047427806,edge density,area and edge metric,lsm_c_ed
+10,class,3,NA,ed,1.5777395295467584,edge density,area and edge metric,lsm_c_ed
+10,class,4,NA,ed,42.50334672021419,edge density,area and edge metric,lsm_c_ed
+10,class,1,NA,enn_cv,96.7250984842327,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+10,class,2,NA,enn_cv,14.448894854417674,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+10,class,3,NA,enn_cv,NA,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+10,class,4,NA,enn_cv,76.3773393587727,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_cv
+10,class,1,NA,enn_mn,328.69664646420415,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+10,class,2,NA,enn_mn,64.56212186676848,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+10,class,3,NA,enn_mn,NA,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+10,class,4,NA,enn_mn,113.5244331143486,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_mn
+10,class,1,NA,enn_sd,317.93215500687165,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+10,class,2,NA,enn_sd,9.328513104310378,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+10,class,3,NA,enn_sd,NA,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+10,class,4,NA,enn_sd,86.70694153486896,euclidean nearest neighbor distance,aggregation metric,lsm_c_enn_sd
+10,class,1,NA,frac_cv,4.0108268971699355,fractal dimension index,shape metric,lsm_c_frac_cv
+10,class,2,NA,frac_cv,7.509451030474152,fractal dimension index,shape metric,lsm_c_frac_cv
+10,class,3,NA,frac_cv,NA,fractal dimension index,shape metric,lsm_c_frac_cv
+10,class,4,NA,frac_cv,5.880836915396294,fractal dimension index,shape metric,lsm_c_frac_cv
+10,class,1,NA,frac_mn,1.0225941231472606,fractal dimension index,shape metric,lsm_c_frac_mn
+10,class,2,NA,frac_mn,1.0769889892926028,fractal dimension index,shape metric,lsm_c_frac_mn
+10,class,3,NA,frac_mn,1.13706680818529,fractal dimension index,shape metric,lsm_c_frac_mn
+10,class,4,NA,frac_mn,1.083311990212454,fractal dimension index,shape metric,lsm_c_frac_mn
+10,class,1,NA,frac_sd,0.04101448014006938,fractal dimension index,shape metric,lsm_c_frac_sd
+10,class,2,NA,frac_sd,0.08087596075452652,fractal dimension index,shape metric,lsm_c_frac_sd
+10,class,3,NA,frac_sd,NA,fractal dimension index,shape metric,lsm_c_frac_sd
+10,class,4,NA,frac_sd,0.06370781142932828,fractal dimension index,shape metric,lsm_c_frac_sd
+10,class,1,NA,gyrate_cv,142.17238205283527,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+10,class,2,NA,gyrate_cv,219.6500505944292,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+10,class,3,NA,gyrate_cv,NA,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+10,class,4,NA,gyrate_cv,126.38907749988508,radius of gyration,area and edge metric,lsm_c_gyrate_cv
+10,class,1,NA,gyrate_mn,9.081993811598876,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+10,class,2,NA,gyrate_mn,221.57379035363158,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+10,class,3,NA,gyrate_mn,157.85486710864035,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+10,class,4,NA,gyrate_mn,61.26247387442425,radius of gyration,area and edge metric,lsm_c_gyrate_mn
+10,class,1,NA,gyrate_sd,12.91208693984121,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+10,class,2,NA,gyrate_sd,486.68694261574626,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+10,class,3,NA,gyrate_sd,NA,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+10,class,4,NA,gyrate_sd,77.42907558349292,radius of gyration,area and edge metric,lsm_c_gyrate_sd
+10,class,1,NA,iji,41.92680777743264,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+10,class,2,NA,iji,35.80339159200364,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+10,class,3,NA,iji,41.265782878065174,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+10,class,4,NA,iji,6.573414411806905,interspersion and juxtaposition index,aggregation metric,lsm_c_iji
+10,class,1,NA,lpi,0.05737234652897303,largest patch index,area and edge metric,lsm_c_lpi
+10,class,2,NA,lpi,87.60757314974182,largest patch index,area and edge metric,lsm_c_lpi
+10,class,3,NA,lpi,0.4374641422834194,largest patch index,area and edge metric,lsm_c_lpi
+10,class,4,NA,lpi,3.1483075157773954,largest patch index,area and edge metric,lsm_c_lpi
+10,class,1,NA,lsi,5.524475524475524,landscape shape index,aggregation metric,lsm_c_lsi
+10,class,2,NA,lsi,5.262051359062922,landscape shape index,aggregation metric,lsm_c_lsi
+10,class,3,NA,lsi,2.1108742004264394,landscape shape index,aggregation metric,lsm_c_lsi
+10,class,4,NA,lsi,11.463414634146341,landscape shape index,aggregation metric,lsm_c_lsi
+10,class,1,NA,mesh,0.0011424268502581757,effective mesh size,aggregation metric,lsm_c_mesh
+10,class,2,NA,mesh,963.2418588640274,effective mesh size,aggregation metric,lsm_c_mesh
+10,class,3,NA,mesh,0.024016781411359725,effective mesh size,aggregation metric,lsm_c_mesh
+10,class,4,NA,mesh,1.8944018932874356,effective mesh size,aggregation metric,lsm_c_mesh
+10,class,1,NA,ndca,1,number of disjunct core areas,core area metric,lsm_c_ndca
+10,class,2,NA,ndca,8,number of disjunct core areas,core area metric,lsm_c_ndca
+10,class,3,NA,ndca,3,number of disjunct core areas,core area metric,lsm_c_ndca
+10,class,4,NA,ndca,38,number of disjunct core areas,core area metric,lsm_c_ndca
+10,class,1,NA,nlsi,27.06896551724138,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+10,class,2,NA,nlsi,1.0641523273938691,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+10,class,3,NA,nlsi,9.18867924528302,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+10,class,4,NA,nlsi,9.042654028436019,normalized landscape shape index,aggregation metric,lsm_c_nlsi
+10,class,1,NA,np,26,number of patches,aggregation metric,lsm_c_np
+10,class,2,NA,np,7,number of patches,aggregation metric,lsm_c_np
+10,class,3,NA,np,1,number of patches,aggregation metric,lsm_c_np
+10,class,4,NA,np,54,number of patches,aggregation metric,lsm_c_np
+10,class,1,NA,pafrac,1.4604647147053473,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+10,class,2,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+10,class,3,NA,pafrac,NA,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+10,class,4,NA,pafrac,1.4729753018481393,perimeter-area fractal dimension,shape metric,lsm_c_pafrac
+10,class,1,NA,para_cv,19.32323950688845,perimeter-area ratio,shape metric,lsm_c_para_cv
+10,class,2,NA,para_cv,56.921785810037186,perimeter-area ratio,shape metric,lsm_c_para_cv
+10,class,3,NA,para_cv,NA,perimeter-area ratio,shape metric,lsm_c_para_cv
+10,class,4,NA,para_cv,38.87940871983197,perimeter-area ratio,shape metric,lsm_c_para_cv
+10,class,1,NA,para_mn,0.12040598290598291,perimeter-area ratio,shape metric,lsm_c_para_mn
+10,class,2,NA,para_mn,0.08362323282179661,perimeter-area ratio,shape metric,lsm_c_para_mn
+10,class,3,NA,para_mn,0.036065573770491806,perimeter-area ratio,shape metric,lsm_c_para_mn
+10,class,4,NA,para_mn,0.07936151705987088,perimeter-area ratio,shape metric,lsm_c_para_mn
+10,class,1,NA,para_sd,0.023266336457546243,perimeter-area ratio,shape metric,lsm_c_para_sd
+10,class,2,NA,para_sd,0.047599837474251776,perimeter-area ratio,shape metric,lsm_c_para_sd
+10,class,3,NA,para_sd,NA,perimeter-area ratio,shape metric,lsm_c_para_sd
+10,class,4,NA,para_sd,0.03085528858396638,perimeter-area ratio,shape metric,lsm_c_para_sd
+10,class,1,NA,pd,2.071779180212915,patch density,aggregation metric,lsm_c_pd
+10,class,2,NA,pd,0.5577867023650156,patch density,aggregation metric,lsm_c_pd
+10,class,3,NA,pd,0.07968381462357366,patch density,aggregation metric,lsm_c_pd
+10,class,4,NA,pd,4.3029259896729775,patch density,aggregation metric,lsm_c_pd
+10,class,1,NA,pladj,22.772277227722775,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+10,class,2,NA,pladj,96.01833285591522,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+10,class,3,NA,pladj,72.95081967213115,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+10,class,4,NA,pladj,71.34756504336224,percentage of like adjacencies,aggregation metric,lsm_c_pladj
+10,class,1,NA,pland,0.3657487091222031,percentage of landscape,area and edge metric,lsm_c_pland
+10,class,2,NA,pland,88.32472748135399,percentage of landscape,area and edge metric,lsm_c_pland
+10,class,3,NA,pland,0.4374641422834194,percentage of landscape,area and edge metric,lsm_c_pland
+10,class,4,NA,pland,10.87205966724039,percentage of landscape,area and edge metric,lsm_c_pland
+10,class,1,NA,shape_cv,19.947997607283156,shape index,shape metric,lsm_c_shape_cv
+10,class,2,NA,shape_cv,76.38715864372686,shape index,shape metric,lsm_c_shape_cv
+10,class,3,NA,shape_cv,NA,shape index,shape metric,lsm_c_shape_cv
+10,class,4,NA,shape_cv,42.73590613534996,shape index,shape metric,lsm_c_shape_cv
+10,class,1,NA,shape_mn,1.1101396179773684,shape index,shape metric,lsm_c_shape_mn
+10,class,2,NA,shape_mn,1.909593974300617,shape index,shape metric,lsm_c_shape_mn
+10,class,3,NA,shape_mn,2.1108742004264394,shape index,shape metric,lsm_c_shape_mn
+10,class,4,NA,shape_mn,1.6132780512969507,shape index,shape metric,lsm_c_shape_mn
+10,class,1,NA,shape_sd,0.22145062443162783,shape index,shape metric,lsm_c_shape_sd
+10,class,2,NA,shape_sd,1.458684578600061,shape index,shape metric,lsm_c_shape_sd
+10,class,3,NA,shape_sd,NA,shape index,shape metric,lsm_c_shape_sd
+10,class,4,NA,shape_sd,0.6894489937044678,shape index,shape metric,lsm_c_shape_sd
+10,class,1,NA,split,1098503.5932203392,splitting index,aggregation metric,lsm_c_split
+10,class,2,NA,split,1.3028503573131696,splitting index,aggregation metric,lsm_c_split
+10,class,3,NA,split,52253.46304756786,splitting index,aggregation metric,lsm_c_split
+10,class,4,NA,split,662.4571082022175,splitting index,aggregation metric,lsm_c_split
+10,class,1,NA,tca,0.09,total core area,core area metric,lsm_c_tca
+10,class,2,NA,tca,963.81,total core area,core area metric,lsm_c_tca
+10,class,3,NA,tca,1.35,total core area,core area metric,lsm_c_tca
+10,class,4,NA,tca,48.96,total core area,core area metric,lsm_c_tca
+10,class,1,NA,te,4740,total edge,area and edge metric,lsm_c_te
+10,class,2,NA,te,68160,total edge,area and edge metric,lsm_c_te
+10,class,3,NA,te,1980,total edge,area and edge metric,lsm_c_te
+10,class,4,NA,te,53340,total edge,area and edge metric,lsm_c_te
