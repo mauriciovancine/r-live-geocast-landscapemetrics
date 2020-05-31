@@ -38,7 +38,7 @@ getwd()
 dir()
 
 # mudar diretorio
-setwd(".."); setwd("02_dados")
+setwd("02_dados")
 
 # criar diretorios de saida
 dir.create("mapas")
